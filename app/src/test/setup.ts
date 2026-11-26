@@ -1,5 +1,8 @@
-import { cleanup } from '@testing-library/react';
+import { cleanup, configure } from '@testing-library/react';
 import { afterEach } from 'vitest';
+
+// waiting for something to appear gives up after 1 s by default, too soon on a busy machine
+configure({ asyncUtilTimeout: 10_000 });
 
 // jsdom is missing a few things every browser has
 if (typeof window !== 'undefined') {

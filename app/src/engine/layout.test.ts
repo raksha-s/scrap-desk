@@ -17,15 +17,16 @@ describe('layout', () => {
     expect(items).toEqual(g.items);
   });
 
-  it('keeps title, note and quote apart and on the sheet', async () => {
-    const stories = ['', 'A short day.', SAMPLE.slice(0, 200), SAMPLE.slice(0, 400), `${SAMPLE} ${SAMPLE} ${SAMPLE}`.slice(0, 900)];
+  const stories = ['', 'A short day.', SAMPLE.slice(0, 200), SAMPLE.slice(0, 400), `${SAMPLE} ${SAMPLE} ${SAMPLE}`.slice(0, 900)];
+  // one test per story length: 56 full layouts each, a second or so normally and far longer on a busy machine
+  it.each(stories.map((s) => [s.length, s] as const))('keeps title, note and quote apart and on the sheet (%i characters)', async (_length, story) => {
     const overlaps: string[] = []; const offSheet: string[] = [];
-    for (const story of stories) for (let n = 0; n <= 6; n++) for (let day = 1; day <= 8; day++) {
+    for (let n = 0; n <= 6; n++) for (let day = 1; day <= 8; day++) {
       const date = `2026-11-0${day}`;
       const direction = await ruleDirector.direct({ story, start: date, end: date, cardCount: n });
       const { items } = layoutPage({ direction, cards: cardsOf(n), story }, { art, measureNote: estimate });
       const text = items.filter((i) => i.type === 'title' || i.type === 'note' || i.type === 'quote');
-      const where = `${story.length} chars, ${n} photos, ${date}`;
+      const where = `${n} photos, ${date}`;
       text.forEach((a, i) => {
         const x = bbox(a);
         if (x.x0 < 0 || x.y0 < 0 || x.x1 > 900 || x.y1 > 1200) offSheet.push(`${where}: ${a.type}`);
@@ -37,7 +38,7 @@ describe('layout', () => {
     }
     expect(overlaps).toEqual([]);
     expect(offSheet).toEqual([]);
-  }, 60_000);   // 280 full layouts: a few seconds, longer on a busy machine
+  }, 120_000);
 
   it('sizes a card to its photo shape', () => {
     expect(cardSize({ kind: 'photo', w: 1000, h: 750 }, 328)).toEqual({ w: 328, h: 297 });

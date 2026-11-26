@@ -4,14 +4,34 @@
     {
       "name": "scrap-desk",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "app", "run", "dev"],
+      "runtimeArgs": [
+        "--prefix",
+        "app",
+        "run",
+        "dev"
+      ],
       "port": 5191,
+      "autoPort": false
+    },
+    {
+      "name": "scrap-desk-built",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "app",
+        "run",
+        "preview"
+      ],
+      "port": 5192,
       "autoPort": false
     },
     {
       "name": "folder-of-life-prototype",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["prototype/serve.py", "5190"],
+      "runtimeArgs": [
+        "prototype/serve.py",
+        "5190"
+      ],
       "port": 5190,
       "autoPort": false
     }
