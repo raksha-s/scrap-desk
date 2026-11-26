@@ -1,20 +1,25 @@
 import { useEffect, useState } from 'react';
 import type { StoredImage } from '../storage/repo';
 
+type Load = (id: string) => Promise<StoredImage | undefined>;
 // one address per stored image for the life of the tab; images never change once stored
 const cache = new Map<string, string>();
 
-export function useImageUrl(imageId: string, load: (id: string) => Promise<StoredImage | undefined>): string | undefined {
+export async function imageUrlFor(imageId: string, load: Load): Promise<string | undefined> {
+  if (!cache.has(imageId)) {
+    const img = await load(imageId).catch(() => undefined);
+    if (img && !cache.has(imageId)) cache.set(imageId, URL.createObjectURL(img.blob));
+  }
+  return cache.get(imageId);
+}
+
+export function useImageUrl(imageId: string, load: Load): string | undefined {
   const [, setLoaded] = useState(0);
   const url = cache.get(imageId);
   useEffect(() => {
     if (!imageId || cache.has(imageId)) return;
     let live = true;
-    load(imageId).then((img) => {
-      if (!img) return;
-      if (!cache.has(imageId)) cache.set(imageId, URL.createObjectURL(img.blob));
-      if (live) setLoaded((n) => n + 1);
-    }).catch(() => {});
+    imageUrlFor(imageId, load).then((found) => { if (live && found) setLoaded((n) => n + 1); });
     return () => { live = false; };
   }, [imageId]);
   return url;
