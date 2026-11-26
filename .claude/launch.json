@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "folder-of-life-prototype",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["prototype/serve.py", "5190"],
+      "port": 5190,
+      "autoPort": false
+    }
+  ]
+}

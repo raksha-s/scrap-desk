@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f1e7">
+  <title>Scrap Desk — UI prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-view="home">
+  <!-- WebGL stage: folders, desk, transitions -->
+  <canvas id="stage" aria-hidden="true"></canvas>
+
+  <div class="proto-flag" role="note">UI prototype · throwaway · mock AI</div>
+
+  <!-- ============ HOME ============ -->
+  <section id="home" class="view is-active" aria-label="Your folders">
+    <header class="brand">
+      <h1>Scrap Desk</h1>
+    </header>
+
+    <div class="list-view" id="listView" hidden>
+      <ul id="folderList" class="folder-list"></ul>
+    </div>
+
+    <div class="controls">
+      <div class="toggle" id="viewToggle" data-mode="folders" role="group" aria-label="View">
+        <button type="button" class="kc kc-sq tk-l toggle-opt" data-mode="folders" aria-pressed="true" aria-label="Folder view"><img class="glyph" src="assets/ui/cardboard/icon_folder.png" alt=""></button>
+        <button type="button" class="kc kc-sq tk-r toggle-opt" data-mode="list" aria-pressed="false" aria-label="List view"><img class="glyph" src="assets/ui/cardboard/icon_list.png" alt=""></button>
+      </div>
+
+      <button type="button" class="key key-solo" id="btnStart"><span>+ Add New</span></button>
+    </div>
+  </section>
+
+  <!-- ============ INSIDE A FOLDER ============ -->
+  <section id="folderView" class="view" aria-label="Folder">
+    <header class="fv-head">
+      <button type="button" class="key key-solo" id="fvBack" aria-label="Back to folders" title="Back to folders"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11.5 5.5 5 12l6.5 6.5"/></svg></button>
+      <div class="fv-title">
+        <div class="fv-name-row">
+          <h2 id="fvName">Folder</h2>
+          <input type="text" id="fvNameInput" maxlength="28" aria-label="Folder name" autocomplete="off" enterkeyhint="done" hidden>
+        </div>
+        <p id="fvMeta" class="mono-meta"></p>
+      </div>
+      <div class="fv-actions">
+        <button type="button" class="key key-solo" id="fvNew" aria-label="Add New"><span>+<span class="long"> Add New</span></span></button>
+        <div class="fv-more">
+          <button type="button" class="kebab" id="fvMore" aria-label="Folder options" aria-haspopup="menu" aria-expanded="false" aria-controls="fvMenu"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.1"/><circle cx="12" cy="12" r="2.1"/><circle cx="12" cy="19" r="2.1"/></svg></button>
+          <div class="fv-menu" id="fvMenu" role="menu" aria-label="Folder options" hidden>
+            <button type="button" role="menuitem" id="fvRename"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16zM13.5 6.5l4 4"/></svg><span>Edit name</span></button>
+            <button type="button" role="menuitem" id="fvColour"><i class="swatch" aria-hidden="true"></i><span>Change color</span></button>
+          </div>
+          <div class="fv-colours" id="fvColours" role="radiogroup" aria-label="Folder color" hidden></div>
+        </div>
+      </div>
+    </header>
+    <div class="fv-scroll"><div class="fv-grid" id="fvGrid"></div></div>
+  </section>
+
+  <!-- ============ A PAGE ============ -->
+  <section id="pageView" class="view" aria-label="Journal page">
+    <div class="pv-top">
+      <button type="button" class="key key-solo" id="pvBack" aria-label="Back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11.5 5.5 5 12l6.5 6.5"/></svg></button>
+      <p class="mono-meta" id="pvMeta"></p>
+      <button type="button" class="key key-solo" id="toolExport" disabled title="Image export is built in the real app (milestone 3)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10.5 12 15.5l5-5M5 19h14"/></svg><span>Export</span></button>
+    </div>
+    <div class="pv-desk" id="pvDesk">
+      <div class="sheet-wrap" id="sheetWrap">
+        <div class="under u1"></div><div class="under u2"></div>
+        <div class="sheet-scale" id="sheetScale"></div>
+      </div>
+    </div>
+    <div class="zoom" role="group" aria-label="Zoom">
+      <button type="button" class="zoom-key" id="zoomIn" aria-label="Zoom in" title="Zoom in"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></button>
+      <input type="range" id="zoomRange" min="50" max="300" step="5" value="100" aria-label="Zoom level" aria-orientation="vertical">
+      <button type="button" class="zoom-key" id="zoomOut" aria-label="Zoom out" title="Zoom out"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+      <button type="button" class="zoom-fit" id="zoomFit" title="Fit the page to the screen">100%</button>
+    </div>
+    <div class="tray pv-tools" role="toolbar" aria-label="Page tools">
+      <button type="button" class="obj obj-record" id="toolAlbum" aria-label="Add Music Cover">
+        <span class="obj-art" aria-hidden="true"><img class="rec-disc" src="assets/ui/record/record.png" alt="" draggable="false"><img class="rec-sleeve" src="assets/ui/record/sleeve.png" alt="" draggable="false"></span>
+        <span class="obj-tip" aria-hidden="true">Add Music Cover</span>
+      </button>
+      <button type="button" class="obj obj-camera" id="toolCamera" aria-label="Add Image">
+        <span class="obj-art" aria-hidden="true"><img class="cam-print" src="assets/ui/camera/print.png" alt="" draggable="false"><img class="cam-body-art" src="assets/ui/camera/camera.png" alt="" draggable="false"></span>
+        <span class="obj-tip" aria-hidden="true">Add Image</span>
+      </button>
+      <button type="button" class="obj obj-sticker" id="toolStickers" aria-label="Add Sticker">
+        <span class="obj-art" aria-hidden="true"><img class="stk-art" src="assets/ui/sticker/stamp.png" alt="" draggable="false"></span>
+        <span class="obj-tip" aria-hidden="true">Add Sticker</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- frame / item bubble (page view) -->
+  <div class="bubble" id="bubble" hidden>
+    <div class="bubble-frames" id="bubbleFrames" role="group" aria-label="Frame"></div>
+    <div class="bubble-actions" id="bubbleActions" role="group" aria-label="Piece">
+      <button type="button" data-act="rot-l" aria-label="Rotate left" title="Rotate left"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.6-5.9M4 4v5h5"/></svg></button>
+      <button type="button" data-act="rot-r" aria-label="Rotate right" title="Rotate right"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v5h-5"/></svg></button>
+      <button type="button" data-act="smaller" aria-label="Smaller" title="Smaller"><svg viewBox="0 0 24 24"><path d="M5 12h14"/></svg></button>
+      <button type="button" data-act="bigger" aria-label="Bigger" title="Bigger"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></svg></button>
+      <button type="button" data-act="front" aria-label="Bring to front" title="Bring to front"><svg viewBox="0 0 24 24"><rect x="8" y="8" width="11" height="11" rx="1.5"/><path d="M5 15V6.5A1.5 1.5 0 0 1 6.5 5H15"/></svg></button>
+      <button type="button" data-act="delete" aria-label="Delete" title="Delete"><svg viewBox="0 0 24 24"><path d="M5 7h14M10 7V5h4v2M7 7l1 12h8l1-12"/></svg></button>
+    </div>
+  </div>
+
+  <!-- ============ ADD NEW: one question per sheet on the writing pad ============ -->
+  <dialog id="createDlg" class="dlg dlg-create" aria-label="A new page">
+    <form method="dialog" id="createForm" novalidate>
+      <div class="pad" id="pad">
+        <img class="pad-layer" src="assets/ui/clipboard/board.png" alt="">
+        <section class="leaf" data-page="0" aria-label="Step 1 of 4">
+          <div class="leaf-back" aria-hidden="true"></div>
+          <div class="leaf-front">
+            <div class="leaf-body">
+              <p class="leaf-kicker">A new page</p>
+              <h3 tabindex="-1">Which folder?</h3>
+              <div class="leaf-fields">
+                <div class="folder-grid" id="folderGrid" role="radiogroup" aria-label="Folder"></div>
+                <label class="newfolder" id="newFolderWrap"><span>Folder name</span>
+                  <input type="text" id="newFolderName" maxlength="28" value="Unnamed Folder" autocomplete="off"></label>
+              </div>
+              <footer class="leaf-foot">
+                <span></span>
+                <span class="leaf-no">1 / 4</span>
+                <button type="button" class="key key-solo" data-next><span>Next</span></button>
+              </footer>
+            </div>
+          </div>
+        </section>
+        <section class="leaf" data-page="1" aria-label="Step 2 of 4">
+          <div class="leaf-back" aria-hidden="true"></div>
+          <div class="leaf-front">
+            <div class="leaf-body">
+              <h3 tabindex="-1">When was it?</h3>
+              <div class="leaf-fields">
+                <div class="seg" role="group" aria-label="Date type">
+                  <button type="button" class="seg-opt is-on" data-kind="day" aria-pressed="true">One day</button>
+                  <button type="button" class="seg-opt" data-kind="range" aria-pressed="false">Date range</button>
+                </div>
+                <div class="dates">
+                  <label><span id="lblStart">Date</span><input type="date" id="dStart" required></label>
+                  <label id="endWrap" hidden><span>Until</span><input type="date" id="dEnd"></label>
+                </div>
+                <p class="err" id="errDate" role="alert" hidden></p>
+                <button type="button" class="link" id="loadSample">Load my sample</button>
+              </div>
+              <footer class="leaf-foot">
+                <button type="button" class="key key-solo" data-prev><span>Back</span></button>
+                <span class="leaf-no">2 / 4</span>
+                <button type="button" class="key key-solo" data-next><span>Next</span></button>
+              </footer>
+            </div>
+          </div>
+        </section>
+        <section class="leaf" data-page="2" aria-label="Step 3 of 4">
+          <div class="leaf-back" aria-hidden="true"></div>
+          <div class="leaf-front">
+            <div class="leaf-body">
+              <h3 tabindex="-1">What happened?</h3>
+              <div class="leaf-fields leaf-write">
+                <textarea id="story" maxlength="900" aria-label="What happened?"></textarea>
+                <p class="mono-meta"><span id="storyCount">0</span> / 900</p>
+              </div>
+              <footer class="leaf-foot">
+                <button type="button" class="key key-solo" data-prev><span>Back</span></button>
+                <span class="leaf-no">3 / 4</span>
+                <button type="button" class="key key-solo" data-next><span>Next</span></button>
+              </footer>
+            </div>
+          </div>
+        </section>
+        <section class="leaf" data-page="3" aria-label="Step 4 of 4">
+          <div class="leaf-back" aria-hidden="true"></div>
+          <div class="leaf-front">
+            <div class="leaf-body">
+              <h3 tabindex="-1">Photos</h3>
+              <div class="leaf-fields" id="photoPick">
+                <input type="file" id="fileInput" accept="image/*" multiple hidden>
+                <ul class="slots" id="slots" aria-label="Six photo slots"></ul>
+              </div>
+              <footer class="leaf-foot">
+                <button type="button" class="key key-solo" data-prev><span>Back</span></button>
+                <span class="leaf-no">4 / 4</span>
+                <button type="submit" class="key key-solo" id="btnGenerate" disabled><span>Generate</span></button>
+              </footer>
+            </div>
+          </div>
+        </section>
+        <img class="pad-layer pad-clip" src="assets/ui/clipboard/clip.png" alt="">
+        <button type="button" class="x" data-close aria-label="Close">×</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ============ ALBUM ============ -->
+  <dialog id="albumDlg" class="dlg dlg-album" aria-labelledby="aTitle">
+    <header class="dlg-head"><h2 id="aTitle">Add an album cover</h2><button type="button" class="x" data-close aria-label="Close">×</button></header>
+    <form id="albumForm" class="album-search" role="search">
+      <input type="search" id="albumQ" placeholder="Album, song or artist" autocomplete="off" enterkeyhint="search">
+      <button type="submit" class="key key-sm"><span>Search</span></button>
+    </form>
+    <p class="mono-meta" id="albumStatus">Covers come from MusicBrainz &amp; the Cover Art Archive (open source).</p>
+    <ul class="album-grid" id="albumGrid"></ul>
+  </dialog>
+
+  <!-- ============ STICKERS ============ -->
+  <dialog id="stickerDlg" class="dlg dlg-stickers" aria-labelledby="sTitle">
+    <header class="dlg-head"><h2 id="sTitle">Add a sticker</h2><button type="button" class="x" data-close aria-label="Close">×</button></header>
+    <div class="stk-tabs" id="stkTabs" role="group" aria-label="Sticker type"></div>
+    <ul class="stk-grid" id="stkGrid"></ul>
+  </dialog>
+
+  <!-- ============ CAMERA ============ -->
+  <dialog id="cameraDlg" class="dlg dlg-camera" aria-labelledby="camTitle">
+    <header class="dlg-head"><h2 id="camTitle">Take a polaroid</h2><button type="button" class="x" data-close aria-label="Close">×</button></header>
+    <div class="cam-body">
+      <div class="viewfinder" id="viewfinder">
+        <video id="camVideo" playsinline muted></video>
+        <p class="cam-msg" id="camMsg" hidden></p>
+      </div>
+      <div class="cam-row">
+        <button type="button" class="key key-sm" id="camFlip"><span>Flip</span></button>
+        <button type="button" class="shutter" id="camShoot" aria-label="Take photo"></button>
+        <label class="key key-sm cam-file"><span>From files</span><input type="file" id="camFile" accept="image/*" capture="environment"></label>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ============ GENERATING ============ -->
+  <div class="gen" id="gen" hidden aria-live="polite">
+    <div class="gen-card">
+      <div class="gen-stack" aria-hidden="true"><i></i><i></i><i></i></div>
+      <p class="gen-line" id="genLine">Reading your story…</p>
+      <p class="gen-sub" id="genSub"></p>
+      <ul class="gen-chips" id="genChips"></ul>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
