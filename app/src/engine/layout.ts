@@ -52,6 +52,31 @@ function tornPolygon(rng: Rng, amp = 1.6, step = 5) {
   return 'polygon(' + pts.map(([x, y]) => `${x.toFixed(1)}% ${y.toFixed(1)}%`).join(',') + ')';
 }
 
+const NOTE_MAX = 640;      // the tallest a note may be
+const NOTE_ROOMY = 480;    // what a note that had to be squeezed aims for, leaving room for the title and quote
+const lineHeight = (fs: number) => Math.round(fs * 1.18);
+
+/**
+ * The story note, with every word on it. A story too tall as written (many line breaks) gets smaller writing,
+ * then has its blank lines closed up, and as a last resort its lines run together.
+ */
+function fitNote(text: string, sig: string, w: number, fs: number, measure: MeasureNote) {
+  const at = (version: string, width: number, size: number) => ({ text: version, w: width, fs: size, lh: lineHeight(size), h: measure(version, sig, width, size, lineHeight(size)) + 8 });
+  const asWritten = at(text, w, fs);
+  // a note made tall by line breaks crowds out the title and quote well before it reaches the limit
+  if (asWritten.h <= (text.includes('\n') ? NOTE_ROOMY : NOTE_MAX)) return asWritten;
+  const runOn = text.replace(/\s*\n\s*/g, ' ');
+  const wide = Math.max(w, 520);
+  for (const version of [text, text.replace(/\n\s*\n+/g, '\n'), runOn]) {
+    for (let size = fs; size >= 17; size -= 2) {
+      const tried = at(version, wide, size);
+      if (tried.h <= NOTE_ROOMY) return tried;
+    }
+  }
+  const smallest = at(runOn, wide, 17);
+  return { ...smallest, h: Math.min(NOTE_MAX, smallest.h) };
+}
+
 function scoreC(c: Shape, placed: Placed[], o: PlaceOpts) {
   const b = bbox(c);
   const bleed = o.bleed || 0;
@@ -121,12 +146,12 @@ export function layoutPage(
   const L = text.length;
   if (L < 120) { nw = 360; fs = 32; } else if (L < 240) { nw = 400; fs = 30; } else if (L < 400) { nw = 440; fs = 27; } else if (L < 620) { nw = 480; fs = 25; } else { nw = 520; fs = 23; }
   if (n >= 4) { nw = Math.max(nw, 470); fs = Math.min(fs, 25); } else if (n === 3) { fs = Math.min(fs, 28); }
-  const lh = Math.round(fs * 1.18);
   const noteKind = pal.noteKind;
   let note: Draft | null = null;
   if (text) {
-    const nh = Math.min(640, measureNote(text, `— ${direction.dateShort}`, nw, fs, lh) + 8);
-    note = mk('note', { text, sig: `— ${direction.dateShort}`, kind: noteKind, fs, lh, w: nw, h: nh, rot: sign(rng) * (0.6 + rng() * 1.2), z: 14, torn: tornPolygon(rng, 1.2, 4) });
+    const sig = `— ${direction.dateShort}`;
+    const fitted = fitNote(text, sig, nw, fs, measureNote);
+    note = mk('note', { ...fitted, sig, kind: noteKind, rot: sign(rng) * (0.6 + rng() * 1.2), z: 14, torn: tornPolygon(rng, 1.2, 4) });
     const nAnchor = n <= 1 ? (mode === 'diagR' ? A(0.7, 0.8) : A(0.3, 0.8)) : mode === 'diag' ? A(0.3, 0.8) : mode === 'diagR' ? A(0.7, 0.8) : mode === 'cols' ? A(0.5, 0.84) : A(0.5, 0.58);
     Object.assign(note, placeBest(rng, placed, note, { anchor: nAnchor, aw: 0.5, spread: 90, n: 300 }));
     solid(note, true);

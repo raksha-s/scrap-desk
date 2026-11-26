@@ -4,7 +4,7 @@ import { ruleDirector } from './director';
 import { bbox, cardSize, findSpot, layoutPage, type MeasureNote } from './layout';
 import { art } from './manifest';
 import { placeCard, placeSticker } from './place';
-import type { ArtDirection, Card, Page } from './types';
+import type { ArtDirection, Card, NoteItem, Page } from './types';
 
 // roughly what the handwriting face measures, so long stories get tall notes
 const estimate: MeasureNote = (text, _sig, w, fs, lh) => (Math.ceil(text.length / Math.floor((w - 40) / (fs * 0.42))) + 2) * lh + 40;
@@ -38,6 +38,39 @@ describe('layout', () => {
     }
     expect(overlaps).toEqual([]);
     expect(offSheet).toEqual([]);
+  }, 120_000);
+
+  // like the estimate above, but line breaks cost a line each, as they do on the page
+  const byLine: MeasureNote = (text, _sig, w, fs, lh) => {
+    const perLine = Math.floor((w - 76) / (fs * 0.42));
+    return text.split('\n').reduce((n, line) => n + Math.max(1, Math.ceil(line.length / perLine)), 0) * lh + 92;
+  };
+  const days = (n: number, gap: string) => Array.from({ length: n }, (_, i) => `Day ${i + 1} was a good one.`).join(gap);
+  it.each([
+    ['eight short paragraphs', days(8, '\n\n')],
+    ['a list of twenty lines', days(20, '\n')],
+    ['a list of thirty lines', days(30, '\n')],
+    ['hundreds of line breaks', 'a\n'.repeat(450).trim()],
+  ])('fits every word of %s on the page', async (_name, story) => {
+    const cut: string[] = []; const overlaps: string[] = [];
+    for (let n = 0; n <= 6; n++) for (let day = 1; day <= 4; day++) {
+      const date = `2026-11-0${day}`;
+      const direction = await ruleDirector.direct({ story, start: date, end: date, cardCount: n });
+      const { items } = layoutPage({ direction, cards: cardsOf(n), story }, { art, measureNote: byLine });
+      const note = items.find((i) => i.type === 'note') as NoteItem;
+      expect(note.text.split(/\s+/)).toEqual(story.split(/\s+/));
+      if (byLine(note.text, note.sig, note.w, note.fs, note.lh) > note.h) cut.push(`${n} photos, ${date}`);
+      const text = items.filter((i) => i.type === 'title' || i.type === 'note' || i.type === 'quote');
+      text.forEach((a, i) => {
+        const x = bbox(a);
+        for (const b of text.slice(i + 1)) {
+          const y = bbox(b);
+          if (Math.min(x.x1, y.x1) - Math.max(x.x0, y.x0) > 1 && Math.min(x.y1, y.y1) - Math.max(x.y0, y.y0) > 1) overlaps.push(`${n} photos, ${date}: ${a.type} over ${b.type}`);
+        }
+      });
+    }
+    expect(cut).toEqual([]);
+    expect(overlaps).toEqual([]);
   }, 120_000);
 
   it('sizes a card to its photo shape', () => {
