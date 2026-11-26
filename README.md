@@ -75,7 +75,7 @@ That story and three photos went in. This came out, with the pull quote and the 
 
 ## What it does
 
-| | |
+| Feature | What you get |
 |---|---|
 | **Folders** | Create, rename, recolour (11 colours) and delete, as a 3D stack or a list |
 | **Pages** | One date or a range, a story up to 900 characters, up to six photos |
@@ -89,7 +89,8 @@ That story and three photos went in. This came out, with the pull quote and the 
 ## How a page gets made
 
 ```mermaid
-flowchart LR
+%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#f6f1e7", "primaryBorderColor": "#c98a45", "primaryTextColor": "#2a2118", "lineColor": "#a96f35"}}}%%
+flowchart TD
   A[Date, story, photos] --> B[Art director<br/>reads mood and themes]
   B --> C[Layout engine<br/>seeded, 900 × 1200 sheet]
   C --> D[Editable page]
