@@ -1,0 +1,16 @@
+/* generating */
+.gen { position: fixed; inset: 0; z-index: 90; display: grid; place-items: center; background: rgba(246, 241, 231, .86); backdrop-filter: blur(10px); animation: fade .35s both; }
+.gen-card { text-align: center; padding: 20px; max-width: 520px; }
+.gen-stack { position: relative; width: 120px; height: 150px; margin: 0 auto 26px; }
+.gen-stack i { position: absolute; inset: 0; background: #fff; box-shadow: 0 2px 3px rgba(0,0,0,.2), 0 12px 20px -8px rgba(0,0,0,.35); animation: shuffle 1.6s var(--ease) infinite; }
+.gen-stack i:nth-child(1) { transform: rotate(-6deg); background: #efe7d6; }
+.gen-stack i:nth-child(2) { transform: rotate(4deg); background: #dcb07a; animation-delay: .25s; }
+.gen-stack i:nth-child(3) { background: #fbfaf5; animation-delay: .5s; }
+@keyframes shuffle { 0%, 100% { translate: 0 0; } 50% { translate: 14px -10px; } }
+.gen-line { font: 400 clamp(30px, 6vw, 44px)/1.05 var(--serif); letter-spacing: -.02em; min-height: 1.1em; }
+.gen-sub { margin-top: 12px; font: 400 26px/1.1 var(--hand); color: var(--brown); min-height: 1.2em; }
+.gen-chips { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; min-height: 34px; }
+.gen-chips li { font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 8px 12px; border-radius: 999px; background: var(--kraft); color: var(--brown); animation: rise .5s var(--ease) both; box-shadow: inset 0 -2px 0 rgba(110,62,18,.25); }
+
+.toast { position: fixed; left: 50%; bottom: calc(120px + var(--safe-b)); transform: translateX(-50%); z-index: 130; background: var(--brown); color: #fbf3e4; padding: 12px 18px; border-radius: 10px; font: 500 13px/1.3 var(--mono); max-width: calc(100vw - 32px); box-shadow: 0 10px 30px rgba(0,0,0,.3); animation: rise .35s var(--ease) both; }
+

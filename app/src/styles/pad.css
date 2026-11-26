@@ -1,0 +1,70 @@
+/* ---------- add new: the writing pad ---------- */
+/* Three aligned layers cut from the clipboard photo: board, loose sheets (one per question), metal clip on top. */
+.dlg-create {
+  --pad-h: min(calc(100dvh - 16px), calc((100vw - 16px) * 1480 / 952), 940px);
+  --pad-w: calc(var(--pad-h) * 952 / 1480);
+  --u: max(.33px, calc(var(--pad-w) / 1150));          /* key size follows the pad */
+  margin: auto; padding: 0; border: 0; background: none; width: var(--pad-w); height: var(--pad-h); max-width: none; max-height: none; overflow: visible;
+}
+.pad { position: relative; width: var(--pad-w); height: var(--pad-h); perspective: 1800px; perspective-origin: 50% 20%; }
+.pad-layer { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; user-select: none; -webkit-user-drag: none; }
+.pad > .pad-layer:first-child { filter: drop-shadow(0 28px 34px rgba(20, 10, 0, .45)) drop-shadow(0 3px 4px rgba(20, 10, 0, .3)); }
+.pad-clip { z-index: 10; filter: drop-shadow(0 3px 3px rgba(30, 20, 10, .32)); }
+.pad > .x { position: absolute; z-index: 11; top: 9%; right: 4%; background: rgba(255, 255, 255, .75); box-shadow: 0 1px 4px rgba(20, 30, 50, .25); }
+.pad > .x:hover { background: #fff; }
+
+/* a sheet hinges just under the clip: flipping forward lifts it up and over, going back lays it down again */
+.leaf {
+  position: absolute; inset: 0; pointer-events: none; transform-style: preserve-3d; transform-origin: 50% 18.5%; transform: rotateX(0deg);
+  transition: transform .72s cubic-bezier(.45, .05, .25, 1), opacity .2s linear, visibility 0s;
+}
+.leaf[data-page="0"] { z-index: 4; } .leaf[data-page="1"] { z-index: 3; } .leaf[data-page="2"] { z-index: 2; } .leaf[data-page="3"] { z-index: 1; }
+.leaf.is-turned { transform: rotateX(168deg); opacity: 0; visibility: hidden;
+  transition: transform .72s cubic-bezier(.45, .05, .25, 1), opacity .26s linear .46s, visibility 0s linear .72s; }
+.pad.no-anim .leaf { transition: none; }
+.leaf-front, .leaf-back { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.leaf-front::before, .leaf-back { background: url("/art/ui/clipboard/sheet.png") 0 0 / 100% 100% no-repeat; }
+.leaf-front::before { content: ""; position: absolute; inset: 0; filter: drop-shadow(0 1px 2px rgba(30, 40, 60, .22)); }
+.leaf-back { transform: rotateY(180deg); filter: brightness(.93); }          /* the same sheet seen from behind */
+.leaf-body { position: absolute; left: 13%; right: 13%; top: 20.5%; bottom: 9%; display: flex; flex-direction: column; pointer-events: auto; }
+.leaf[inert] .leaf-body { pointer-events: none; }
+.leaf-kicker { font: 400 24px/1 var(--hand); color: var(--ink-soft); margin-bottom: 4px; }
+.leaf h3 { font: 400 clamp(21px, calc(var(--pad-w) * .05), 28px)/1.1 var(--serif); letter-spacing: -.01em; padding-bottom: 8px; border-bottom: 1.5px solid rgba(80, 110, 160, .3); outline: none; }
+.leaf-fields { flex: 1; min-height: 0; overflow-y: auto; padding: 12px 10px 4px; }
+.leaf-write { display: flex; flex-direction: column; }
+.leaf-write textarea { flex: 1; min-height: 90px; resize: none; }
+.leaf-foot { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 6px; padding-top: 8px; }
+.leaf-foot > :first-child { justify-self: start; } .leaf-foot > :last-child { justify-self: end; }
+.leaf-no { font: 500 11px/1 var(--mono); letter-spacing: .14em; color: var(--ink-soft); white-space: nowrap; }
+
+/* fields are written straight onto the paper */
+.leaf input[type="date"], .leaf input[type="text"] { background: transparent; border: 0; border-bottom: 1.5px solid rgba(59, 36, 16, .38); border-radius: 0; padding: 8px 2px; }
+/* ruled paper: one rule per 30px line, drawn just under the handwriting's baseline (23px down), scrolling with the text */
+.leaf textarea { border: 0; border-radius: 0; padding: 0 2px; background: linear-gradient(transparent 24px, rgba(80, 110, 160, .3) 24px 25px, transparent 25px) 0 0 / 100% 30px repeat local; }
+.leaf input:focus-visible { border-bottom-color: var(--brown); box-shadow: 0 2px 0 var(--kraft); }
+.leaf textarea:focus-visible { box-shadow: 0 0 0 2px rgba(220, 157, 88, .55); }
+.leaf .dates { flex-direction: column; gap: 12px; }
+.leaf .link { margin-top: 8px; }
+
+.album-search { display: flex; gap: 10px; margin: 6px 0 10px; }
+.album-search input { flex: 1; }
+.album-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 14px; margin-top: 16px; max-height: min(46dvh, 420px); overflow-y: auto; padding: 6px 4px 10px; }
+.album-grid button { display: block; width: 100%; border: 0; padding: 7px 7px 9px; background: #fbfaf5; box-shadow: 0 2px 3px rgba(0,0,0,.2), 0 8px 14px -6px rgba(0,0,0,.3); text-align: left; transition: transform .2s var(--ease); }
+.album-grid button:hover { transform: translateY(-3px) rotate(-1deg); }
+.album-grid img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: #ddd5c4; }
+.album-grid b { display: block; margin-top: 7px; font: 600 11px/1.2 var(--mono); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.album-grid small { display: block; font: 400 10px/1.3 var(--mono); color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.cam-body { display: grid; gap: 16px; margin-top: 10px; }
+.viewfinder { position: relative; aspect-ratio: 4 / 3; background: #1d1913; border-radius: 10px; overflow: hidden; box-shadow: inset 0 0 0 6px #2a251d, inset 0 0 0 8px #0e0c09, 0 8px 18px -8px rgba(0,0,0,.5); }
+.viewfinder video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.viewfinder.front video { transform: scaleX(-1); }
+.cam-msg { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; padding: 24px; font: 500 14px/1.5 var(--mono); color: #f3e9d7; }
+.cam-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 12px; }
+.shutter { width: 76px; height: 76px; border-radius: 50%; border: 0; background: radial-gradient(circle at 35% 30%, #fff, #e8e2d6 55%, #c9c1b0); box-shadow: 0 0 0 6px #cfc8b8, 0 0 0 9px #8f8775, 0 8px 0 9px #6f6858, 0 16px 20px rgba(0,0,0,.35); transition: transform .12s; margin-bottom: 6px; }
+.shutter:active { transform: translateY(5px); box-shadow: 0 0 0 6px #cfc8b8, 0 0 0 9px #8f8775, 0 3px 0 9px #6f6858; }
+.cam-file { position: relative; overflow: hidden; }
+.cam-file input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.flash { position: fixed; inset: 0; background: #fff; z-index: 120; pointer-events: none; animation: flash .5s ease-out forwards; }
+@keyframes flash { from { opacity: .95; } to { opacity: 0; } }
+

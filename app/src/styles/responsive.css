@@ -1,0 +1,47 @@
+/* ---------- small screens ---------- */
+@media (max-width: 720px) {
+  :root { --u: calc(min(100vw - 24px, 430px) / 776); }
+  .controls { padding: 0 12px; bottom: calc(14px + var(--safe-b)); }
+  .fv-head, .pv-top { --u: .36px; }                     /* smaller header keys so the folder name has room */
+  .fv-head { grid-template-columns: auto 1fr auto; gap: 8px; }
+  .fv-scroll { top: 138px; padding: 14px 18px 70px; }
+  .fv-name-row { gap: 6px; }
+  /* long names take a second line on phones rather than being cut off */
+  .fv-title h2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; overflow-wrap: break-word; font-size: 24px; line-height: 1.05; }
+  .fv-title h2[hidden] { display: none; }
+  .fv-title input[type="text"] { width: 100%; font-size: 26px; }
+  /* + Add New shrinks to a square + so the folder name keeps its space */
+  .fv-actions { gap: 4px; }
+  #fvNew { width: calc(143 * var(--u)); min-width: 0; height: calc(132 * var(--u)); border: 0; padding: 0 0 calc(30 * var(--u)); border-image: none; background: url("/art/ui/cardboard/keycap_square.png") 0 0 / 100% 100% no-repeat; font-size: calc(64 * var(--u)); }
+  #fvNew .long { display: none; }
+  .fv-colours { grid-template-columns: repeat(4, 58px); gap: 6px; }
+  .fv-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 16px; }
+  .pv-desk { padding-top: 76px; padding-bottom: calc(191 * var(--u) + 26px + var(--safe-b)); }
+  .zoomed .pv-desk { padding-left: 16px; padding-right: 60px; }
+  /* the bar moves left so the zoom strip can sit beside it */
+  .tray.pv-tools { left: 8px; transform: none; bottom: calc(14px + var(--safe-b)); }
+  .zoom { right: 6px; bottom: calc(10px + var(--safe-b)); width: 50px; gap: 5px; padding: 10px 0 15px; }
+  .zoom::before { border-width: 15px 16px 19px; border-image-width: 15px 16px 19px 16px; }
+  .zoom-key { width: 32px; height: 30px; padding-bottom: 5px; }
+  .zoom input[type="range"] { height: 62px; }
+  /* export becomes a square icon key, like the back keys */
+  #toolExport span { display: none; }
+  #toolExport {
+    width: calc(143 * var(--u)); height: calc(132 * var(--u)); border: 0; padding: 0 0 calc(30 * var(--u));
+    border-image: none; background: url("/art/ui/cardboard/keycap_square.png") 0 0 / 100% 100% no-repeat;
+  }
+  #toolExport svg { width: calc(60 * var(--u)); height: calc(60 * var(--u)); }
+  .folder-row h3 { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* folder view on a dark folder */
+#folderView.on-dark .page-card .cap { color: #f4ead8; }
+#folderView.on-dark .page-card .cap small { color: rgba(244, 234, 216, .7); }
+#folderView.on-dark .page-card.new .thumb { color: #f4ead8; border-color: rgba(244, 234, 216, .5); }
+#folderView.on-dark .fv-empty { color: #f4ead8; }
+
+.dlg-album .dlg-head, .dlg-camera .dlg-head, .dlg-stickers .dlg-head { position: static; background: none; }
+

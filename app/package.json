@@ -1,0 +1,43 @@
+{
+  "name": "scrap-desk",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 5192 --strictPort",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "assets": "node scripts/copy-assets.mjs",
+    "golden": "node --experimental-default-type=module scripts/golden.mjs"
+  },
+  "dependencies": {
+    "@fontsource/caveat": "5.3.0",
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
+    "@fontsource/reenie-beanie": "5.3.0",
+    "idb": "8.0.4",
+    "modern-screenshot": "4.7.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "20.19.43",
+    "@types/react": "19.3.3",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.170.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "fake-indexeddb": "6.2.8",
+    "jsdom": "26.1.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.8",
+    "vitest": "4.1.12"
+  }
+}

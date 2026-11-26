@@ -1,0 +1,1216 @@
+{
+ "folders": [
+  {
+   "id": "f03",
+   "file": "art/folders/f03.webp",
+   "avg": "#b86b48",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.1217,
+    "by": 0.1661,
+    "bw": 0.7583,
+    "bh": 0.6587,
+    "tabL": 0.026,
+    "tabR": 0.345,
+    "tabH": 0.056
+   },
+   "dark": true
+  },
+  {
+   "id": "f04",
+   "file": "art/folders/f04.webp",
+   "avg": "#9ca08a",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.1217,
+    "by": 0.1661,
+    "bw": 0.7583,
+    "bh": 0.6587,
+    "tabL": 0.026,
+    "tabR": 0.345,
+    "tabH": 0.059
+   },
+   "dark": false
+  },
+  {
+   "id": "f05",
+   "file": "art/folders/f05.webp",
+   "avg": "#364e38",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.1217,
+    "by": 0.1661,
+    "bw": 0.7583,
+    "bh": 0.6587,
+    "tabL": 0.026,
+    "tabR": 0.343,
+    "tabH": 0.059
+   },
+   "dark": true
+  },
+  {
+   "id": "f06",
+   "file": "art/folders/f06.webp",
+   "avg": "#943b40",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.1217,
+    "by": 0.1679,
+    "bw": 0.7583,
+    "bh": 0.6568,
+    "tabL": 0.026,
+    "tabR": 0.343,
+    "tabH": 0.056
+   },
+   "dark": true
+  },
+  {
+   "id": "f07",
+   "file": "art/folders/f07.webp",
+   "avg": "#e4bac1",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.12,
+    "by": 0.1661,
+    "bw": 0.7617,
+    "bh": 0.6587,
+    "tabL": 0.026,
+    "tabR": 0.344,
+    "tabH": 0.056
+   },
+   "dark": false
+  },
+  {
+   "id": "f08",
+   "file": "art/folders/f08.webp",
+   "avg": "#b8abcd",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.12,
+    "by": 0.1661,
+    "bw": 0.7617,
+    "bh": 0.6587,
+    "tabL": 0.026,
+    "tabR": 0.344,
+    "tabH": 0.056
+   },
+   "dark": false
+  },
+  {
+   "id": "f09",
+   "file": "art/folders/f09.webp",
+   "avg": "#eae3d1",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.12,
+    "by": 0.1661,
+    "bw": 0.7617,
+    "bh": 0.6587,
+    "tabL": 0.026,
+    "tabR": 0.344,
+    "tabH": 0.056
+   },
+   "dark": false
+  },
+  {
+   "id": "f10",
+   "file": "art/folders/f10.webp",
+   "avg": "#302b28",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.12,
+    "by": 0.1679,
+    "bw": 0.7617,
+    "bh": 0.6568,
+    "tabL": 0.026,
+    "tabR": 0.344,
+    "tabH": 0.056
+   },
+   "dark": true
+  },
+  {
+   "id": "f11",
+   "file": "art/folders/f11.webp",
+   "avg": "#99c6e4",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.12,
+    "by": 0.1661,
+    "bw": 0.7617,
+    "bh": 0.6587,
+    "tabL": 0.026,
+    "tabR": 0.344,
+    "tabH": 0.056
+   },
+   "dark": false
+  },
+  {
+   "id": "f12",
+   "file": "art/folders/f12.webp",
+   "avg": "#ebd898",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.1183,
+    "by": 0.1661,
+    "bw": 0.7633,
+    "bh": 0.6587,
+    "tabL": 0.028,
+    "tabR": 0.343,
+    "tabH": 0.056
+   },
+   "dark": false
+  },
+  {
+   "id": "f13",
+   "file": "art/folders/f13.webp",
+   "avg": "#c1dc7c",
+   "w": 1100,
+   "h": 993,
+   "geo": {
+    "bx": 0.1183,
+    "by": 0.1661,
+    "bw": 0.7633,
+    "bh": 0.6587,
+    "tabL": 0.028,
+    "tabR": 0.345,
+    "tabH": 0.056
+   },
+   "dark": false
+  }
+ ],
+ "stamps": [
+  {
+   "id": "blue-floral",
+   "file": "art/stamps/blue-floral.png",
+   "w": 240,
+   "h": 230
+  },
+  {
+   "id": "gold-botanical",
+   "file": "art/stamps/gold-botanical.png",
+   "w": 240,
+   "h": 240
+  },
+  {
+   "id": "pink-butterfly",
+   "file": "art/stamps/pink-butterfly.png",
+   "w": 240,
+   "h": 244
+  },
+  {
+   "id": "gold-leaf",
+   "file": "art/stamps/gold-leaf.png",
+   "w": 240,
+   "h": 238
+  },
+  {
+   "id": "pink-heart",
+   "file": "art/stamps/pink-heart.png",
+   "w": 240,
+   "h": 228
+  },
+  {
+   "id": "burgundy-leaf",
+   "file": "art/stamps/burgundy-leaf.png",
+   "w": 240,
+   "h": 236
+  },
+  {
+   "id": "blue-botanical",
+   "file": "art/stamps/blue-botanical.png",
+   "w": 240,
+   "h": 248
+  },
+  {
+   "id": "ivory-daisy",
+   "file": "art/stamps/ivory-daisy.png",
+   "w": 240,
+   "h": 228
+  },
+  {
+   "id": "gold-sun",
+   "file": "art/stamps/gold-sun.png",
+   "w": 240,
+   "h": 243
+  },
+  {
+   "id": "green-clover",
+   "file": "art/stamps/green-clover.png",
+   "w": 240,
+   "h": 251
+  },
+  {
+   "id": "ivory-lily",
+   "file": "art/stamps/ivory-lily.png",
+   "w": 240,
+   "h": 240
+  },
+  {
+   "id": "pink-libra",
+   "file": "art/stamps/pink-libra.png",
+   "w": 240,
+   "h": 237
+  },
+  {
+   "id": "ivory-butterfly",
+   "file": "art/stamps/ivory-butterfly.png",
+   "w": 240,
+   "h": 236
+  },
+  {
+   "id": "gold-crescent-moon",
+   "file": "art/stamps/gold-crescent-moon.png",
+   "w": 240,
+   "h": 234
+  },
+  {
+   "id": "blue-mountains",
+   "file": "art/stamps/blue-mountains.png",
+   "w": 240,
+   "h": 262
+  },
+  {
+   "id": "burgundy-gold-heart",
+   "file": "art/stamps/burgundy-gold-heart.png",
+   "w": 240,
+   "h": 242
+  },
+  {
+   "id": "gold-flowers",
+   "file": "art/stamps/gold-flowers.png",
+   "w": 240,
+   "h": 246
+  },
+  {
+   "id": "pink-swan",
+   "file": "art/stamps/pink-swan.png",
+   "w": 240,
+   "h": 215
+  },
+  {
+   "id": "ivory-daisies",
+   "file": "art/stamps/ivory-daisies.png",
+   "w": 240,
+   "h": 242
+  },
+  {
+   "id": "lavender-airplane",
+   "file": "art/stamps/lavender-airplane.png",
+   "w": 240,
+   "h": 236
+  },
+  {
+   "id": "blue-bow",
+   "file": "art/stamps/blue-bow.png",
+   "w": 240,
+   "h": 238
+  },
+  {
+   "id": "peach-ornamental",
+   "file": "art/stamps/peach-ornamental.png",
+   "w": 240,
+   "h": 240
+  },
+  {
+   "id": "lavender-heart",
+   "file": "art/stamps/lavender-heart.png",
+   "w": 240,
+   "h": 240
+  },
+  {
+   "id": "bronze-paw",
+   "file": "art/stamps/bronze-paw.png",
+   "w": 240,
+   "h": 249
+  },
+  {
+   "id": "burgundy-crown",
+   "file": "art/stamps/burgundy-crown.png",
+   "w": 240,
+   "h": 233
+  },
+  {
+   "id": "lavender-sprigs",
+   "file": "art/stamps/lavender-sprigs.png",
+   "w": 240,
+   "h": 238
+  },
+  {
+   "id": "gold-star",
+   "file": "art/stamps/gold-star.png",
+   "w": 240,
+   "h": 243
+  },
+  {
+   "id": "pink-filigree-heart",
+   "file": "art/stamps/pink-filigree-heart.png",
+   "w": 240,
+   "h": 211
+  },
+  {
+   "id": "pink-heart-seal",
+   "file": "art/stamps/pink-heart-seal.png",
+   "w": 240,
+   "h": 229
+  },
+  {
+   "id": "blue-compass",
+   "file": "art/stamps/blue-compass.png",
+   "w": 240,
+   "h": 257
+  },
+  {
+   "id": "pink-rose",
+   "file": "art/stamps/pink-rose.png",
+   "w": 240,
+   "h": 238
+  },
+  {
+   "id": "pink-tulip",
+   "file": "art/stamps/pink-tulip.png",
+   "w": 240,
+   "h": 242
+  }
+ ],
+ "leaves": [
+  {
+   "id": "mint",
+   "file": "art/leaves/mint.png",
+   "w": 394,
+   "h": 460
+  },
+  {
+   "id": "pine-branch",
+   "file": "art/leaves/pine-branch.png",
+   "w": 304,
+   "h": 460
+  },
+  {
+   "id": "long-green",
+   "file": "art/leaves/long-green.png",
+   "w": 216,
+   "h": 460
+  },
+  {
+   "id": "fatsia",
+   "file": "art/leaves/fatsia.png",
+   "w": 299,
+   "h": 460
+  },
+  {
+   "id": "orange-birch",
+   "file": "art/leaves/orange-birch.png",
+   "w": 213,
+   "h": 460
+  },
+  {
+   "id": "brown-maple",
+   "file": "art/leaves/brown-maple.png",
+   "w": 495,
+   "h": 460
+  },
+  {
+   "id": "trifoliate",
+   "file": "art/leaves/trifoliate.png",
+   "w": 290,
+   "h": 460
+  },
+  {
+   "id": "ivy",
+   "file": "art/leaves/ivy.png",
+   "w": 187,
+   "h": 460
+  },
+  {
+   "id": "fern",
+   "file": "art/leaves/fern.png",
+   "w": 238,
+   "h": 460
+  },
+  {
+   "id": "yellow-green",
+   "file": "art/leaves/yellow-green.png",
+   "w": 213,
+   "h": 460
+  },
+  {
+   "id": "eucalyptus",
+   "file": "art/leaves/eucalyptus.png",
+   "w": 224,
+   "h": 460
+  },
+  {
+   "id": "yellow-maple",
+   "file": "art/leaves/yellow-maple.png",
+   "w": 457,
+   "h": 460
+  },
+  {
+   "id": "red",
+   "file": "art/leaves/red.png",
+   "w": 248,
+   "h": 460
+  },
+  {
+   "id": "monstera",
+   "file": "art/leaves/monstera.png",
+   "w": 345,
+   "h": 460
+  },
+  {
+   "id": "clover",
+   "file": "art/leaves/clover.png",
+   "w": 346,
+   "h": 460
+  },
+  {
+   "id": "dark-oval",
+   "file": "art/leaves/dark-oval.png",
+   "w": 214,
+   "h": 460
+  },
+  {
+   "id": "rose",
+   "file": "art/leaves/rose.png",
+   "w": 332,
+   "h": 460
+  },
+  {
+   "id": "oak",
+   "file": "art/leaves/oak.png",
+   "w": 451,
+   "h": 460
+  },
+  {
+   "id": "banana",
+   "file": "art/leaves/banana.png",
+   "w": 371,
+   "h": 460
+  }
+ ],
+ "patterns": [
+  {
+   "id": "lipstick-kisses-left-torn-edge",
+   "file": "art/patterns/lipstick-kisses-left-torn-edge.png",
+   "w": 403,
+   "h": 700
+  },
+  {
+   "id": "red-gingham-diagonal-tear",
+   "file": "art/patterns/red-gingham-diagonal-tear.png",
+   "w": 344,
+   "h": 700
+  },
+  {
+   "id": "tulip-checkerboard",
+   "file": "art/patterns/tulip-checkerboard.png",
+   "w": 392,
+   "h": 700
+  },
+  {
+   "id": "red-gingham-vertical-strip",
+   "file": "art/patterns/red-gingham-vertical-strip.png",
+   "w": 395,
+   "h": 700
+  },
+  {
+   "id": "printed-text-torn-strip",
+   "file": "art/patterns/printed-text-torn-strip.png",
+   "w": 350,
+   "h": 700
+  },
+  {
+   "id": "lipstick-kisses-corner",
+   "file": "art/patterns/lipstick-kisses-corner.png",
+   "w": 445,
+   "h": 700
+  },
+  {
+   "id": "heart-pattern-diagonal-tear",
+   "file": "art/patterns/heart-pattern-diagonal-tear.png",
+   "w": 446,
+   "h": 700
+  },
+  {
+   "id": "tiny-hearts-torn-strip",
+   "file": "art/patterns/tiny-hearts-torn-strip.png",
+   "w": 316,
+   "h": 700
+  },
+  {
+   "id": "handwritten-script-corner",
+   "file": "art/patterns/handwritten-script-corner.png",
+   "w": 378,
+   "h": 700
+  },
+  {
+   "id": "lace-trim",
+   "file": "art/patterns/lace-trim.webp",
+   "w": 262,
+   "h": 724,
+   "corner_at": "l"
+  },
+  {
+   "id": "floral-swag",
+   "file": "art/patterns/floral-swag.webp",
+   "w": 760,
+   "h": 617,
+   "corner_at": "br"
+  },
+  {
+   "id": "blue-lace",
+   "file": "art/patterns/blue-lace.webp",
+   "w": 543,
+   "h": 760,
+   "corner_at": "bl"
+  },
+  {
+   "id": "love-text",
+   "file": "art/patterns/love-text.webp",
+   "w": 433,
+   "h": 760,
+   "corner_at": "tr"
+  },
+  {
+   "id": "red-tile",
+   "file": "art/patterns/red-tile.webp",
+   "w": 692,
+   "h": 662,
+   "corner_at": "br"
+  },
+  {
+   "id": "rose-floral",
+   "file": "art/patterns/rose-floral.webp",
+   "w": 630,
+   "h": 638,
+   "corner_at": "tl"
+  },
+  {
+   "id": "handwriting-script",
+   "file": "art/patterns/handwriting-script.webp",
+   "w": 599,
+   "h": 760,
+   "corner_at": "bl"
+  },
+  {
+   "id": "green-damask",
+   "file": "art/patterns/green-damask.webp",
+   "w": 753,
+   "h": 760,
+   "corner_at": "tr"
+  },
+  {
+   "id": "paris-postcard",
+   "file": "art/patterns/paris-postcard.webp",
+   "w": 530,
+   "h": 740,
+   "corner_at": "bl"
+  },
+  {
+   "id": "plaid",
+   "file": "art/patterns/plaid.webp",
+   "w": 465,
+   "h": 760,
+   "corner_at": "tl"
+  },
+  {
+   "id": "burgundy-roses",
+   "file": "art/patterns/burgundy-roses.webp",
+   "w": 760,
+   "h": 726,
+   "corner_at": "tl"
+  },
+  {
+   "id": "lipstick-kisses",
+   "file": "art/patterns/lipstick-kisses.webp",
+   "w": 610,
+   "h": 760,
+   "corner_at": "br"
+  },
+  {
+   "id": "typewritten-strip",
+   "file": "art/patterns/typewritten-strip.webp",
+   "w": 254,
+   "h": 760,
+   "corner_at": "l"
+  },
+  {
+   "id": "embossed-floral-corner",
+   "file": "art/patterns/embossed-floral-corner.webp",
+   "w": 707,
+   "h": 760,
+   "corner_at": "br"
+  },
+  {
+   "id": "butterfly-newspaper",
+   "file": "art/patterns/butterfly-newspaper.webp",
+   "w": 604,
+   "h": 760,
+   "corner_at": "tl"
+  },
+  {
+   "id": "building-sketch",
+   "file": "art/patterns/building-sketch.webp",
+   "w": 722,
+   "h": 760,
+   "corner_at": "bl"
+  },
+  {
+   "id": "pink-ditsy-floral",
+   "file": "art/patterns/pink-ditsy-floral.webp",
+   "w": 651,
+   "h": 760,
+   "corner_at": "tr"
+  },
+  {
+   "id": "white-lace",
+   "file": "art/patterns/white-lace.webp",
+   "w": 558,
+   "h": 564,
+   "corner_at": "br"
+  }
+ ],
+ "stickers": [
+  {
+   "id": "silver-pin",
+   "kind": "pin",
+   "file": "art/stickers/silver-pin.png",
+   "w": 180,
+   "h": 179
+  },
+  {
+   "id": "black-pin",
+   "kind": "pin",
+   "file": "art/stickers/black-pin.png",
+   "w": 153,
+   "h": 131
+  },
+  {
+   "id": "red-wire-clip",
+   "kind": "clip",
+   "file": "art/stickers/red-wire-clip.png",
+   "w": 253,
+   "h": 170
+  },
+  {
+   "id": "silver-paperclip",
+   "kind": "paperclip",
+   "file": "art/stickers/silver-paperclip.png",
+   "w": 241,
+   "h": 77
+  },
+  {
+   "id": "pink-pin-long",
+   "kind": "pin",
+   "file": "art/stickers/pink-pin-long.png",
+   "w": 221,
+   "h": 185
+  },
+  {
+   "id": "pink-pin",
+   "kind": "pin",
+   "file": "art/stickers/pink-pin.png",
+   "w": 181,
+   "h": 130
+  },
+  {
+   "id": "red-pin",
+   "kind": "pin",
+   "file": "art/stickers/red-pin.png",
+   "w": 153,
+   "h": 115
+  },
+  {
+   "id": "teal-pin",
+   "kind": "pin",
+   "file": "art/stickers/teal-pin.png",
+   "w": 212,
+   "h": 139
+  },
+  {
+   "id": "yellow-star",
+   "kind": "sticker",
+   "file": "art/stickers/yellow-star.png",
+   "w": 140,
+   "h": 143
+  },
+  {
+   "id": "red-paperclip",
+   "kind": "paperclip",
+   "file": "art/stickers/red-paperclip.png",
+   "w": 74,
+   "h": 236
+  },
+  {
+   "id": "gold-clip",
+   "kind": "clip",
+   "file": "art/stickers/gold-clip.png",
+   "w": 169,
+   "h": 210
+  },
+  {
+   "id": "red-binder",
+   "kind": "clip",
+   "file": "art/stickers/red-binder.png",
+   "w": 187,
+   "h": 150
+  },
+  {
+   "id": "white-clip",
+   "kind": "clip",
+   "file": "art/stickers/white-clip.png",
+   "w": 213,
+   "h": 231
+  },
+  {
+   "id": "pink-clip",
+   "kind": "clip",
+   "file": "art/stickers/pink-clip.png",
+   "w": 248,
+   "h": 231
+  },
+  {
+   "id": "pink-paperclip",
+   "kind": "paperclip",
+   "file": "art/stickers/pink-paperclip.png",
+   "w": 147,
+   "h": 92
+  },
+  {
+   "id": "lilac-clip",
+   "kind": "clip",
+   "file": "art/stickers/lilac-clip.png",
+   "w": 230,
+   "h": 188
+  },
+  {
+   "id": "blue-archive-clip",
+   "kind": "clip",
+   "file": "art/stickers/blue-archive-clip.png",
+   "w": 243,
+   "h": 276
+  },
+  {
+   "id": "blue-pin",
+   "kind": "pin",
+   "file": "art/stickers/blue-pin.png",
+   "w": 164,
+   "h": 86
+  },
+  {
+   "id": "pink-binder",
+   "kind": "clip",
+   "file": "art/stickers/pink-binder.png",
+   "w": 200,
+   "h": 185
+  },
+  {
+   "id": "cream-clip",
+   "kind": "clip",
+   "file": "art/stickers/cream-clip.png",
+   "w": 274,
+   "h": 286
+  },
+  {
+   "id": "pink-paperclip-tall",
+   "kind": "paperclip",
+   "file": "art/stickers/pink-paperclip-tall.png",
+   "w": 75,
+   "h": 201
+  },
+  {
+   "id": "sky-clip",
+   "kind": "clip",
+   "file": "art/stickers/sky-clip.png",
+   "w": 248,
+   "h": 224
+  },
+  {
+   "id": "wood-pin",
+   "kind": "pin",
+   "file": "art/stickers/wood-pin.png",
+   "w": 130,
+   "h": 92
+  },
+  {
+   "id": "red-tab-clip",
+   "kind": "clip",
+   "file": "art/stickers/red-tab-clip.png",
+   "w": 129,
+   "h": 188
+  },
+  {
+   "id": "gold-tab-clip",
+   "kind": "clip",
+   "file": "art/stickers/gold-tab-clip.png",
+   "w": 132,
+   "h": 191
+  },
+  {
+   "id": "green-dot-clip",
+   "kind": "clip",
+   "file": "art/stickers/green-dot-clip.png",
+   "w": 180,
+   "h": 153
+  },
+  {
+   "id": "yellow-dot-clip",
+   "kind": "clip",
+   "file": "art/stickers/yellow-dot-clip.png",
+   "w": 178,
+   "h": 153
+  },
+  {
+   "id": "black-binder",
+   "kind": "clip",
+   "file": "art/stickers/black-binder.png",
+   "w": 169,
+   "h": 150
+  },
+  {
+   "id": "silver-bulldog",
+   "kind": "clip",
+   "file": "art/stickers/silver-bulldog.png",
+   "w": 159,
+   "h": 193
+  },
+  {
+   "id": "pink-binder-2",
+   "kind": "clip",
+   "file": "art/stickers/pink-binder-2.png",
+   "w": 172,
+   "h": 158
+  },
+  {
+   "id": "red-binder-2",
+   "kind": "clip",
+   "file": "art/stickers/red-binder-2.png",
+   "w": 179,
+   "h": 143
+  },
+  {
+   "id": "sage-clip",
+   "kind": "clip",
+   "file": "art/stickers/sage-clip.png",
+   "w": 141,
+   "h": 211
+  },
+  {
+   "id": "green-clip",
+   "kind": "clip",
+   "file": "art/stickers/green-clip.png",
+   "w": 159,
+   "h": 136
+  },
+  {
+   "id": "ice-clip",
+   "kind": "clip",
+   "file": "art/stickers/ice-clip.png",
+   "w": 171,
+   "h": 145
+  }
+ ],
+ "ui": {
+  "camera-white": "art/ui/camera-white.png",
+  "camera-brown": "art/ui/camera-brown.png",
+  "kraft": "art/ui/kraft-patch.png"
+ },
+ "flowers": [
+  {
+   "id": "pink-hydrangea",
+   "file": "art/flowers/pink-hydrangea.webp",
+   "w": 377,
+   "h": 380
+  },
+  {
+   "id": "white-lily",
+   "file": "art/flowers/white-lily.webp",
+   "w": 380,
+   "h": 351
+  },
+  {
+   "id": "dried-pink-sprig",
+   "file": "art/flowers/dried-pink-sprig.webp",
+   "w": 240,
+   "h": 380
+  },
+  {
+   "id": "spotted-hydrangea-petals",
+   "file": "art/flowers/spotted-hydrangea-petals.webp",
+   "w": 338,
+   "h": 342
+  },
+  {
+   "id": "pink-columbine",
+   "file": "art/flowers/pink-columbine.webp",
+   "w": 347,
+   "h": 380
+  },
+  {
+   "id": "hollyhock",
+   "file": "art/flowers/hollyhock.webp",
+   "w": 380,
+   "h": 372
+  },
+  {
+   "id": "blue-delphinium",
+   "file": "art/flowers/blue-delphinium.webp",
+   "w": 363,
+   "h": 380
+  },
+  {
+   "id": "peach-daisy",
+   "file": "art/flowers/peach-daisy.webp",
+   "w": 380,
+   "h": 338
+  },
+  {
+   "id": "lilac-hydrangea",
+   "file": "art/flowers/lilac-hydrangea.webp",
+   "w": 380,
+   "h": 322
+  },
+  {
+   "id": "pink-cosmos",
+   "file": "art/flowers/pink-cosmos.webp",
+   "w": 380,
+   "h": 374
+  },
+  {
+   "id": "lavender-sprig",
+   "file": "art/flowers/lavender-sprig.webp",
+   "w": 264,
+   "h": 380
+  },
+  {
+   "id": "blue-hydrangea",
+   "file": "art/flowers/blue-hydrangea.webp",
+   "w": 380,
+   "h": 372
+  },
+  {
+   "id": "burgundy-flower",
+   "file": "art/flowers/burgundy-flower.webp",
+   "w": 372,
+   "h": 368
+  },
+  {
+   "id": "green-hydrangea-leaf",
+   "file": "art/flowers/green-hydrangea-leaf.webp",
+   "w": 380,
+   "h": 312
+  },
+  {
+   "id": "purple-lobelia",
+   "file": "art/flowers/purple-lobelia.webp",
+   "w": 334,
+   "h": 378
+  },
+  {
+   "id": "white-anemone",
+   "file": "art/flowers/white-anemone.webp",
+   "w": 380,
+   "h": 365
+  },
+  {
+   "id": "pink-blossom",
+   "file": "art/flowers/pink-blossom.webp",
+   "w": 374,
+   "h": 380
+  },
+  {
+   "id": "peach-hibiscus",
+   "file": "art/flowers/peach-hibiscus.webp",
+   "w": 380,
+   "h": 346
+  },
+  {
+   "id": "blue-sweet-pea",
+   "file": "art/flowers/blue-sweet-pea.webp",
+   "w": 336,
+   "h": 380
+  }
+ ],
+ "cats": [
+  {
+   "id": "shark-pacifier-cat",
+   "file": "art/cats/shark-pacifier-cat.webp",
+   "w": 358,
+   "h": 440
+  },
+  {
+   "id": "angry-bow-cat",
+   "file": "art/cats/angry-bow-cat.webp",
+   "w": 393,
+   "h": 440
+  },
+  {
+   "id": "grumpy-shark-cat",
+   "file": "art/cats/grumpy-shark-cat.webp",
+   "w": 293,
+   "h": 440
+  },
+  {
+   "id": "winking-tongue-cat",
+   "file": "art/cats/winking-tongue-cat.webp",
+   "w": 394,
+   "h": 440
+  },
+  {
+   "id": "close-up-nose-cat",
+   "file": "art/cats/close-up-nose-cat.webp",
+   "w": 375,
+   "h": 440
+  },
+  {
+   "id": "matcha-cat",
+   "file": "art/cats/matcha-cat.webp",
+   "w": 440,
+   "h": 343
+  },
+  {
+   "id": "glasses-and-tulips-cat",
+   "file": "art/cats/glasses-and-tulips-cat.webp",
+   "w": 440,
+   "h": 404
+  },
+  {
+   "id": "reading-glasses-cat",
+   "file": "art/cats/reading-glasses-cat.webp",
+   "w": 440,
+   "h": 417
+  },
+  {
+   "id": "whisker-bow-cat",
+   "file": "art/cats/whisker-bow-cat.webp",
+   "w": 440,
+   "h": 358
+  },
+  {
+   "id": "standing-kitten",
+   "file": "art/cats/standing-kitten.webp",
+   "w": 248,
+   "h": 440
+  },
+  {
+   "id": "sunglasses-cat",
+   "file": "art/cats/sunglasses-cat.webp",
+   "w": 440,
+   "h": 395
+  },
+  {
+   "id": "sad-phone-cat",
+   "file": "art/cats/sad-phone-cat.webp",
+   "w": 440,
+   "h": 335
+  },
+  {
+   "id": "giggling-bow-cat",
+   "file": "art/cats/giggling-bow-cat.webp",
+   "w": 440,
+   "h": 372
+  },
+  {
+   "id": "shark-pacifier-cat-2",
+   "file": "art/cats/shark-pacifier-cat-2.webp",
+   "w": 355,
+   "h": 440
+  },
+  {
+   "id": "grumpy-shark-cat-2",
+   "file": "art/cats/grumpy-shark-cat-2.webp",
+   "w": 314,
+   "h": 440
+  },
+  {
+   "id": "headphones-cat",
+   "file": "art/cats/headphones-cat.webp",
+   "w": 375,
+   "h": 440
+  }
+ ],
+ "papers": [
+  {
+   "id": "torn-strip",
+   "file": "art/papers/torn-strip.webp",
+   "w": 760,
+   "h": 232
+  },
+  {
+   "id": "dotted-notebook",
+   "file": "art/papers/dotted-notebook.webp",
+   "w": 582,
+   "h": 760
+  },
+  {
+   "id": "lined-paper",
+   "file": "art/papers/lined-paper.webp",
+   "w": 760,
+   "h": 502
+  },
+  {
+   "id": "small-torn-square",
+   "file": "art/papers/small-torn-square.webp",
+   "w": 470,
+   "h": 464
+  },
+  {
+   "id": "rounded-torn-paper",
+   "file": "art/papers/rounded-torn-paper.webp",
+   "w": 640,
+   "h": 506
+  },
+  {
+   "id": "beige-torn-strip",
+   "file": "art/papers/beige-torn-strip.webp",
+   "w": 760,
+   "h": 146
+  },
+  {
+   "id": "grid-notebook",
+   "file": "art/papers/grid-notebook.webp",
+   "w": 760,
+   "h": 653
+  },
+  {
+   "id": "large-torn-paper",
+   "file": "art/papers/large-torn-paper.webp",
+   "w": 760,
+   "h": 490
+  },
+  {
+   "id": "speech-bubble",
+   "file": "art/papers/speech-bubble.webp",
+   "w": 694,
+   "h": 428
+  },
+  {
+   "id": "tall-torn-strip",
+   "file": "art/papers/tall-torn-strip.webp",
+   "w": 239,
+   "h": 760
+  },
+  {
+   "id": "beige-ruled-notebook",
+   "file": "art/papers/beige-ruled-notebook.webp",
+   "w": 619,
+   "h": 760
+  },
+  {
+   "id": "l-shaped-torn-paper",
+   "file": "art/papers/l-shaped-torn-paper.webp",
+   "w": 450,
+   "h": 702
+  }
+ ]
+}
