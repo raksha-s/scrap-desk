@@ -51,8 +51,16 @@
 :is(.tray .key, .key-solo) svg { width: calc(52 * var(--u)); height: calc(52 * var(--u)); flex: none; }
 :is(.tray .key, .key-solo):active { transform: translateY(calc(7 * var(--u))); }
 :is(.tray .key, .key-solo)[disabled] { transform: none; }
-/* Add New lines up with the toggle's keys, which sit this far above the bottom of their base */
-#btnStart { width: calc(290 * var(--u)); margin: 0 calc(23 * var(--u)) calc(39 * var(--u)) auto; font-size: calc(37 * var(--u)); }
+#btnStart { width: calc(290 * var(--u)); margin: 0 0 0 auto; font-size: calc(37 * var(--u)); }
+
+/* The view toggle stands exactly as tall as Add New. --key-h is the height of the cardboard you can see: 120.8 units of
+   a text key, and 182 units of the toggle's base, so the toggle is drawn at its own smaller scale. The two pictures have
+   different blank edges below (7 toggle units, 10 key units); Add New's margin lines their cardboard up. */
+#home { --key-h: calc(var(--u) * 120.8); }
+#home .toggle { --u: calc(var(--key-h) / 182); }
+/* its base is one picture at its own shape: sliced and stretched this small, hairlines show between the slices */
+#home .toggle::before { border: 0; border-image: none; background: url("/art/ui/cardboard/bar_toggle.png") 0 0 / 100% 100% no-repeat; }
+#btnStart { margin-bottom: calc(var(--key-h) / 182 * 7 - var(--key-h) / 120.8 * 10); }
 
 /* Each key is two stacked layers: ::after is the raised keycap, ::before is the recess it drops into.
    Selecting a key sinks the keycap and fades in the recess (the sheet's "Pressed" state), so the

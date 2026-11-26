@@ -31,7 +31,7 @@ export function Desk({ active, mode, webgl, onMode, onOpen, onAddNew }: Props) {
           {option('folders', 'tk-l', 'Folder view', 'icon_folder')}
           {option('list', 'tk-r', 'List view', 'icon_list')}
         </div>
-        <button type="button" className="key key-solo" id="btnStart" onClick={onAddNew}><span>+ Add New</span></button>
+        <button type="button" className="key key-solo" id="btnStart" onClick={onAddNew}><span>+<span className="long"> Add New</span></span></button>
       </div>
       <p className="credit">Made with <span role="img" aria-label="love">❤️</span> by Raksha</p>
     </section>

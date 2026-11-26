@@ -35,13 +35,26 @@ const FLAP: [number, number][] = [[0, 0.19], [0.008, 0.17], [0.02, 0.145], [0.03
 // Taller back panel: the strip between the folder's top edge and its front flap is stretched by `ext` px,
 // everything above (tab) and below (flap, body) keeps its exact pixels. UVs map into the folder PNG's bounding box.
 const BAND = [0.064, 0.080];
-function sliceGeometry(fw: number, fh: number, ext: number, g: Geo) {
-  const hs = [BAND[0] * fh, (BAND[1] - BAND[0]) * fh + ext, (1 - BAND[1]) * fh];
-  const H = hs[0] + hs[1] + hs[2], vs = [0, BAND[0], BAND[1], 1];
-  const ys = [H / 2, H / 2 - hs[0], H / 2 - hs[0] - hs[1], -H / 2];
+// A folder made `drop` px longer, to fill a tall screen, takes it up in its plain body, the REACH above LOWER.
+// A little extra is stretched into that. More than half as much again would smear the paper, so then the picture runs
+// down to LOWER and goes back and forth over the stretch, each pass mirrored so no seam shows.
+const LOWER = 0.66, REACH = 0.44;           // evenly lit paper; below LOWER the picture darkens, which would band if repeated
+function sliceGeometry(fw: number, fh: number, ext: number, g: Geo, drop = 0) {
+  // [height of the strip, where in the picture it ends], from the top down
+  const strips: [number, number][] = [[BAND[0] * fh, BAND[0]], [(BAND[1] - BAND[0]) * fh + ext, BAND[1]]];
+  if (drop > 0 && drop <= REACH * fh / 2) {
+    strips.push([(LOWER - REACH - BAND[1]) * fh, LOWER - REACH], [REACH * fh + drop, LOWER], [(1 - LOWER) * fh, 1]);
+  } else if (drop > 0) {
+    const passes = 2 * Math.ceil(drop / (2 * REACH * fh)), each = drop / passes;
+    strips.push([(LOWER - BAND[1]) * fh, LOWER]);
+    for (let k = 0; k < passes; k++) strips.push([each, k % 2 ? LOWER : LOWER - each / fh]);
+    strips.push([(1 - LOWER) * fh, 1]);
+  } else strips.push([(1 - BAND[1]) * fh, 1]);
+  let y = strips.reduce((sum, [h]) => sum + h, 0) / 2;
   const pos: number[] = [], uv: number[] = [], idx: number[] = [];
-  for (let r = 0; r < 4; r++) for (let c = 0; c < 2; c++) { pos.push((c ? 0.5 : -0.5) * fw, ys[r], 0); uv.push(g.bx + (c ? g.bw : 0), 1 - (g.by + vs[r] * g.bh)); }
-  for (let r = 0; r < 3; r++) { const a = r * 2; idx.push(a, a + 2, a + 1, a + 1, a + 2, a + 3); }
+  const row = (at: number, v: number) => { for (let c = 0; c < 2; c++) { pos.push((c ? 0.5 : -0.5) * fw, at, 0); uv.push(g.bx + (c ? g.bw : 0), 1 - (g.by + v * g.bh)); } };
+  row(y, 0);
+  strips.forEach(([h, v], r) => { row((y -= h), v); const a = r * 2; idx.push(a, a + 2, a + 1, a + 1, a + 2, a + 3); });
   const geo = new THREE.BufferGeometry();
   geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); geo.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2)); geo.setIndex(idx);
   return geo;
@@ -99,7 +112,7 @@ export class Stage {
   private paper?: THREE.CanvasTexture;
   private dead = false;
   private W = 1; private H = 1; private small = false;
-  private fw = 0; private fh = 0; private fhx = 0; private ext = 0; private step = 1;
+  private fw = 0; private fh = 0; private fhx = 0; private ext = 0; private drop = 0; private step = 1;
   private topY = 0; private fvTop = 0; private fvScale = 1; private pvScale = 1;
   private onResize = () => this.resize();
   private onVisibility = () => { this.last = performance.now(); };
@@ -132,6 +145,7 @@ export class Stage {
     document.removeEventListener('visibilitychange', this.onVisibility);
     for (const it of this.items) { this.scene.remove(it.group); this.disposeItem(it); }
     this.items = [];
+    for (const name of ['--folder-w', '--folder-front']) document.documentElement.style.removeProperty(name);
     this.paper?.dispose(); this.bg.geometry.dispose(); this.bg.material.dispose();
     this.renderer.dispose();
   }
@@ -333,19 +347,28 @@ export class Stage {
     this.fw = small ? W * 0.92 : Math.min(860, W * 0.64);
     this.fh = this.fw / ((geo.bw * sk.w) / (geo.bh * sk.h));
     this.ext = Math.round(this.fh * 0.075);          // extra back-panel height
-    this.fhx = this.fh + this.ext;                   // drawn folder height
     this.step = clamp(this.fh * 0.22, small ? 52 : 70, 150);
-    this.topY = clamp(H * (small ? 0.27 : 0.285), 150, 290);
+    // On phones the stack rises from the bottom edge, leaving the top to the name and the view toggle: part of a
+    // folder shows, and a little more of the stack with each of the first two folders in front of it.
+    const inFront = clamp(this.items.length - 1, 0, 2);
+    this.topY = small ? clamp(H - this.fhx * 0.62 - this.step * inFront, H * 0.54, H * 0.8) : clamp(H * 0.285, 150, 290);
     this.fvTop = small ? 124 : 158;
     this.fvScale = Math.min(1.28, (W * 0.97) / this.fw);
     this.pvScale = Math.min(1.3, Math.max(0.9, (W * 0.9) / this.fw));
+    // an open folder runs off the bottom of the screen, however tall, so its pages always lie on it
+    this.drop = Math.max(0, Math.ceil((H - this.fvTop) / this.fvScale + 24 - this.fh - this.ext));
+    this.fhx = this.fh + this.ext + this.drop;       // drawn folder height
+    // the page lays the open folder's contents out to match: its width, and where its front flap begins
+    const page = document.documentElement.style;
+    page.setProperty('--folder-w', `${(this.fw * this.fvScale).toFixed(1)}px`);
+    page.setProperty('--folder-front', `${(this.fvTop + this.fvScale * (FLAP_Y * this.fh + this.ext)).toFixed(1)}px`);
     this.items.forEach((it) => this.sizeItem(it));
   }
 
   private sizeItem(it: FolderItem) {
-    const { fw, fh, fhx, ext } = this; const g = it.skin.geo;
-    it.body.geometry.dispose(); it.body.geometry = sliceGeometry(fw, fh, ext, g);
-    if (it.flap) { it.flap.geometry.dispose(); it.flap.geometry = sliceGeometry(fw, fh, ext, FULL); }
+    const { fw, fh, fhx, ext, drop } = this; const g = it.skin.geo;
+    it.body.geometry.dispose(); it.body.geometry = sliceGeometry(fw, fh, ext, g, drop);
+    if (it.flap) { it.flap.geometry.dispose(); it.flap.geometry = sliceGeometry(fw, fh, ext, FULL, drop); }
     const pad = it.shadowPad || { x: 1.2, y: 1.3 };
     it.shadow.geometry.dispose(); it.shadow.geometry = new THREE.PlaneGeometry(fw * pad.x, fhx * pad.y);
     const tabW = (g.tabR - g.tabL) * fw, tabH = g.tabH * fh;

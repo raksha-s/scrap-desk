@@ -1,19 +1,21 @@
 /* ---------- small screens ---------- */
 @media (max-width: 720px) {
   :root { --u: calc(min(100vw - 24px, 430px) / 776); }
-  .controls { padding: 0 12px; bottom: calc(30px + var(--safe-b)); }
+  /* the toggle sits under the name; Add New floats at the bottom right */
+  #home { --key-h: 60px; --toggle-top: calc(clamp(22px, 4.2vh, 44px) + clamp(46px, 8.4vw, 96px) + 18px); }
+  .controls { top: 0; bottom: 0; display: block; padding: 0; }
+  #home .toggle { position: absolute; top: var(--toggle-top); left: 50%; margin: 0; translate: -50% 0; }
+  .list-view { top: calc(var(--toggle-top) + var(--key-h) + 16px); bottom: calc(104px + var(--safe-b)); }
+  /* the bottom right belongs to the + button, so the maker's line moves left */
+  #home > .credit { left: 10px; transform: none; }
   .fv-head, .pv-top { --u: .36px; }                     /* smaller header keys so the folder name has room */
   .fv-head { grid-template-columns: auto 1fr auto; gap: 8px; }
-  .fv-scroll { top: 138px; padding: 14px 18px 70px; }
+  .fv-scroll { --fv-top: 138px; padding-top: 14px; }
   .fv-name-row { gap: 6px; }
   /* long names take a second line on phones rather than being cut off */
   .fv-title h2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; overflow-wrap: break-word; font-size: 24px; line-height: 1.05; }
   .fv-title h2[hidden] { display: none; }
   .fv-title input[type="text"] { width: 100%; font-size: 26px; }
-  /* + Add New shrinks to a square + so the folder name keeps its space */
-  .fv-actions { gap: 4px; }
-  #fvNew { width: calc(143 * var(--u)); min-width: 0; height: calc(132 * var(--u)); border: 0; padding: 0 0 calc(30 * var(--u)); border-image: none; background: url("/art/ui/cardboard/keycap_square.png") 0 0 / 100% 100% no-repeat; font-size: calc(64 * var(--u)); }
-  #fvNew .long { display: none; }
   .fv-colours { grid-template-columns: repeat(4, 58px); gap: 6px; }
   .fv-grid { grid-template-columns: repeat(2, 1fr); gap: 22px 16px; }
   .pv-desk { padding-top: 76px; padding-bottom: calc(191 * var(--u) + 26px + var(--safe-b)); }
@@ -32,6 +34,29 @@
   }
   #toolExport svg { width: calc(60 * var(--u)); height: calc(60 * var(--u)); }
   .folder-row h3 { font-size: 26px; }
+}
+/* ---------- the floating + button: on the home screen of phones, and inside a folder on phones and tablets ---------- */
+@media (max-width: 720px) {
+  #btnStart {
+    --fab: calc(60px / 123);                      /* one unit of the square key's picture: 60px of it is cardboard */
+    position: fixed; z-index: 7; min-width: 0; margin: 0; border: 0; border-image: none;
+    right: calc(18px - var(--fab) * 13); bottom: calc(20px - var(--fab) * 7 + var(--safe-b));
+    width: calc(var(--fab) * 143); height: calc(var(--fab) * 132); padding: 0 0 calc(var(--fab) * 20);
+    background: url("/art/ui/cardboard/keycap_square.png") 0 0 / 100% 100% no-repeat; font-size: 32px;
+  }
+  #btnStart .long { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (max-width: 1024px), (hover: none) and (pointer: coarse) {
+  #fvNew {
+    --fab: calc(60px / 123);                      /* one unit of the square key's picture: 60px of it is cardboard */
+    position: fixed; z-index: 7; min-width: 0; margin: 0; border: 0; border-image: none;
+    right: calc(18px - var(--fab) * 13); bottom: calc(20px - var(--fab) * 7 + var(--safe-b));
+    width: calc(var(--fab) * 143); height: calc(var(--fab) * 132); padding: 0 0 calc(var(--fab) * 20);
+    background: url("/art/ui/cardboard/keycap_square.png") 0 0 / 100% 100% no-repeat; font-size: 32px;
+  }
+  #fvNew .long { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .fv-actions .fv-more { margin-left: 0; }
+  .fv-scroll { padding-bottom: calc(112px + var(--safe-b)); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
