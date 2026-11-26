@@ -8,6 +8,7 @@ import { noteFontsReady } from '../page/measureNote';
 import { Sheet } from '../page/Sheet';
 import { flattenGrain } from './grain';
 import { whenImagesLoaded } from './loaded';
+import { within } from './within';
 
 export async function exportPage(page: Page, load: (imageId: string) => Promise<StoredImage | undefined>): Promise<Blob> {
   const urls = new Map<string, string>();
@@ -25,7 +26,8 @@ export async function exportPage(page: Page, load: (imageId: string) => Promise<
     await document.fonts?.ready;
     await whenImagesLoaded(host);
     const sheet = host.firstElementChild as HTMLElement;
-    return await domToBlob(sheet, { width: 900, height: 1200, scale: 2, type: 'image/png', backgroundColor: '#ffffff', style: { boxShadow: 'none', margin: '0' } });
+    // a drawing that never finishes must still give the Export key back
+    return await within(domToBlob(sheet, { width: 900, height: 1200, scale: 2, type: 'image/png', backgroundColor: '#ffffff', style: { boxShadow: 'none', margin: '0' } }), 60_000);
   } finally {
     const done = root; if (done) setTimeout(() => done.unmount(), 0);
     host.remove();

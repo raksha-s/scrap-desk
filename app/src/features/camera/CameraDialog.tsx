@@ -61,7 +61,7 @@ function Camera({ onShot, onClose }: Props) {
           <button type="button" className="key key-sm" onClick={() => setFacing((f) => (f === 'user' ? 'environment' : 'user'))}><span>Flip</span></button>
           <button type="button" className="shutter" aria-label="Take photo" onClick={shoot} />
           <label className="key key-sm cam-file"><span>From files</span>
-            <input type="file" id="camFile" accept="image/*" capture="environment" onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ''; if (f) onShot(f); }} />
+            <input type="file" id="camFile" accept="image/*" onChange={(e) => { const f = e.target.files?.[0]; e.target.value = ''; if (f) onShot(f); }} />
           </label>
         </div>
       </div>

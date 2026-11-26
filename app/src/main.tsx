@@ -21,9 +21,17 @@ import './styles/generating.css';
 import './styles/responsive.css';
 import './styles/stickers.css';
 import { App } from './App';
+import { ErrorBoundary } from './ui/ErrorBoundary';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <ErrorBoundary fallback={(
+      <div className="broken" role="alert">
+        <p>Something here couldn't be shown. Your journals are still saved.</p>
+        <button type="button" className="key key-sm" onClick={() => location.assign(location.pathname)}><span>Reload</span></button>
+      </div>
+    )}>
+      <App />
+    </ErrorBoundary>
   </StrictMode>,
 );

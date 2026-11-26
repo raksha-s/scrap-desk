@@ -9,8 +9,4 @@ export function visible(folders: Folder[], pages: Page[]) {
   return { folders: [...folders].sort(byCreation), pages: pages.filter((p) => ids.has(p.folderId)).sort(byCreation) };
 }
 
-/** Images the earlier version of a page used that the new one doesn't. */
-export function droppedImages(before: Page | undefined, after: Page): string[] {
-  const kept = new Set(after.cards.map((c) => c.imageId));
-  return (before?.cards ?? []).map((c) => c.imageId).filter((id) => !kept.has(id));
-}
+export const usedImages = (pages: Page[]): Set<string> => new Set(pages.flatMap((p) => (p.cards ?? []).map((c) => c.imageId)));

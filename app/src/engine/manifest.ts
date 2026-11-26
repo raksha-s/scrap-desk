@@ -8,6 +8,9 @@ export const manifestList = (key: ArtList): Asset[] => lists[key];
 export const art = Object.fromEntries(LISTS.map((k) => [k, Object.fromEntries(lists[k].map((a) => [a.id, a]))])) as ArtIndex;
 export const folderSkins: Record<string, FolderSkin> = Object.fromEntries((data.folders as FolderSkin[]).map((f) => [f.id, f]));
 
+/** The picture for a folder colour; a colour that no longer exists shows as the first one. */
+export const skinFor = (skinId: string): FolderSkin => folderSkins[skinId] ?? folderSkins.f03;
+
 export const SKIN_ORDER = ['f03', 'f09', 'f05', 'f11', 'f04', 'f07', 'f08', 'f12', 'f06', 'f13', 'f10'];
 export const SKIN_NAMES: Record<string, string> = { f03: 'Terracotta', f04: 'Sage', f05: 'Forest', f06: 'Burgundy', f07: 'Pink', f08: 'Lavender', f09: 'Cream', f10: 'Charcoal', f11: 'Sky blue', f12: 'Butter', f13: 'Lime' };
 

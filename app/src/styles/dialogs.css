@@ -74,3 +74,6 @@ textarea { font: 500 24px/30px var(--hand); resize: vertical; min-height: 140px;
 
 /* stays until saving works again */
 .save-error { position: fixed; z-index: 70; left: 50%; top: 10px; transform: translateX(-50%); width: max-content; max-width: min(560px, calc(100vw - 24px)); padding: 10px 14px; border-radius: 10px; background: #7a2e1c; color: #fff8ee; font: 500 12px/1.5 var(--mono); box-shadow: 0 10px 24px -10px rgba(40, 10, 0, .6); }
+
+/* something could not be drawn */
+.broken { position: fixed; z-index: 65; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(420px, calc(100vw - 32px)); display: grid; justify-items: center; gap: 18px; padding: 26px 22px; border-radius: 12px; background: var(--card); text-align: center; font: 500 13px/1.6 var(--mono); color: var(--ink); box-shadow: 0 2px 3px rgba(0,0,0,.2), 0 24px 40px -14px rgba(20,10,0,.5); }

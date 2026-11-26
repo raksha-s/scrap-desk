@@ -5,7 +5,7 @@
 // World units are CSS pixels (camera is set so z=0 maps 1:1 to the screen).
 
 import * as THREE from 'three';
-import { folderSkins } from '../engine/manifest';
+import { skinFor } from '../engine/manifest';
 import type { FolderSkin } from '../engine/types';
 
 export interface StageFolder { id: string; name: string; skin: string; pages: number; peek: { src: string } | null }
@@ -151,7 +151,7 @@ export class Stage {
 
   private makeFolder(f: StageFolder, i: number): FolderItem {
     const stage = this;
-    const skin = folderSkins[f.skin]; const g = skin.geo;
+    const skin = skinFor(f.skin); const g = skin.geo;
     const group = new THREE.Group();
     const side: 1 | -1 = i % 2 ? -1 : 1; // mirrored folders carry their tab on the right
     const tex = this.loader.load(skin.file, (t) => { t.generateMipmaps = true; if (stage.dead || it.skin !== skin) return; it.img = t.image; this.buildShadow(it, t); if (it.hasContent && !it.flap) { this.buildFlap(it); this.sizeItem(it); } });
@@ -302,7 +302,7 @@ export class Stage {
 
   // swap the folder's picture once the new one has loaded, so it never blinks
   recolor(i: number, skinId: string) {
-    const it = this.items[i]; if (!it) return; const skin = folderSkins[skinId]; it.wanted = skinId;
+    const it = this.items[i]; if (!it) return; const skin = skinFor(skinId); it.wanted = skinId;
     this.loader.load(skin.file, (t) => {
       if (this.dead || this.items[i] !== it || it.wanted !== skinId) { t.dispose(); return; }    // a later pick won
       t.colorSpace = THREE.NoColorSpace; t.anisotropy = 4; t.minFilter = THREE.LinearMipmapLinearFilter;

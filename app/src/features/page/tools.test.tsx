@@ -97,6 +97,12 @@ describe('the bottom bar', () => {
     expect(screen.getByRole('status').textContent).toBe('Developing… give it a few seconds.');
   });
 
+  it('lets “From files” offer the photo library, not only the camera', async () => {
+    await setup(async () => image('x'));
+    fireEvent.click(screen.getByRole('button', { name: 'Add Image' }));
+    expect(document.querySelector('#camFile')!.hasAttribute('capture')).toBe(false);
+  });
+
   it('adds a sticker, selects it, and reopens on the same tab', async () => {
     const { pageOf } = await setup(async () => image('x'));
     const before = pageOf('p')!.items.length;

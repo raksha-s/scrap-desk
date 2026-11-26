@@ -14,6 +14,7 @@ import { StageCanvas } from './stage/StageCanvas';
 import { useStageFolders } from './stage/usePeeks';
 import { SAVE_ERROR } from './state/store';
 import { useApp, useStore } from './state/useApp';
+import { ErrorBoundary } from './ui/ErrorBoundary';
 import { toast, Toaster } from './ui/toast';
 
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -62,16 +63,32 @@ function ScrapDesk() {
 
   return (
     <>
-      <StageCanvas folders={stageFolders} view={route.view === 'home' ? (mode === 'list' ? 'list' : 'home') : route.view}
-        selected={folders.findIndex((f) => f.id === lastFolder.current)} onOpen={open} onUnavailable={() => setWebgl(false)} />
+      {/* if the 3D desk breaks, the list view takes over */}
+      <ErrorBoundary fallback={null} onError={() => setWebgl(false)}>
+        <StageCanvas folders={stageFolders} view={route.view === 'home' ? (mode === 'list' ? 'list' : 'home') : route.view}
+          selected={folders.findIndex((f) => f.id === lastFolder.current)} onOpen={open} onUnavailable={() => setWebgl(false)} />
+      </ErrorBoundary>
       <Desk active={route.view === 'home'} mode={mode} webgl={webgl} onMode={setMode} onOpen={open} onAddNew={() => addNew(null)} />
-      <FolderView active={route.view === 'folder'} folderId={lastFolder.current} onAddNew={addNew} />
-      <PageView active={route.view === 'page'} pageId={lastPage.current} />
+      <ErrorBoundary resetKey={lastFolder.current} fallback={route.view === 'folder' ? <Broken /> : null}>
+        <FolderView active={route.view === 'folder'} folderId={lastFolder.current} onAddNew={addNew} />
+      </ErrorBoundary>
+      <ErrorBoundary resetKey={lastPage.current} fallback={route.view === 'page' ? <Broken /> : null}>
+        <PageView active={route.view === 'page'} pageId={lastPage.current} />
+      </ErrorBoundary>
       {pad && <WritingPad open initial={pad} folders={folders} onClose={closePad} onGenerate={generate} />}
       <Generating narration={narration} />
       {saveError && <div className="save-error" role="alert">{saveError}</div>}
       <Toaster />
     </>
+  );
+}
+
+function Broken() {
+  return (
+    <div className="broken" role="alert">
+      <p>Something here couldn't be shown. Your journals are still saved.</p>
+      <button type="button" className="key key-sm" onClick={() => go('/')}><span>Back to the desk</span></button>
+    </div>
   );
 }
 

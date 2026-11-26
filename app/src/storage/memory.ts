@@ -1,7 +1,7 @@
 // Stand-in used when the browser won't give us storage: everything lasts until the tab closes.
 import type { Folder, Page } from '../engine/types';
 import type { Repo, StoredImage } from './repo';
-import { droppedImages, visible } from './shared';
+import { usedImages, visible } from './shared';
 
 export function memoryRepo(): Repo {
   const folders = new Map<string, Folder>(), pages = new Map<string, Page>(), images = new Map<string, StoredImage>();
@@ -19,13 +19,15 @@ export function memoryRepo(): Repo {
       folders.delete(id);
     },
     putPage: async (page, { images: added = [], folder } = {}) => {
-      const gone = droppedImages(pages.get(page.id), page);
       for (const i of added) images.set(i.id, i);
-      for (const id of gone) images.delete(id);
       if (folder) folders.set(folder.id, folder);
       pages.set(page.id, page);
     },
     deletePage: async (id) => { removePage(id); },
     getImage: async (id) => images.get(id),
+    sweepImages: async () => {
+      const used = usedImages([...pages.values()]);
+      for (const id of [...images.keys()]) if (!used.has(id)) images.delete(id);
+    },
   };
 }

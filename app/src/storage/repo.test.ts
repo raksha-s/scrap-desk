@@ -1,5 +1,6 @@
 import 'fake-indexeddb/auto';
-import { describe, expect, it } from 'vitest';
+import { openDB } from 'idb';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { card, folder, image, page } from '../test/fixtures';
 import { memoryRepo } from './memory';
 import { openRepo, type Repo } from './repo';
@@ -37,10 +38,20 @@ describe.each([
     expect(await got!.blob.text()).toBe('bytes');
   });
 
-  it('drops images a page no longer uses', async () => {
+  it('keeps a dropped image until tidying, so a later save that still uses it finds it', async () => {
+    const r = await open();
+    const withPhoto = page('p', 'f', [card('a')]);
+    await r.putPage(withPhoto, { images: [image('img-a')], folder: folder('f') });
+    await r.putPage(page('p', 'f', []));                       // an out-of-date tab saves without the photo
+    await r.putPage(withPhoto);                                // the tab that has it saves again
+    expect(await r.getImage('img-a')).toBeDefined();
+  });
+
+  it('tidying removes the images no page uses', async () => {
     const r = await open();
     await r.putPage(page('p', 'f', [card('a'), card('b')]), { images: [image('img-a'), image('img-b')], folder: folder('f') });
     await r.putPage(page('p', 'f', [card('b')]));
+    await r.sweepImages();
     expect(await r.getImage('img-a')).toBeUndefined();
     expect(await r.getImage('img-b')).toBeDefined();
   });
@@ -83,4 +94,29 @@ it('keeps everything across a reopen', async () => {
   const second = await openRepo(db);
   expect(await second.load()).toEqual({ folders: [folder('f')], pages: [p], seeded: true });
   expect(await (await second.getImage('img-c'))!.blob.text()).toBe('kept bytes');
+});
+
+describe('a lost connection', () => {
+  afterEach(() => vi.restoreAllMocks());
+  const lost = () => { throw new DOMException('Connection to Indexed Database server lost', 'UnknownError'); };
+
+  it('is reopened, and the save goes through', async () => {
+    const db = name(); const r = await openRepo(db);
+    const broken = vi.spyOn(IDBDatabase.prototype, 'transaction').mockImplementationOnce(lost);
+    await r.putFolder(folder('f'));
+    expect(broken).toHaveBeenCalled();
+    expect((await (await openRepo(db)).load()).folders.map((f) => f.id)).toEqual(['f']);
+  });
+
+  it('reports the failure if reopening does not help', async () => {
+    const r = await openRepo(name());
+    vi.spyOn(IDBDatabase.prototype, 'transaction').mockImplementation(lost);
+    await expect(r.putFolder(folder('f'))).rejects.toThrow('server lost');
+  });
+
+  it('does not block a newer version of the app from upgrading', async () => {
+    const db = name(); await openRepo(db);
+    const newer = await Promise.race([openDB(db, 2), new Promise((res) => setTimeout(() => res('blocked'), 1000))]);
+    expect(newer).not.toBe('blocked');
+  });
 });
