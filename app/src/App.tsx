@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { Desk, type DeskMode } from './features/desk/Desk';
+import { FolderView } from './features/folder/FolderView';
 import { go, parseRoute, resolveRoute, useHash, type Route } from './route';
 import { play, wireButtonSounds } from './sound/sound';
 import { StageCanvas } from './stage/StageCanvas';
@@ -51,6 +52,7 @@ function ScrapDesk() {
       <StageCanvas folders={stageFolders} view={route.view === 'home' ? (mode === 'list' ? 'list' : 'home') : route.view}
         selected={folders.findIndex((f) => f.id === lastFolder.current)} onOpen={open} onUnavailable={() => setWebgl(false)} />
       <Desk active={route.view === 'home'} mode={mode} webgl={webgl} onMode={setMode} onOpen={open} onAddNew={() => addNew(null)} />
+      <FolderView active={route.view === 'folder'} folderId={lastFolder.current} onAddNew={addNew} />
       {saveError && <div className="save-error" role="alert">{saveError}</div>}
       <Toaster />
     </>
