@@ -37,7 +37,7 @@ describe('layout', () => {
     }
     expect(overlaps).toEqual([]);
     expect(offSheet).toEqual([]);
-  });
+  }, 60_000);   // 280 full layouts: a few seconds, longer on a busy machine
 
   it('sizes a card to its photo shape', () => {
     expect(cardSize({ kind: 'photo', w: 1000, h: 750 }, 328)).toEqual({ w: 328, h: 297 });

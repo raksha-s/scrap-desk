@@ -93,7 +93,9 @@
 .quote { display: flex; align-items: center; justify-content: center; text-align: center; font: 600 var(--qfs, 46px)/1.05 var(--hand); color: var(--accent); text-wrap: balance; padding: 14px 20px 26px; }
 .quote svg { position: absolute; left: 6%; right: 6%; bottom: 4px; width: 88%; height: 18px; overflow: visible; }
 .quote svg path { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; opacity: .75; }
-.quote q { quotes: "“" "”"; }
+.quote q { quotes: none; }
+.quote q::before { content: "“"; }
+.quote q::after { content: "”"; }
 
 /* tape */
 .tstrip { height: 100%; width: 100%; opacity: .9; box-shadow: 0 1px 2px rgba(0,0,0,.18);
