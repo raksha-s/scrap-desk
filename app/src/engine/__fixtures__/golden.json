@@ -1,0 +1,3976 @@
+[
+ {
+  "name": "the sample month",
+  "input": {
+   "story": "November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all",
+   "start": "2026-11-01",
+   "end": "2026-11-30",
+   "cardCount": 5
+  },
+  "args": {
+   "direction": {
+    "seed": 408411257,
+    "mood": {
+     "arc": "heavy-warm",
+     "summary": "a hard stretch that turned golden",
+     "chips": [
+      "heavy",
+      "warm"
+     ],
+     "neg": 3,
+     "pos": 7
+    },
+    "palette": {
+     "ink": "#2a2118",
+     "accent": "#bd7a14",
+     "tape": "sage",
+     "paperKind": "grid",
+     "noteKind": "kraft",
+     "filter": "sepia(.10) saturate(.94) contrast(.97)"
+    },
+    "title": "November",
+    "dateChip": "1 – 30 Nov 2026",
+    "dateShort": "Nov 2026",
+    "quote": "I will cherish it all",
+    "scraps": [
+     "diwali",
+     "lady bug",
+     "moving out"
+    ],
+    "stickers": {
+     "stamps": [
+      {
+       "id": "pink-libra",
+       "phase": "early"
+      },
+      {
+       "id": "gold-sun",
+       "phase": "late"
+      }
+     ],
+     "leaves": [
+      {
+       "id": "banana",
+       "phase": "early"
+      },
+      {
+       "id": "red",
+       "phase": "late"
+      }
+     ],
+     "flowers": [
+      {
+       "id": "peach-hibiscus",
+       "phase": "early"
+      },
+      {
+       "id": "peach-daisy",
+       "phase": "late"
+      },
+      {
+       "id": "pink-blossom",
+       "phase": "late"
+      }
+     ],
+     "patterns": [
+      {
+       "id": "red-tile",
+       "m": "w",
+       "s": 11.04235272903461
+      },
+      {
+       "id": "red-gingham-vertical-strip",
+       "m": "w",
+       "s": 9.989356068638154
+      },
+      {
+       "id": "red-gingham-diagonal-tear",
+       "m": "w",
+       "s": 9.362533442815765
+      },
+      {
+       "id": "tulip-checkerboard",
+       "m": "w",
+       "s": 8.203339574416168
+      },
+      {
+       "id": "building-sketch",
+       "m": "h",
+       "s": 7.222935771592893
+      },
+      {
+       "id": "handwriting-script",
+       "m": "h",
+       "s": 7.20198298948817
+      },
+      {
+       "id": "handwritten-script-corner",
+       "m": "h",
+       "s": 6.948540712241083
+      },
+      {
+       "id": "pink-ditsy-floral",
+       "m": "w",
+       "s": 6.759375645103864
+      }
+     ],
+     "patternCount": 2,
+     "cat": "headphones-cat",
+     "papers": {
+      "under": "beige-ruled-notebook",
+      "quote": "rounded-torn-paper"
+     },
+     "clip": "pink-binder",
+     "pin": "pink-pin-long",
+     "extra": "pink-paperclip"
+    },
+    "themes": [
+     "festival",
+     "friends",
+     "food",
+     "move",
+     "insect",
+     "celebrate",
+     "work",
+     "home"
+    ],
+    "density": "rich"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "kind": "photo",
+     "imageId": "m0",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c1",
+     "kind": "photo",
+     "imageId": "m1",
+     "w": 750,
+     "h": 1000
+    },
+    {
+     "id": "c2",
+     "kind": "photo",
+     "imageId": "m2",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c3",
+     "kind": "photo",
+     "imageId": "m3",
+     "w": 750,
+     "h": 1000
+    },
+    {
+     "id": "c4",
+     "kind": "photo",
+     "imageId": "m4",
+     "w": 1000,
+     "h": 750
+    }
+   ],
+   "story": "November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all"
+  },
+  "direction": {
+   "seed": 408411257,
+   "mood": {
+    "arc": "heavy-warm",
+    "summary": "a hard stretch that turned golden",
+    "chips": [
+     "heavy",
+     "warm"
+    ],
+    "neg": 3,
+    "pos": 7
+   },
+   "palette": {
+    "ink": "#2a2118",
+    "accent": "#bd7a14",
+    "tape": "sage",
+    "paperKind": "grid",
+    "noteKind": "kraft",
+    "filter": "sepia(.10) saturate(.94) contrast(.97)"
+   },
+   "title": "November",
+   "dateChip": "1 – 30 Nov 2026",
+   "dateShort": "Nov 2026",
+   "quote": "I will cherish it all",
+   "scraps": [
+    "diwali",
+    "lady bug",
+    "moving out"
+   ],
+   "stickers": {
+    "stamps": [
+     {
+      "id": "pink-libra",
+      "phase": "early"
+     },
+     {
+      "id": "gold-sun",
+      "phase": "late"
+     }
+    ],
+    "leaves": [
+     {
+      "id": "banana",
+      "phase": "early"
+     },
+     {
+      "id": "red",
+      "phase": "late"
+     }
+    ],
+    "flowers": [
+     {
+      "id": "peach-hibiscus",
+      "phase": "early"
+     },
+     {
+      "id": "peach-daisy",
+      "phase": "late"
+     },
+     {
+      "id": "pink-blossom",
+      "phase": "late"
+     }
+    ],
+    "patterns": [
+     {
+      "id": "red-tile",
+      "m": "w",
+      "s": 11.04235272903461
+     },
+     {
+      "id": "red-gingham-vertical-strip",
+      "m": "w",
+      "s": 9.989356068638154
+     },
+     {
+      "id": "red-gingham-diagonal-tear",
+      "m": "w",
+      "s": 9.362533442815765
+     },
+     {
+      "id": "tulip-checkerboard",
+      "m": "w",
+      "s": 8.203339574416168
+     },
+     {
+      "id": "building-sketch",
+      "m": "h",
+      "s": 7.222935771592893
+     },
+     {
+      "id": "handwriting-script",
+      "m": "h",
+      "s": 7.20198298948817
+     },
+     {
+      "id": "handwritten-script-corner",
+      "m": "h",
+      "s": 6.948540712241083
+     },
+     {
+      "id": "pink-ditsy-floral",
+      "m": "w",
+      "s": 6.759375645103864
+     }
+    ],
+    "patternCount": 2,
+    "cat": "headphones-cat",
+    "papers": {
+     "under": "beige-ruled-notebook",
+     "quote": "rounded-torn-paper"
+    },
+    "clip": "pink-binder",
+    "pin": "pink-pin-long",
+    "extra": "pink-paperclip"
+   },
+   "themes": [
+    "festival",
+    "friends",
+    "food",
+    "move",
+    "insect",
+    "celebrate",
+    "work",
+    "home"
+   ],
+   "density": "rich"
+  },
+  "items": [
+   {
+    "id": "i1",
+    "type": "title",
+    "text": "November",
+    "chip": "1 – 30 Nov 2026",
+    "tfs": 96,
+    "w": 408,
+    "h": 152,
+    "rot": -1,
+    "z": 32,
+    "x": 421.9982879384607,
+    "y": 116.87594704087823,
+    "score": -7.4029522780205985,
+    "d": 358
+   },
+   {
+    "id": "i2",
+    "type": "note",
+    "text": "November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all",
+    "sig": "— Nov 2026",
+    "kind": "kraft",
+    "fs": 25,
+    "lh": 30,
+    "w": 480,
+    "h": 268,
+    "rot": 1.5102241200394928,
+    "z": 14,
+    "torn": "polygon(0.0% 1.1%,4.0% 0.3%,8.0% 0.4%,12.0% 1.0%,16.0% 0.3%,20.0% 0.2%,24.0% 1.1%,28.0% 0.0%,32.0% 0.5%,36.0% 0.8%,40.0% 1.1%,44.0% 0.2%,48.0% 1.1%,52.0% 0.4%,56.0% 0.1%,60.0% 0.2%,64.0% 0.9%,68.0% 0.8%,72.0% 0.4%,76.0% 0.3%,80.0% 0.9%,84.0% 0.8%,88.0% 0.9%,92.0% 0.9%,96.0% 0.3%,100.0% 0.3%,99.4% 4.0%,99.2% 8.0%,99.1% 12.0%,99.0% 16.0%,99.2% 20.0%,99.7% 24.0%,100.0% 28.0%,99.5% 32.0%,99.6% 36.0%,98.8% 40.0%,99.7% 44.0%,99.9% 48.0%,99.1% 52.0%,99.1% 56.0%,98.8% 60.0%,99.9% 64.0%,99.6% 68.0%,99.5% 72.0%,99.9% 76.0%,99.7% 80.0%,99.6% 84.0%,99.2% 88.0%,99.0% 92.0%,100.0% 96.0%,99.9% 100.0%,96.0% 99.7%,92.0% 99.2%,88.0% 99.6%,84.0% 99.7%,80.0% 98.9%,76.0% 99.7%,72.0% 99.9%,68.0% 99.1%,64.0% 99.3%,60.0% 99.2%,56.0% 99.3%,52.0% 99.2%,48.0% 99.9%,44.0% 99.8%,40.0% 99.4%,36.0% 99.3%,32.0% 99.1%,28.0% 99.0%,24.0% 99.6%,20.0% 98.8%,16.0% 99.4%,12.0% 99.4%,8.0% 99.1%,4.0% 99.1%,0.0% 99.6%,1.1% 96.0%,0.9% 92.0%,1.1% 88.0%,0.0% 84.0%,0.3% 80.0%,0.9% 76.0%,0.2% 72.0%,0.0% 68.0%,0.8% 64.0%,1.1% 60.0%,0.1% 56.0%,0.9% 52.0%,1.0% 48.0%,1.1% 44.0%,0.2% 40.0%,0.5% 36.0%,1.0% 32.0%,0.3% 28.0%,0.8% 24.0%,0.3% 20.0%,0.9% 16.0%,0.2% 12.0%,0.7% 8.0%,0.3% 4.0%)",
+    "x": 481.81313594128005,
+    "y": 679.4806303540338,
+    "score": -5.560525357433882,
+    "d": 291
+   },
+   {
+    "id": "i3",
+    "type": "quote",
+    "text": "I will cherish it all",
+    "qfs": 52,
+    "w": 360,
+    "h": 164,
+    "rot": -1.5019332997500898,
+    "z": 30,
+    "x": 490.6895479010418,
+    "y": 291.3413210012019,
+    "d": 479
+   },
+   {
+    "id": "i4",
+    "type": "photo",
+    "cardId": "c0",
+    "frame": "polaroid",
+    "z": 10,
+    "w": 265,
+    "h": 250,
+    "rot": 2.892901660548523,
+    "x": 653.2169094381085,
+    "y": 959.2793403813906,
+    "torn": "polygon(0.0% 0.7%,5.0% 0.1%,10.0% 0.0%,15.0% 0.7%,20.0% 0.7%,25.0% 0.1%,30.0% 1.2%,35.0% 1.2%,40.0% 0.2%,45.0% 1.1%,50.0% 0.9%,55.0% 0.5%,60.0% 0.1%,65.0% 1.0%,70.0% 1.3%,75.0% 0.7%,80.0% 0.9%,85.0% 1.0%,90.0% 0.4%,95.0% 0.1%,100.0% 1.3%,99.2% 5.0%,99.6% 10.0%,100.0% 15.0%,99.7% 20.0%,99.9% 25.0%,98.9% 30.0%,98.7% 35.0%,99.5% 40.0%,98.9% 45.0%,99.1% 50.0%,99.0% 55.0%,99.8% 60.0%,99.6% 65.0%,99.3% 70.0%,99.6% 75.0%,99.4% 80.0%,99.6% 85.0%,99.4% 90.0%,99.7% 95.0%,99.9% 100.0%,95.0% 99.0%,90.0% 98.8%,85.0% 99.6%,80.0% 99.0%,75.0% 98.7%,70.0% 99.6%,65.0% 99.5%,60.0% 99.8%,55.0% 99.9%,50.0% 99.5%,45.0% 99.9%,40.0% 99.6%,35.0% 99.1%,30.0% 98.8%,25.0% 98.8%,20.0% 99.2%,15.0% 98.8%,10.0% 99.0%,5.0% 99.4%,0.0% 99.7%,0.9% 95.0%,0.9% 90.0%,1.2% 85.0%,0.5% 80.0%,0.3% 75.0%,1.0% 70.0%,0.0% 65.0%,0.7% 60.0%,0.5% 55.0%,0.7% 50.0%,0.6% 45.0%,0.1% 40.0%,0.2% 35.0%,1.0% 30.0%,1.1% 25.0%,0.8% 20.0%,1.2% 15.0%,0.2% 10.0%,1.0% 5.0%)",
+    "d": 242
+   },
+   {
+    "id": "i5",
+    "type": "photo",
+    "cardId": "c1",
+    "frame": "instax",
+    "z": 12,
+    "w": 207,
+    "h": 311,
+    "rot": 4.066831633588299,
+    "x": 367.80361662203825,
+    "y": 981.5647169395966,
+    "torn": "polygon(0.0% 0.7%,5.0% 0.8%,10.0% 1.3%,15.0% 0.3%,20.0% 0.4%,25.0% 0.5%,30.0% 0.5%,35.0% 0.2%,40.0% 0.5%,45.0% 1.0%,50.0% 0.0%,55.0% 0.6%,60.0% 1.2%,65.0% 0.1%,70.0% 1.1%,75.0% 1.0%,80.0% 0.1%,85.0% 1.2%,90.0% 0.7%,95.0% 1.1%,100.0% 0.4%,99.4% 5.0%,99.0% 10.0%,98.7% 15.0%,99.5% 20.0%,99.7% 25.0%,99.9% 30.0%,99.9% 35.0%,99.4% 40.0%,99.5% 45.0%,99.8% 50.0%,99.2% 55.0%,98.9% 60.0%,99.7% 65.0%,98.8% 70.0%,99.0% 75.0%,98.7% 80.0%,99.5% 85.0%,99.5% 90.0%,99.6% 95.0%,99.5% 100.0%,95.0% 99.8%,90.0% 99.8%,85.0% 99.5%,80.0% 99.7%,75.0% 99.9%,70.0% 99.4%,65.0% 99.5%,60.0% 98.8%,55.0% 99.0%,50.0% 99.5%,45.0% 99.2%,40.0% 99.0%,35.0% 98.7%,30.0% 99.7%,25.0% 98.8%,20.0% 98.9%,15.0% 98.9%,10.0% 98.8%,5.0% 99.8%,0.0% 99.3%,0.2% 95.0%,0.7% 90.0%,0.8% 85.0%,0.2% 80.0%,1.1% 75.0%,1.3% 70.0%,0.1% 65.0%,1.1% 60.0%,0.5% 55.0%,0.7% 50.0%,0.1% 45.0%,0.6% 40.0%,1.1% 35.0%,1.1% 30.0%,0.6% 25.0%,1.2% 20.0%,0.9% 15.0%,0.8% 10.0%,1.0% 5.0%)",
+    "d": 260
+   },
+   {
+    "id": "i6",
+    "type": "photo",
+    "cardId": "c2",
+    "frame": "instax",
+    "z": 14,
+    "w": 192,
+    "h": 195,
+    "rot": -5.912988370843232,
+    "x": 200.72638205299154,
+    "y": 429.84395307675004,
+    "torn": "polygon(0.0% 0.2%,5.0% 0.8%,10.0% 1.1%,15.0% 0.3%,20.0% 0.0%,25.0% 0.9%,30.0% 1.1%,35.0% 0.8%,40.0% 0.6%,45.0% 0.8%,50.0% 0.6%,55.0% 1.0%,60.0% 1.3%,65.0% 0.3%,70.0% 1.2%,75.0% 1.0%,80.0% 1.0%,85.0% 0.9%,90.0% 0.5%,95.0% 0.4%,100.0% 0.4%,98.8% 5.0%,99.5% 10.0%,99.7% 15.0%,99.5% 20.0%,100.0% 25.0%,99.8% 30.0%,99.5% 35.0%,99.7% 40.0%,99.6% 45.0%,99.2% 50.0%,99.0% 55.0%,100.0% 60.0%,99.0% 65.0%,99.9% 70.0%,99.6% 75.0%,99.4% 80.0%,98.8% 85.0%,98.9% 90.0%,98.9% 95.0%,99.0% 100.0%,95.0% 99.7%,90.0% 99.2%,85.0% 99.7%,80.0% 99.3%,75.0% 99.3%,70.0% 98.9%,65.0% 99.6%,60.0% 99.1%,55.0% 99.7%,50.0% 99.2%,45.0% 98.9%,40.0% 98.8%,35.0% 99.7%,30.0% 99.8%,25.0% 99.4%,20.0% 99.3%,15.0% 99.6%,10.0% 99.0%,5.0% 99.1%,0.0% 99.5%,0.8% 95.0%,1.3% 90.0%,0.4% 85.0%,1.2% 80.0%,1.1% 75.0%,0.8% 70.0%,1.0% 65.0%,1.2% 60.0%,0.2% 55.0%,0.7% 50.0%,1.1% 45.0%,0.3% 40.0%,1.2% 35.0%,1.1% 30.0%,0.7% 25.0%,1.2% 20.0%,0.1% 15.0%,0.5% 10.0%,0.5% 5.0%)",
+    "d": 170
+   },
+   {
+    "id": "i7",
+    "type": "photo",
+    "cardId": "c3",
+    "frame": "polaroid",
+    "z": 16,
+    "w": 178,
+    "h": 272,
+    "rot": -3.579475875804201,
+    "x": 757.8489328334108,
+    "y": 210.06332711689174,
+    "torn": "polygon(0.0% 0.7%,5.0% 1.3%,10.0% 0.0%,15.0% 0.3%,20.0% 0.2%,25.0% 0.3%,30.0% 0.7%,35.0% 0.0%,40.0% 1.1%,45.0% 0.4%,50.0% 0.3%,55.0% 0.5%,60.0% 0.9%,65.0% 0.8%,70.0% 0.4%,75.0% 0.6%,80.0% 1.1%,85.0% 1.1%,90.0% 1.1%,95.0% 1.1%,100.0% 0.3%,99.3% 5.0%,99.9% 10.0%,98.8% 15.0%,99.2% 20.0%,99.5% 25.0%,99.6% 30.0%,99.0% 35.0%,99.2% 40.0%,99.2% 45.0%,98.9% 50.0%,99.6% 55.0%,99.8% 60.0%,99.9% 65.0%,99.0% 70.0%,99.0% 75.0%,98.7% 80.0%,99.1% 85.0%,99.9% 90.0%,98.9% 95.0%,99.8% 100.0%,95.0% 99.0%,90.0% 99.5%,85.0% 99.4%,80.0% 99.3%,75.0% 99.7%,70.0% 98.7%,65.0% 99.9%,60.0% 99.5%,55.0% 98.8%,50.0% 99.1%,45.0% 99.1%,40.0% 99.8%,35.0% 99.1%,30.0% 99.3%,25.0% 99.9%,20.0% 99.1%,15.0% 98.8%,10.0% 99.7%,5.0% 99.4%,0.0% 99.9%,0.3% 95.0%,0.4% 90.0%,0.1% 85.0%,1.1% 80.0%,1.0% 75.0%,0.3% 70.0%,0.2% 65.0%,0.0% 60.0%,0.2% 55.0%,0.5% 50.0%,0.1% 45.0%,1.1% 40.0%,0.4% 35.0%,1.0% 30.0%,1.0% 25.0%,1.2% 20.0%,0.9% 15.0%,0.9% 10.0%,0.1% 5.0%)",
+    "d": 188
+   },
+   {
+    "id": "i8",
+    "type": "photo",
+    "cardId": "c4",
+    "frame": "polaroid",
+    "z": 18,
+    "w": 172,
+    "h": 180,
+    "rot": 3.3120705826673658,
+    "x": 763.4083551405929,
+    "y": 450.0515496209264,
+    "torn": "polygon(0.0% 0.6%,5.0% 0.3%,10.0% 0.5%,15.0% 0.3%,20.0% 0.5%,25.0% 0.8%,30.0% 0.2%,35.0% 0.0%,40.0% 0.7%,45.0% 1.1%,50.0% 0.9%,55.0% 0.5%,60.0% 0.4%,65.0% 0.2%,70.0% 1.1%,75.0% 0.2%,80.0% 1.0%,85.0% 1.2%,90.0% 0.2%,95.0% 0.6%,100.0% 0.4%,99.9% 5.0%,99.0% 10.0%,99.1% 15.0%,99.6% 20.0%,98.7% 25.0%,99.9% 30.0%,99.5% 35.0%,99.8% 40.0%,99.1% 45.0%,99.7% 50.0%,99.2% 55.0%,99.1% 60.0%,99.0% 65.0%,99.7% 70.0%,99.7% 75.0%,98.9% 80.0%,100.0% 85.0%,99.2% 90.0%,99.3% 95.0%,99.6% 100.0%,95.0% 99.6%,90.0% 99.4%,85.0% 99.4%,80.0% 99.0%,75.0% 99.6%,70.0% 99.6%,65.0% 99.6%,60.0% 99.0%,55.0% 98.8%,50.0% 98.8%,45.0% 99.3%,40.0% 99.6%,35.0% 99.1%,30.0% 98.9%,25.0% 99.3%,20.0% 98.8%,15.0% 99.0%,10.0% 99.3%,5.0% 99.6%,0.0% 99.3%,0.5% 95.0%,0.8% 90.0%,0.6% 85.0%,0.4% 80.0%,0.3% 75.0%,1.2% 70.0%,0.4% 65.0%,0.6% 60.0%,1.2% 55.0%,1.3% 50.0%,1.2% 45.0%,0.8% 40.0%,0.2% 35.0%,1.2% 30.0%,0.5% 25.0%,1.1% 20.0%,1.2% 15.0%,0.1% 10.0%,0.0% 5.0%)",
+    "d": 206
+   },
+   {
+    "id": "i9",
+    "type": "pattern",
+    "art": "red-tile",
+    "x": 687.5,
+    "y": 997,
+    "w": 437,
+    "h": 418,
+    "rot": 0,
+    "z": 1,
+    "d": 54
+   },
+   {
+    "id": "i10",
+    "type": "pattern",
+    "art": "building-sketch",
+    "x": 172,
+    "y": 1018.5,
+    "w": 356,
+    "h": 375,
+    "rot": 0,
+    "z": 1,
+    "d": 72
+   },
+   {
+    "id": "i11",
+    "type": "paper",
+    "art": "beige-ruled-notebook",
+    "x": 454.74361662203825,
+    "y": 919.3647169395965,
+    "w": 287,
+    "h": 353,
+    "rot": 13.7916755520273,
+    "z": 6,
+    "d": 175
+   },
+   {
+    "id": "i12",
+    "type": "paper",
+    "art": "rounded-torn-paper",
+    "x": 490.6895479010418,
+    "y": 291.3413210012019,
+    "w": 389,
+    "h": 210,
+    "rot": 0.9011599798500538,
+    "z": 8,
+    "d": 85
+   },
+   {
+    "id": "i13",
+    "type": "leaf",
+    "art": "banana",
+    "x": 110,
+    "y": 304.14440281778053,
+    "w": 220,
+    "h": 273,
+    "rot": 146.79495334625244,
+    "z": 2,
+    "d": 103
+   },
+   {
+    "id": "i14",
+    "type": "leaf",
+    "art": "red",
+    "x": 825.201343408155,
+    "y": 1136.7691535257077,
+    "w": 175,
+    "h": 325,
+    "rot": 334.9727907124907,
+    "z": 2,
+    "d": 121
+   },
+   {
+    "id": "i15",
+    "type": "tape",
+    "kind": "sage",
+    "x": 659.2227453033936,
+    "y": 840.4309919050266,
+    "w": 128,
+    "h": 38,
+    "rot": 12.210310730757191,
+    "z": 11,
+    "d": 564
+   },
+   {
+    "id": "i16",
+    "type": "tape",
+    "kind": "sage",
+    "x": 378.406159119729,
+    "y": 832.4411571222938,
+    "w": 128,
+    "h": 38,
+    "rot": -2.769536603102461,
+    "z": 13,
+    "d": 582
+   },
+   {
+    "id": "i17",
+    "type": "tape",
+    "kind": "sage",
+    "x": 122.5479866169067,
+    "y": 345.9513855451794,
+    "w": 128,
+    "h": 38,
+    "rot": 32.08701162915677,
+    "z": 15,
+    "d": 600
+   },
+   {
+    "id": "i18",
+    "type": "tape",
+    "kind": "sage",
+    "x": 260.0524792503724,
+    "y": 331.7101740232207,
+    "w": 128,
+    "h": 38,
+    "rot": -43.91298837084323,
+    "z": 15,
+    "d": 510
+   },
+   {
+    "id": "i19",
+    "type": "tape",
+    "kind": "sage",
+    "x": 749.7326416871082,
+    "y": 80.31693673153865,
+    "w": 128,
+    "h": 38,
+    "rot": -8.473173750424758,
+    "z": 17,
+    "d": 528
+   },
+   {
+    "id": "i20",
+    "type": "tape",
+    "kind": "sage",
+    "x": 768.2614003523441,
+    "y": 366.1918575622699,
+    "w": 128,
+    "h": 38,
+    "rot": -3.398910348629579,
+    "z": 19,
+    "d": 546
+   },
+   {
+    "id": "i21",
+    "type": "tape",
+    "kind": "sage",
+    "x": 555.3577830983502,
+    "y": 551.3744246578381,
+    "w": 132,
+    "h": 38,
+    "rot": 10.4132296920754,
+    "z": 15,
+    "d": 564
+   },
+   {
+    "id": "i22",
+    "type": "sticker",
+    "art": "pink-binder",
+    "x": 52,
+    "y": 770.43424627278,
+    "w": 173,
+    "h": 160,
+    "rot": 84.34584245830774,
+    "z": 48,
+    "d": 752
+   },
+   {
+    "id": "i23",
+    "type": "sticker",
+    "art": "pink-pin-long",
+    "x": 300.25987030677976,
+    "y": 493.535473082934,
+    "w": 134,
+    "h": 112,
+    "rot": -24.799803943606094,
+    "z": 47,
+    "d": 770
+   },
+   {
+    "id": "i24",
+    "type": "sticker",
+    "art": "pink-paperclip",
+    "x": 255.42811723320722,
+    "y": 541.2018973600976,
+    "w": 224,
+    "h": 140,
+    "rot": 16.084869193844497,
+    "z": 45,
+    "d": 680
+   },
+   {
+    "id": "i25",
+    "type": "stamp",
+    "art": "pink-libra",
+    "x": 270.4561664582808,
+    "y": 1112.65294706053,
+    "w": 141,
+    "h": 139,
+    "rot": 12.210601601749659,
+    "z": 44,
+    "d": 613
+   },
+   {
+    "id": "i26",
+    "type": "stamp",
+    "art": "gold-sun",
+    "x": 764.8394026310294,
+    "y": 1076.167212748582,
+    "w": 120,
+    "h": 122,
+    "rot": 22.024028026964515,
+    "z": 44,
+    "d": 631
+   },
+   {
+    "id": "i27",
+    "type": "flower",
+    "art": "peach-hibiscus",
+    "x": 818.2644185903283,
+    "y": 86.89210400589982,
+    "w": 166,
+    "h": 151,
+    "rot": 25.49435664759949,
+    "z": 43,
+    "d": 649
+   },
+   {
+    "id": "i28",
+    "type": "flower",
+    "art": "peach-daisy",
+    "x": 775.7767048690233,
+    "y": 855.5258083864727,
+    "w": 134,
+    "h": 120,
+    "rot": -14.447171047329903,
+    "z": 43,
+    "d": 667
+   },
+   {
+    "id": "i29",
+    "type": "flower",
+    "art": "pink-blossom",
+    "x": 439.13494158993063,
+    "y": 1122.7733905188713,
+    "w": 174,
+    "h": 177,
+    "rot": -11.072396418079734,
+    "z": 43,
+    "d": 685
+   },
+   {
+    "id": "i30",
+    "type": "cat",
+    "art": "headphones-cat",
+    "w": 170,
+    "h": 200,
+    "rot": 4.9993329043500125,
+    "x": 169.3684912743047,
+    "y": 915.1541592534631,
+    "z": 46,
+    "d": 680
+   },
+   {
+    "id": "i31",
+    "type": "scrap",
+    "text": "✦ diwali",
+    "mono": false,
+    "w": 160,
+    "h": 44,
+    "rot": -5.53589793574065,
+    "x": 195.08893814962357,
+    "y": 1116.4879764597863,
+    "z": 50,
+    "d": 783
+   },
+   {
+    "id": "i32",
+    "type": "scrap",
+    "text": "✦ lady bug",
+    "mono": true,
+    "w": 190,
+    "h": 44,
+    "rot": 3.5459942570887506,
+    "x": 768.3339644531831,
+    "y": 1132.6847485871133,
+    "z": 50,
+    "d": 801
+   },
+   {
+    "id": "i33",
+    "type": "scrap",
+    "text": "✦ moving out",
+    "mono": false,
+    "w": 220,
+    "h": 44,
+    "rot": -3.084190887864679,
+    "x": 515.1012045154348,
+    "y": 1128.4931215848774,
+    "z": 50,
+    "d": 819
+   }
+  ]
+ },
+ {
+  "name": "no words, no photos",
+  "input": {
+   "story": "",
+   "start": "2026-11-09",
+   "end": "2026-11-09",
+   "cardCount": 0
+  },
+  "args": {
+   "direction": {
+    "seed": 45379651,
+    "mood": {
+     "arc": "warm",
+     "summary": "a warm, glowing stretch",
+     "chips": [
+      "warm"
+     ],
+     "neg": 0,
+     "pos": 0
+    },
+    "palette": {
+     "ink": "#2e2013",
+     "accent": "#b4772a",
+     "tape": "mustard",
+     "paperKind": "dots",
+     "noteKind": "kraft",
+     "filter": "sepia(.15) saturate(1.06) contrast(.97)"
+    },
+    "title": "9 November",
+    "dateChip": "Monday · 2026",
+    "dateShort": "9 Nov 2026",
+    "quote": "",
+    "scraps": [],
+    "stickers": {
+     "stamps": [
+      {
+       "id": "pink-butterfly",
+       "phase": "any"
+      }
+     ],
+     "leaves": [
+      {
+       "id": "red",
+       "phase": "any"
+      }
+     ],
+     "flowers": [
+      {
+       "id": "pink-blossom",
+       "phase": "any"
+      },
+      {
+       "id": "pink-hydrangea",
+       "phase": "any"
+      }
+     ],
+     "patterns": [
+      {
+       "id": "lipstick-kisses-left-torn-edge",
+       "m": "w",
+       "s": 1.9887959508923814
+      },
+      {
+       "id": "tulip-checkerboard",
+       "m": "w",
+       "s": 1.8815990362316373
+      },
+      {
+       "id": "red-tile",
+       "m": "w",
+       "s": 1.8359040041686967
+      },
+      {
+       "id": "lipstick-kisses",
+       "m": "w",
+       "s": 1.7568520941771568
+      },
+      {
+       "id": "red-gingham-diagonal-tear",
+       "m": "w",
+       "s": 1.7376426419010387
+      },
+      {
+       "id": "tiny-hearts-torn-strip",
+       "m": "w",
+       "s": 1.6953707503853366
+      },
+      {
+       "id": "love-text",
+       "m": "w",
+       "s": 1.459647060185671
+      },
+      {
+       "id": "heart-pattern-diagonal-tear",
+       "m": "w",
+       "s": 1.4298911132384093
+      }
+     ],
+     "patternCount": 1,
+     "cat": "close-up-nose-cat",
+     "papers": {
+      "under": "speech-bubble",
+      "quote": "lined-paper"
+     },
+     "clip": "red-binder-2",
+     "pin": "pink-pin"
+    },
+    "themes": [],
+    "density": "sparse"
+   },
+   "cards": [],
+   "story": ""
+  },
+  "direction": {
+   "seed": 45379651,
+   "mood": {
+    "arc": "warm",
+    "summary": "a warm, glowing stretch",
+    "chips": [
+     "warm"
+    ],
+    "neg": 0,
+    "pos": 0
+   },
+   "palette": {
+    "ink": "#2e2013",
+    "accent": "#b4772a",
+    "tape": "mustard",
+    "paperKind": "dots",
+    "noteKind": "kraft",
+    "filter": "sepia(.15) saturate(1.06) contrast(.97)"
+   },
+   "title": "9 November",
+   "dateChip": "Monday · 2026",
+   "dateShort": "9 Nov 2026",
+   "quote": "",
+   "scraps": [],
+   "stickers": {
+    "stamps": [
+     {
+      "id": "pink-butterfly",
+      "phase": "any"
+     }
+    ],
+    "leaves": [
+     {
+      "id": "red",
+      "phase": "any"
+     }
+    ],
+    "flowers": [
+     {
+      "id": "pink-blossom",
+      "phase": "any"
+     },
+     {
+      "id": "pink-hydrangea",
+      "phase": "any"
+     }
+    ],
+    "patterns": [
+     {
+      "id": "lipstick-kisses-left-torn-edge",
+      "m": "w",
+      "s": 1.9887959508923814
+     },
+     {
+      "id": "tulip-checkerboard",
+      "m": "w",
+      "s": 1.8815990362316373
+     },
+     {
+      "id": "red-tile",
+      "m": "w",
+      "s": 1.8359040041686967
+     },
+     {
+      "id": "lipstick-kisses",
+      "m": "w",
+      "s": 1.7568520941771568
+     },
+     {
+      "id": "red-gingham-diagonal-tear",
+      "m": "w",
+      "s": 1.7376426419010387
+     },
+     {
+      "id": "tiny-hearts-torn-strip",
+      "m": "w",
+      "s": 1.6953707503853366
+     },
+     {
+      "id": "love-text",
+      "m": "w",
+      "s": 1.459647060185671
+     },
+     {
+      "id": "heart-pattern-diagonal-tear",
+      "m": "w",
+      "s": 1.4298911132384093
+     }
+    ],
+    "patternCount": 1,
+    "cat": "close-up-nose-cat",
+    "papers": {
+     "under": "speech-bubble",
+     "quote": "lined-paper"
+    },
+    "clip": "red-binder-2",
+    "pin": "pink-pin"
+   },
+   "themes": [],
+   "density": "sparse"
+  },
+  "items": [
+   {
+    "id": "i1",
+    "type": "title",
+    "text": "9 November",
+    "chip": "Monday · 2026",
+    "tfs": 92,
+    "w": 484,
+    "h": 148,
+    "rot": -1,
+    "z": 32,
+    "x": 417.9048055577278,
+    "y": 120.09699122272431,
+    "score": -1.159303124652088,
+    "d": 358
+   },
+   {
+    "id": "i2",
+    "type": "pattern",
+    "art": "lipstick-kisses-left-torn-edge",
+    "x": 818.4,
+    "y": 392.42285205982625,
+    "w": 240,
+    "h": 417,
+    "rot": -2.5912516321986914,
+    "z": 1,
+    "d": 36
+   },
+   {
+    "id": "i3",
+    "type": "sticker",
+    "art": "red-binder-2",
+    "x": 52,
+    "y": 730.5600081244484,
+    "w": 200,
+    "h": 160,
+    "rot": 96.47545920405537,
+    "z": 48,
+    "d": 734
+   },
+   {
+    "id": "i4",
+    "type": "cat",
+    "art": "close-up-nose-cat",
+    "w": 196,
+    "h": 230,
+    "rot": 3.523061412619427,
+    "x": 764.2434192591905,
+    "y": 1007.6396950333566,
+    "z": 46,
+    "d": 752
+   }
+  ]
+ },
+ {
+  "name": "a heavy day",
+  "input": {
+   "story": "A hard, lonely day at the office. I was tired and stressed and everything felt heavy.",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "cardCount": 1
+  },
+  "args": {
+   "direction": {
+    "seed": 1640730830,
+    "mood": {
+     "arc": "heavy",
+     "summary": "a quiet, heavy stretch",
+     "chips": [
+      "heavy"
+     ],
+     "neg": 5,
+     "pos": 0
+    },
+    "palette": {
+     "ink": "#262a30",
+     "accent": "#587286",
+     "tape": "slate",
+     "paperKind": "lined",
+     "noteKind": "slate",
+     "filter": "sepia(.06) saturate(.76) contrast(.98) brightness(.98)"
+    },
+    "title": "18 November",
+    "dateChip": "Wednesday · 2026",
+    "dateShort": "18 Nov 2026",
+    "quote": "I was tired and stressed and everything felt heavy",
+    "scraps": [
+     "office"
+    ],
+    "stickers": {
+     "stamps": [
+      {
+       "id": "blue-compass",
+       "phase": "any"
+      }
+     ],
+     "leaves": [
+      {
+       "id": "brown-maple",
+       "phase": "any"
+      }
+     ],
+     "flowers": [
+      {
+       "id": "green-hydrangea-leaf",
+       "phase": "any"
+      },
+      {
+       "id": "purple-lobelia",
+       "phase": "any"
+      }
+     ],
+     "patterns": [
+      {
+       "id": "plaid",
+       "m": "h",
+       "s": 3.580348782241345
+      },
+      {
+       "id": "handwritten-script-corner",
+       "m": "h",
+       "s": 3.573130466602743
+      },
+      {
+       "id": "typewritten-strip",
+       "m": "h",
+       "s": 3.4078836673172193
+      },
+      {
+       "id": "handwriting-script",
+       "m": "h",
+       "s": 3.309528780821711
+      },
+      {
+       "id": "printed-text-torn-strip",
+       "m": "h",
+       "s": 3.2454723066184674
+      },
+      {
+       "id": "butterfly-newspaper",
+       "m": "n",
+       "s": 2.8375597581965852
+      },
+      {
+       "id": "building-sketch",
+       "m": "h",
+       "s": 2.738533313549124
+      },
+      {
+       "id": "blue-lace",
+       "m": "h",
+       "s": 1.9382094892906028
+      }
+     ],
+     "patternCount": 1,
+     "cat": "grumpy-shark-cat-2",
+     "papers": {
+      "under": "grid-notebook",
+      "quote": "lined-paper"
+     },
+     "clip": "blue-archive-clip",
+     "pin": "blue-pin"
+    },
+    "themes": [
+     "work"
+    ],
+    "density": "sparse"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "kind": "photo",
+     "imageId": "m0",
+     "w": 1000,
+     "h": 750
+    }
+   ],
+   "story": "A hard, lonely day at the office. I was tired and stressed and everything felt heavy."
+  },
+  "direction": {
+   "seed": 1640730830,
+   "mood": {
+    "arc": "heavy",
+    "summary": "a quiet, heavy stretch",
+    "chips": [
+     "heavy"
+    ],
+    "neg": 5,
+    "pos": 0
+   },
+   "palette": {
+    "ink": "#262a30",
+    "accent": "#587286",
+    "tape": "slate",
+    "paperKind": "lined",
+    "noteKind": "slate",
+    "filter": "sepia(.06) saturate(.76) contrast(.98) brightness(.98)"
+   },
+   "title": "18 November",
+   "dateChip": "Wednesday · 2026",
+   "dateShort": "18 Nov 2026",
+   "quote": "I was tired and stressed and everything felt heavy",
+   "scraps": [
+    "office"
+   ],
+   "stickers": {
+    "stamps": [
+     {
+      "id": "blue-compass",
+      "phase": "any"
+     }
+    ],
+    "leaves": [
+     {
+      "id": "brown-maple",
+      "phase": "any"
+     }
+    ],
+    "flowers": [
+     {
+      "id": "green-hydrangea-leaf",
+      "phase": "any"
+     },
+     {
+      "id": "purple-lobelia",
+      "phase": "any"
+     }
+    ],
+    "patterns": [
+     {
+      "id": "plaid",
+      "m": "h",
+      "s": 3.580348782241345
+     },
+     {
+      "id": "handwritten-script-corner",
+      "m": "h",
+      "s": 3.573130466602743
+     },
+     {
+      "id": "typewritten-strip",
+      "m": "h",
+      "s": 3.4078836673172193
+     },
+     {
+      "id": "handwriting-script",
+      "m": "h",
+      "s": 3.309528780821711
+     },
+     {
+      "id": "printed-text-torn-strip",
+      "m": "h",
+      "s": 3.2454723066184674
+     },
+     {
+      "id": "butterfly-newspaper",
+      "m": "n",
+      "s": 2.8375597581965852
+     },
+     {
+      "id": "building-sketch",
+      "m": "h",
+      "s": 2.738533313549124
+     },
+     {
+      "id": "blue-lace",
+      "m": "h",
+      "s": 1.9382094892906028
+     }
+    ],
+    "patternCount": 1,
+    "cat": "grumpy-shark-cat-2",
+    "papers": {
+     "under": "grid-notebook",
+     "quote": "lined-paper"
+    },
+    "clip": "blue-archive-clip",
+    "pin": "blue-pin"
+   },
+   "themes": [
+    "work"
+   ],
+   "density": "sparse"
+  },
+  "items": [
+   {
+    "id": "i1",
+    "type": "title",
+    "text": "18 November",
+    "chip": "Wednesday · 2026",
+    "tfs": 84,
+    "w": 486,
+    "h": 141,
+    "rot": -1,
+    "z": 32,
+    "x": 416.9357783849537,
+    "y": 124.87941730897873,
+    "score": -5.138216210440355,
+    "d": 358
+   },
+   {
+    "id": "i2",
+    "type": "note",
+    "text": "A hard, lonely day at the office. I was tired and stressed and everything felt heavy.",
+    "sig": "— 18 Nov 2026",
+    "kind": "slate",
+    "fs": 32,
+    "lh": 38,
+    "w": 360,
+    "h": 268,
+    "rot": -1.3326476879417894,
+    "z": 14,
+    "torn": "polygon(0.0% 0.6%,4.0% 0.4%,8.0% 0.1%,12.0% 1.2%,16.0% 0.9%,20.0% 0.1%,24.0% 0.6%,28.0% 0.8%,32.0% 0.1%,36.0% 0.7%,40.0% 1.0%,44.0% 0.6%,48.0% 1.2%,52.0% 0.6%,56.0% 0.9%,60.0% 0.6%,64.0% 0.4%,68.0% 0.6%,72.0% 0.4%,76.0% 1.1%,80.0% 1.1%,84.0% 1.2%,88.0% 1.2%,92.0% 0.3%,96.0% 0.1%,100.0% 0.7%,99.7% 4.0%,99.1% 8.0%,99.1% 12.0%,99.0% 16.0%,100.0% 20.0%,99.2% 24.0%,99.8% 28.0%,99.2% 32.0%,99.1% 36.0%,99.7% 40.0%,99.8% 44.0%,99.5% 48.0%,99.3% 52.0%,99.1% 56.0%,99.4% 60.0%,99.5% 64.0%,99.8% 68.0%,98.9% 72.0%,99.6% 76.0%,99.4% 80.0%,100.0% 84.0%,99.0% 88.0%,98.9% 92.0%,99.5% 96.0%,99.5% 100.0%,96.0% 99.2%,92.0% 99.1%,88.0% 99.4%,84.0% 100.0%,80.0% 99.4%,76.0% 99.4%,72.0% 99.4%,68.0% 99.4%,64.0% 99.7%,60.0% 99.2%,56.0% 98.9%,52.0% 98.9%,48.0% 99.1%,44.0% 100.0%,40.0% 99.0%,36.0% 99.4%,32.0% 99.2%,28.0% 99.2%,24.0% 100.0%,20.0% 99.2%,16.0% 99.6%,12.0% 98.8%,8.0% 99.6%,4.0% 99.4%,0.0% 99.8%,0.2% 96.0%,0.1% 92.0%,0.5% 88.0%,1.1% 84.0%,0.9% 80.0%,0.8% 76.0%,0.8% 72.0%,0.0% 68.0%,0.0% 64.0%,0.8% 60.0%,0.5% 56.0%,0.1% 52.0%,1.1% 48.0%,0.8% 44.0%,0.4% 40.0%,1.1% 36.0%,0.9% 32.0%,1.1% 28.0%,0.7% 24.0%,0.7% 20.0%,0.7% 16.0%,0.9% 12.0%,0.4% 8.0%,0.7% 4.0%)",
+    "x": 324.1008682097774,
+    "y": 937.7966632357334,
+    "score": -0.30571324920117815,
+    "d": 291
+   },
+   {
+    "id": "i3",
+    "type": "quote",
+    "text": "I was tired and stressed and everything felt heavy",
+    "qfs": 36,
+    "w": 360,
+    "h": 169,
+    "rot": 1.3819117903709413,
+    "z": 30,
+    "x": 640.9459022308886,
+    "y": 289.94201159421357,
+    "d": 479
+   },
+   {
+    "id": "i4",
+    "type": "photo",
+    "cardId": "c0",
+    "frame": "instax",
+    "z": 10,
+    "w": 477,
+    "h": 409,
+    "rot": 2.9477732761297375,
+    "x": 558.500000437256,
+    "y": 598.387199108256,
+    "torn": "polygon(0.0% 0.1%,5.0% 1.2%,10.0% 1.1%,15.0% 0.8%,20.0% 1.0%,25.0% 0.1%,30.0% 1.1%,35.0% 0.1%,40.0% 0.9%,45.0% 0.8%,50.0% 0.6%,55.0% 0.8%,60.0% 0.4%,65.0% 0.4%,70.0% 0.6%,75.0% 1.0%,80.0% 0.2%,85.0% 0.3%,90.0% 1.1%,95.0% 1.3%,100.0% 1.0%,99.2% 5.0%,99.9% 10.0%,99.4% 15.0%,98.8% 20.0%,99.1% 25.0%,99.6% 30.0%,99.1% 35.0%,98.9% 40.0%,99.8% 45.0%,99.6% 50.0%,99.9% 55.0%,99.0% 60.0%,98.8% 65.0%,99.5% 70.0%,98.9% 75.0%,99.9% 80.0%,99.4% 85.0%,99.3% 90.0%,99.8% 95.0%,99.1% 100.0%,95.0% 99.9%,90.0% 99.0%,85.0% 99.9%,80.0% 99.7%,75.0% 99.7%,70.0% 98.9%,65.0% 99.7%,60.0% 99.3%,55.0% 98.7%,50.0% 99.1%,45.0% 99.2%,40.0% 98.9%,35.0% 99.8%,30.0% 99.5%,25.0% 99.6%,20.0% 99.6%,15.0% 99.4%,10.0% 99.6%,5.0% 99.1%,0.0% 98.7%,1.2% 95.0%,0.0% 90.0%,0.0% 85.0%,0.4% 80.0%,0.2% 75.0%,0.2% 70.0%,0.2% 65.0%,0.6% 60.0%,0.3% 55.0%,0.7% 50.0%,0.6% 45.0%,1.1% 40.0%,1.3% 35.0%,0.6% 30.0%,0.8% 25.0%,0.2% 20.0%,0.2% 15.0%,1.1% 10.0%,0.9% 5.0%)",
+    "d": 242
+   },
+   {
+    "id": "i5",
+    "type": "pattern",
+    "art": "plaid",
+    "x": 114,
+    "y": 190,
+    "w": 240,
+    "h": 392,
+    "rot": 0,
+    "z": 1,
+    "d": 90
+   },
+   {
+    "id": "i6",
+    "type": "paper",
+    "art": "grid-notebook",
+    "x": 358.1600004372559,
+    "y": 680.187199108256,
+    "w": 489,
+    "h": 420,
+    "rot": 6.854886826360598,
+    "z": 6,
+    "d": 85
+   },
+   {
+    "id": "i7",
+    "type": "paper",
+    "art": "lined-paper",
+    "x": 640.9459022308886,
+    "y": 289.94201159421357,
+    "w": 389,
+    "h": 216,
+    "rot": -0.8291470742225647,
+    "z": 8,
+    "d": 103
+   },
+   {
+    "id": "i8",
+    "type": "leaf",
+    "art": "brown-maple",
+    "x": 270.20105122891533,
+    "y": 829.9495708359086,
+    "w": 301,
+    "h": 280,
+    "rot": 184.74930338561535,
+    "z": 2,
+    "d": 121
+   },
+   {
+    "id": "i9",
+    "type": "tape",
+    "kind": "slate",
+    "x": 568.7079930649684,
+    "y": 400.1498492306092,
+    "w": 128,
+    "h": 38,
+    "rot": 14.238969341153279,
+    "z": 11,
+    "d": 564
+   },
+   {
+    "id": "i10",
+    "type": "tape",
+    "kind": "slate",
+    "x": 284.74715827209207,
+    "y": 808.6769878397561,
+    "w": 132,
+    "h": 38,
+    "rot": 3.9649823846295478,
+    "z": 15,
+    "d": 582
+   },
+   {
+    "id": "i11",
+    "type": "sticker",
+    "art": "blue-archive-clip",
+    "x": 52,
+    "y": 391.7339241504669,
+    "w": 141,
+    "h": 160,
+    "rot": 95.19620200805366,
+    "z": 48,
+    "d": 770
+   },
+   {
+    "id": "i12",
+    "type": "sticker",
+    "art": "blue-pin",
+    "x": 303.799030975362,
+    "y": 741.2715910894619,
+    "w": 214,
+    "h": 112,
+    "rot": 10.738805235596374,
+    "z": 47,
+    "d": 680
+   },
+   {
+    "id": "i13",
+    "type": "stamp",
+    "art": "blue-compass",
+    "x": 346.79212409744946,
+    "y": 398.93276942720735,
+    "w": 133,
+    "h": 142,
+    "rot": 26.19561635516584,
+    "z": 44,
+    "d": 613
+   },
+   {
+    "id": "i14",
+    "type": "flower",
+    "art": "green-hydrangea-leaf",
+    "x": 766.9678767770624,
+    "y": 799.0416287893047,
+    "w": 160,
+    "h": 132,
+    "rot": 29.104818807449192,
+    "z": 43,
+    "d": 631
+   },
+   {
+    "id": "i15",
+    "type": "flower",
+    "art": "purple-lobelia",
+    "x": 490.3686187719094,
+    "y": 1048.4941601453324,
+    "w": 140,
+    "h": 159,
+    "rot": -38.02678388496861,
+    "z": 43,
+    "d": 649
+   },
+   {
+    "id": "i16",
+    "type": "cat",
+    "art": "grumpy-shark-cat-2",
+    "w": 164,
+    "h": 230,
+    "rot": -4.980537313036621,
+    "x": 185.19794206460938,
+    "y": 666.1317183226347,
+    "z": 46,
+    "d": 752
+   },
+   {
+    "id": "i17",
+    "type": "scrap",
+    "text": "✦ office",
+    "mono": false,
+    "w": 160,
+    "h": 44,
+    "rot": 8.428752664010972,
+    "x": 327.6557733975162,
+    "y": 372.43954637613245,
+    "z": 50,
+    "d": 855
+   }
+  ]
+ },
+ {
+  "name": "across two years",
+  "input": {
+   "story": "We travelled to the mountains, moved into a new home, and the nights were full of stars. It was a good, calm stretch.",
+   "start": "2025-12-30",
+   "end": "2026-01-02",
+   "cardCount": 6
+  },
+  "args": {
+   "direction": {
+    "seed": 1543818128,
+    "mood": {
+     "arc": "warm",
+     "summary": "a warm, glowing stretch",
+     "chips": [
+      "warm"
+     ],
+     "neg": 0,
+     "pos": 2
+    },
+    "palette": {
+     "ink": "#2e2013",
+     "accent": "#b4772a",
+     "tape": "mustard",
+     "paperKind": "dots",
+     "noteKind": "kraft",
+     "filter": "sepia(.15) saturate(1.06) contrast(.97)"
+    },
+    "title": "2025 – 2026",
+    "dateChip": "30 Dec 2025 – 2 Jan 2026",
+    "dateShort": "Dec 2025 – Jan 2026",
+    "quote": "It was a good, calm stretch",
+    "scraps": [
+     "moved",
+     "home",
+     "travelled"
+    ],
+    "stickers": {
+     "stamps": [
+      {
+       "id": "blue-mountains",
+       "phase": "any"
+      },
+      {
+       "id": "blue-compass",
+       "phase": "any"
+      }
+     ],
+     "leaves": [
+      {
+       "id": "rose",
+       "phase": "any"
+      },
+      {
+       "id": "fatsia",
+       "phase": "any"
+      }
+     ],
+     "flowers": [
+      {
+       "id": "blue-hydrangea",
+       "phase": "any"
+      },
+      {
+       "id": "blue-delphinium",
+       "phase": "any"
+      },
+      {
+       "id": "peach-hibiscus",
+       "phase": "any"
+      }
+     ],
+     "patterns": [
+      {
+       "id": "building-sketch",
+       "m": "h",
+       "s": 8.63591109032277
+      },
+      {
+       "id": "paris-postcard",
+       "m": "n",
+       "s": 7.678803289937787
+      },
+      {
+       "id": "handwriting-script",
+       "m": "h",
+       "s": 6.976569697121159
+      },
+      {
+       "id": "handwritten-script-corner",
+       "m": "h",
+       "s": 6.937940974254161
+      },
+      {
+       "id": "typewritten-strip",
+       "m": "h",
+       "s": 5.695201136427932
+      },
+      {
+       "id": "printed-text-torn-strip",
+       "m": "h",
+       "s": 5.488800102425739
+      },
+      {
+       "id": "plaid",
+       "m": "h",
+       "s": 3.9508286292199046
+      },
+      {
+       "id": "blue-lace",
+       "m": "h",
+       "s": 3.8631897699786353
+      }
+     ],
+     "patternCount": 2,
+     "cat": "standing-kitten",
+     "papers": {
+      "under": "dotted-notebook",
+      "quote": "lined-paper"
+     },
+     "clip": "pink-binder",
+     "pin": "red-pin",
+     "extra": "red-paperclip"
+    },
+    "themes": [
+     "move",
+     "travel",
+     "night",
+     "home"
+    ],
+    "density": "rich"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "kind": "photo",
+     "imageId": "m0",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c1",
+     "kind": "photo",
+     "imageId": "m1",
+     "w": 750,
+     "h": 1000
+    },
+    {
+     "id": "c2",
+     "kind": "photo",
+     "imageId": "m2",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c3",
+     "kind": "photo",
+     "imageId": "m3",
+     "w": 750,
+     "h": 1000
+    },
+    {
+     "id": "c4",
+     "kind": "photo",
+     "imageId": "m4",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c5",
+     "kind": "photo",
+     "imageId": "m5",
+     "w": 750,
+     "h": 1000
+    }
+   ],
+   "story": "We travelled to the mountains, moved into a new home, and the nights were full of stars. It was a good, calm stretch."
+  },
+  "direction": {
+   "seed": 1543818128,
+   "mood": {
+    "arc": "warm",
+    "summary": "a warm, glowing stretch",
+    "chips": [
+     "warm"
+    ],
+    "neg": 0,
+    "pos": 2
+   },
+   "palette": {
+    "ink": "#2e2013",
+    "accent": "#b4772a",
+    "tape": "mustard",
+    "paperKind": "dots",
+    "noteKind": "kraft",
+    "filter": "sepia(.15) saturate(1.06) contrast(.97)"
+   },
+   "title": "2025 – 2026",
+   "dateChip": "30 Dec 2025 – 2 Jan 2026",
+   "dateShort": "Dec 2025 – Jan 2026",
+   "quote": "It was a good, calm stretch",
+   "scraps": [
+    "moved",
+    "home",
+    "travelled"
+   ],
+   "stickers": {
+    "stamps": [
+     {
+      "id": "blue-mountains",
+      "phase": "any"
+     },
+     {
+      "id": "blue-compass",
+      "phase": "any"
+     }
+    ],
+    "leaves": [
+     {
+      "id": "rose",
+      "phase": "any"
+     },
+     {
+      "id": "fatsia",
+      "phase": "any"
+     }
+    ],
+    "flowers": [
+     {
+      "id": "blue-hydrangea",
+      "phase": "any"
+     },
+     {
+      "id": "blue-delphinium",
+      "phase": "any"
+     },
+     {
+      "id": "peach-hibiscus",
+      "phase": "any"
+     }
+    ],
+    "patterns": [
+     {
+      "id": "building-sketch",
+      "m": "h",
+      "s": 8.63591109032277
+     },
+     {
+      "id": "paris-postcard",
+      "m": "n",
+      "s": 7.678803289937787
+     },
+     {
+      "id": "handwriting-script",
+      "m": "h",
+      "s": 6.976569697121159
+     },
+     {
+      "id": "handwritten-script-corner",
+      "m": "h",
+      "s": 6.937940974254161
+     },
+     {
+      "id": "typewritten-strip",
+      "m": "h",
+      "s": 5.695201136427932
+     },
+     {
+      "id": "printed-text-torn-strip",
+      "m": "h",
+      "s": 5.488800102425739
+     },
+     {
+      "id": "plaid",
+      "m": "h",
+      "s": 3.9508286292199046
+     },
+     {
+      "id": "blue-lace",
+      "m": "h",
+      "s": 3.8631897699786353
+     }
+    ],
+    "patternCount": 2,
+    "cat": "standing-kitten",
+    "papers": {
+     "under": "dotted-notebook",
+     "quote": "lined-paper"
+    },
+    "clip": "pink-binder",
+    "pin": "red-pin",
+    "extra": "red-paperclip"
+   },
+   "themes": [
+    "move",
+    "travel",
+    "night",
+    "home"
+   ],
+   "density": "rich"
+  },
+  "items": [
+   {
+    "id": "i1",
+    "type": "title",
+    "text": "2025 – 2026",
+    "chip": "30 Dec 2025 – 2 Jan 2026",
+    "tfs": 84,
+    "w": 486,
+    "h": 141,
+    "rot": -1,
+    "z": 32,
+    "x": 371.17664828743784,
+    "y": 116.60647051632404,
+    "score": -4.835310490011449,
+    "d": 358
+   },
+   {
+    "id": "i2",
+    "type": "note",
+    "text": "We travelled to the mountains, moved into a new home, and the nights were full of stars. It was a good, calm stretch.",
+    "sig": "— Dec 2025 – Jan 2026",
+    "kind": "kraft",
+    "fs": 25,
+    "lh": 30,
+    "w": 470,
+    "h": 268,
+    "rot": -1.1645867449231444,
+    "z": 14,
+    "torn": "polygon(0.0% 0.7%,4.0% 0.5%,8.0% 0.7%,12.0% 0.5%,16.0% 0.7%,20.0% 1.0%,24.0% 0.5%,28.0% 0.8%,32.0% 1.1%,36.0% 0.6%,40.0% 0.3%,44.0% 0.9%,48.0% 0.9%,52.0% 1.2%,56.0% 1.0%,60.0% 0.5%,64.0% 0.1%,68.0% 0.3%,72.0% 0.2%,76.0% 1.0%,80.0% 0.6%,84.0% 1.0%,88.0% 1.1%,92.0% 0.6%,96.0% 1.2%,100.0% 0.7%,99.4% 4.0%,98.9% 8.0%,100.0% 12.0%,99.6% 16.0%,99.3% 20.0%,99.6% 24.0%,99.9% 28.0%,99.5% 32.0%,100.0% 36.0%,99.2% 40.0%,99.2% 44.0%,99.3% 48.0%,99.1% 52.0%,98.9% 56.0%,99.6% 60.0%,99.4% 64.0%,99.3% 68.0%,99.1% 72.0%,98.8% 76.0%,99.8% 80.0%,99.8% 84.0%,99.5% 88.0%,98.8% 92.0%,99.0% 96.0%,99.9% 100.0%,96.0% 99.7%,92.0% 99.2%,88.0% 99.1%,84.0% 99.5%,80.0% 99.2%,76.0% 99.9%,72.0% 99.9%,68.0% 99.9%,64.0% 98.8%,60.0% 99.1%,56.0% 99.9%,52.0% 99.8%,48.0% 98.9%,44.0% 99.7%,40.0% 99.0%,36.0% 99.6%,32.0% 99.9%,28.0% 99.4%,24.0% 100.0%,20.0% 99.6%,16.0% 99.8%,12.0% 99.8%,8.0% 98.9%,4.0% 99.6%,0.0% 99.8%,0.1% 96.0%,0.6% 92.0%,1.1% 88.0%,1.1% 84.0%,0.3% 80.0%,0.9% 76.0%,0.1% 72.0%,0.8% 68.0%,0.1% 64.0%,0.4% 60.0%,0.3% 56.0%,0.8% 52.0%,0.9% 48.0%,0.7% 44.0%,0.2% 40.0%,0.5% 36.0%,0.7% 32.0%,0.7% 28.0%,1.1% 24.0%,1.2% 20.0%,0.1% 16.0%,0.5% 12.0%,0.6% 8.0%,1.1% 4.0%)",
+    "x": 482.20540146389976,
+    "y": 982.7419004351646,
+    "score": -1.6492450907587854,
+    "d": 291
+   },
+   {
+    "id": "i3",
+    "type": "quote",
+    "text": "It was a good, calm stretch",
+    "qfs": 44,
+    "w": 360,
+    "h": 147,
+    "rot": 2.5715976770967246,
+    "z": 30,
+    "x": 483.5634923968464,
+    "y": 277.5403670956939,
+    "d": 479
+   },
+   {
+    "id": "i4",
+    "type": "photo",
+    "cardId": "c0",
+    "frame": "instax",
+    "z": 10,
+    "w": 234,
+    "h": 227,
+    "rot": -4.092368358047679,
+    "x": 311.6736290583201,
+    "y": 494.4528275009617,
+    "torn": "polygon(0.0% 0.5%,5.0% 0.2%,10.0% 0.4%,15.0% 1.0%,20.0% 0.9%,25.0% 0.1%,30.0% 0.3%,35.0% 0.1%,40.0% 0.4%,45.0% 0.2%,50.0% 0.3%,55.0% 0.5%,60.0% 0.9%,65.0% 1.3%,70.0% 1.3%,75.0% 0.0%,80.0% 0.0%,85.0% 1.3%,90.0% 1.2%,95.0% 0.1%,100.0% 0.6%,99.1% 5.0%,99.2% 10.0%,99.9% 15.0%,99.2% 20.0%,99.4% 25.0%,99.2% 30.0%,99.9% 35.0%,99.5% 40.0%,98.9% 45.0%,99.6% 50.0%,98.9% 55.0%,98.8% 60.0%,99.3% 65.0%,99.2% 70.0%,98.9% 75.0%,99.0% 80.0%,100.0% 85.0%,100.0% 90.0%,98.7% 95.0%,99.4% 100.0%,95.0% 99.8%,90.0% 98.7%,85.0% 98.7%,80.0% 99.7%,75.0% 99.9%,70.0% 99.9%,65.0% 99.4%,60.0% 99.0%,55.0% 99.5%,50.0% 98.9%,45.0% 99.3%,40.0% 99.4%,35.0% 99.8%,30.0% 99.5%,25.0% 100.0%,20.0% 99.0%,15.0% 99.1%,10.0% 98.8%,5.0% 98.8%,0.0% 99.0%,0.1% 95.0%,0.1% 90.0%,0.4% 85.0%,0.8% 80.0%,0.3% 75.0%,0.6% 70.0%,1.2% 65.0%,0.0% 60.0%,0.8% 55.0%,0.4% 50.0%,0.7% 45.0%,0.1% 40.0%,1.0% 35.0%,1.1% 30.0%,0.7% 25.0%,0.4% 20.0%,0.0% 15.0%,1.1% 10.0%,0.2% 5.0%)",
+    "d": 242
+   },
+   {
+    "id": "i5",
+    "type": "photo",
+    "cardId": "c1",
+    "frame": "instax",
+    "z": 12,
+    "w": 231,
+    "h": 343,
+    "rot": 6.095375469559804,
+    "x": 650.7932370835636,
+    "y": 541.9083400240447,
+    "torn": "polygon(0.0% 0.8%,5.0% 0.8%,10.0% 1.2%,15.0% 1.1%,20.0% 0.0%,25.0% 1.3%,30.0% 0.2%,35.0% 1.3%,40.0% 0.4%,45.0% 0.8%,50.0% 0.2%,55.0% 0.6%,60.0% 0.5%,65.0% 0.5%,70.0% 0.1%,75.0% 1.3%,80.0% 0.4%,85.0% 0.8%,90.0% 0.0%,95.0% 0.0%,100.0% 0.8%,99.6% 5.0%,99.2% 10.0%,99.1% 15.0%,99.1% 20.0%,99.5% 25.0%,98.8% 30.0%,99.9% 35.0%,99.8% 40.0%,99.9% 45.0%,98.8% 50.0%,99.2% 55.0%,98.8% 60.0%,99.0% 65.0%,99.9% 70.0%,99.7% 75.0%,100.0% 80.0%,100.0% 85.0%,98.9% 90.0%,99.9% 95.0%,99.6% 100.0%,95.0% 99.7%,90.0% 99.4%,85.0% 99.9%,80.0% 100.0%,75.0% 98.8%,70.0% 99.7%,65.0% 99.7%,60.0% 98.8%,55.0% 99.3%,50.0% 98.9%,45.0% 99.2%,40.0% 99.4%,35.0% 99.6%,30.0% 99.3%,25.0% 99.4%,20.0% 99.2%,15.0% 99.8%,10.0% 99.3%,5.0% 99.8%,0.0% 98.8%,1.1% 95.0%,0.3% 90.0%,1.0% 85.0%,0.4% 80.0%,0.5% 75.0%,0.2% 70.0%,0.9% 65.0%,0.7% 60.0%,0.1% 55.0%,0.1% 50.0%,0.9% 45.0%,1.0% 40.0%,0.9% 35.0%,0.0% 30.0%,1.0% 25.0%,0.9% 20.0%,0.3% 15.0%,0.5% 10.0%,1.0% 5.0%)",
+    "d": 260
+   },
+   {
+    "id": "i6",
+    "type": "photo",
+    "cardId": "c2",
+    "frame": "polaroid",
+    "z": 14,
+    "w": 220,
+    "h": 216,
+    "rot": -6.05358954500407,
+    "x": 219.74029249654154,
+    "y": 722.2722707419842,
+    "torn": "polygon(0.0% 0.8%,5.0% 0.5%,10.0% 1.2%,15.0% 0.7%,20.0% 0.4%,25.0% 0.7%,30.0% 0.5%,35.0% 0.4%,40.0% 0.9%,45.0% 0.3%,50.0% 1.0%,55.0% 0.7%,60.0% 0.9%,65.0% 0.2%,70.0% 1.2%,75.0% 1.1%,80.0% 1.1%,85.0% 0.9%,90.0% 0.7%,95.0% 0.7%,100.0% 1.0%,99.5% 5.0%,99.0% 10.0%,99.8% 15.0%,98.9% 20.0%,98.7% 25.0%,99.8% 30.0%,99.7% 35.0%,98.8% 40.0%,99.0% 45.0%,99.0% 50.0%,100.0% 55.0%,99.9% 60.0%,98.9% 65.0%,99.4% 70.0%,99.1% 75.0%,99.9% 80.0%,99.7% 85.0%,99.4% 90.0%,98.9% 95.0%,99.3% 100.0%,95.0% 99.6%,90.0% 99.1%,85.0% 99.7%,80.0% 99.9%,75.0% 99.6%,70.0% 99.7%,65.0% 98.7%,60.0% 99.3%,55.0% 99.9%,50.0% 99.5%,45.0% 99.1%,40.0% 99.0%,35.0% 100.0%,30.0% 99.3%,25.0% 99.7%,20.0% 100.0%,15.0% 99.4%,10.0% 99.8%,5.0% 99.4%,0.0% 99.2%,1.2% 95.0%,0.8% 90.0%,0.3% 85.0%,0.1% 80.0%,0.3% 75.0%,0.6% 70.0%,0.6% 65.0%,0.2% 60.0%,0.8% 55.0%,1.0% 50.0%,0.4% 45.0%,0.8% 40.0%,0.7% 35.0%,1.0% 30.0%,0.7% 25.0%,1.2% 20.0%,0.2% 15.0%,1.0% 10.0%,0.2% 5.0%)",
+    "d": 170
+   },
+   {
+    "id": "i7",
+    "type": "photo",
+    "cardId": "c3",
+    "frame": "kraft",
+    "z": 16,
+    "w": 150,
+    "h": 235,
+    "rot": 3.7798055189661683,
+    "x": 767.2695922981948,
+    "y": 187.8430480901152,
+    "torn": "polygon(0.0% 1.1%,5.0% 0.8%,10.0% 0.3%,15.0% 1.2%,20.0% 0.8%,25.0% 1.1%,30.0% 0.9%,35.0% 1.3%,40.0% 0.4%,45.0% 0.0%,50.0% 0.5%,55.0% 0.2%,60.0% 0.4%,65.0% 0.7%,70.0% 1.2%,75.0% 1.1%,80.0% 0.0%,85.0% 0.2%,90.0% 0.6%,95.0% 0.0%,100.0% 0.3%,100.0% 5.0%,99.9% 10.0%,99.3% 15.0%,99.1% 20.0%,98.7% 25.0%,99.5% 30.0%,99.6% 35.0%,99.4% 40.0%,99.4% 45.0%,99.8% 50.0%,100.0% 55.0%,98.7% 60.0%,99.1% 65.0%,99.3% 70.0%,99.3% 75.0%,99.6% 80.0%,99.9% 85.0%,99.8% 90.0%,99.4% 95.0%,99.0% 100.0%,95.0% 99.2%,90.0% 99.6%,85.0% 99.7%,80.0% 99.5%,75.0% 99.9%,70.0% 99.4%,65.0% 99.9%,60.0% 98.7%,55.0% 98.9%,50.0% 99.4%,45.0% 99.8%,40.0% 98.9%,35.0% 98.9%,30.0% 98.8%,25.0% 99.0%,20.0% 99.1%,15.0% 99.9%,10.0% 98.9%,5.0% 99.8%,0.0% 99.5%,1.0% 95.0%,0.5% 90.0%,1.3% 85.0%,0.5% 80.0%,0.4% 75.0%,1.3% 70.0%,0.2% 65.0%,1.0% 60.0%,1.0% 55.0%,1.0% 50.0%,0.0% 45.0%,0.1% 40.0%,0.6% 35.0%,0.5% 30.0%,0.4% 25.0%,1.0% 20.0%,0.5% 15.0%,0.1% 10.0%,1.1% 5.0%)",
+    "d": 188
+   },
+   {
+    "id": "i8",
+    "type": "photo",
+    "cardId": "c4",
+    "frame": "polaroid",
+    "z": 18,
+    "w": 193,
+    "h": 196,
+    "rot": -5.406422468647361,
+    "x": 451.03502685949206,
+    "y": 719.4747449755669,
+    "torn": "polygon(0.0% 0.5%,5.0% 0.2%,10.0% 1.0%,15.0% 1.0%,20.0% 0.4%,25.0% 1.3%,30.0% 0.2%,35.0% 0.9%,40.0% 0.9%,45.0% 0.9%,50.0% 0.3%,55.0% 0.5%,60.0% 0.1%,65.0% 0.9%,70.0% 0.2%,75.0% 0.1%,80.0% 1.2%,85.0% 0.9%,90.0% 0.7%,95.0% 1.3%,100.0% 0.3%,99.7% 5.0%,98.8% 10.0%,99.3% 15.0%,98.8% 20.0%,99.2% 25.0%,99.9% 30.0%,99.3% 35.0%,99.0% 40.0%,99.0% 45.0%,99.2% 50.0%,98.8% 55.0%,99.7% 60.0%,99.8% 65.0%,99.7% 70.0%,99.2% 75.0%,100.0% 80.0%,99.6% 85.0%,100.0% 90.0%,99.3% 95.0%,99.4% 100.0%,95.0% 99.7%,90.0% 99.9%,85.0% 99.9%,80.0% 99.4%,75.0% 99.9%,70.0% 99.3%,65.0% 99.0%,60.0% 98.9%,55.0% 99.9%,50.0% 98.7%,45.0% 99.9%,40.0% 98.8%,35.0% 99.1%,30.0% 99.4%,25.0% 99.4%,20.0% 100.0%,15.0% 99.8%,10.0% 99.4%,5.0% 99.0%,0.0% 99.1%,0.9% 95.0%,1.1% 90.0%,0.8% 85.0%,0.8% 80.0%,0.6% 75.0%,0.4% 70.0%,1.2% 65.0%,0.1% 60.0%,1.3% 55.0%,0.6% 50.0%,0.7% 45.0%,0.7% 40.0%,0.3% 35.0%,0.6% 30.0%,0.7% 25.0%,0.4% 20.0%,0.8% 15.0%,0.3% 10.0%,0.2% 5.0%)",
+    "d": 206
+   },
+   {
+    "id": "i9",
+    "type": "photo",
+    "cardId": "c5",
+    "frame": "polaroid",
+    "z": 20,
+    "w": 154,
+    "h": 240,
+    "rot": -6.097374532232061,
+    "x": 775.3343601750396,
+    "y": 850.9408408389799,
+    "torn": "polygon(0.0% 0.6%,5.0% 0.5%,10.0% 0.7%,15.0% 0.6%,20.0% 0.5%,25.0% 0.8%,30.0% 0.4%,35.0% 0.8%,40.0% 1.2%,45.0% 1.0%,50.0% 1.3%,55.0% 0.2%,60.0% 0.3%,65.0% 1.2%,70.0% 0.4%,75.0% 0.9%,80.0% 1.0%,85.0% 1.1%,90.0% 0.8%,95.0% 1.2%,100.0% 1.0%,99.2% 5.0%,99.8% 10.0%,99.9% 15.0%,98.9% 20.0%,98.9% 25.0%,98.8% 30.0%,99.6% 35.0%,98.8% 40.0%,98.9% 45.0%,99.7% 50.0%,99.6% 55.0%,98.9% 60.0%,99.0% 65.0%,99.2% 70.0%,99.5% 75.0%,99.0% 80.0%,99.7% 85.0%,99.1% 90.0%,99.9% 95.0%,100.0% 100.0%,95.0% 99.4%,90.0% 99.7%,85.0% 99.9%,80.0% 99.9%,75.0% 99.1%,70.0% 99.8%,65.0% 100.0%,60.0% 99.9%,55.0% 98.8%,50.0% 99.0%,45.0% 99.8%,40.0% 99.4%,35.0% 99.6%,30.0% 99.8%,25.0% 99.7%,20.0% 98.9%,15.0% 99.2%,10.0% 99.7%,5.0% 99.4%,0.0% 99.0%,1.0% 95.0%,0.7% 90.0%,1.1% 85.0%,0.4% 80.0%,0.0% 75.0%,0.6% 70.0%,0.7% 65.0%,0.2% 60.0%,0.9% 55.0%,0.3% 50.0%,0.3% 45.0%,0.8% 40.0%,0.9% 35.0%,0.7% 30.0%,0.6% 25.0%,0.8% 20.0%,1.1% 15.0%,0.0% 10.0%,0.7% 5.0%)",
+    "d": 224
+   },
+   {
+    "id": "i10",
+    "type": "pattern",
+    "art": "building-sketch",
+    "x": 155.5,
+    "y": 1036,
+    "w": 323,
+    "h": 340,
+    "rot": 0,
+    "z": 1,
+    "d": 72
+   },
+   {
+    "id": "i11",
+    "type": "pattern",
+    "art": "plaid",
+    "x": 112.5,
+    "y": 188,
+    "w": 237,
+    "h": 388,
+    "rot": 0,
+    "z": 1,
+    "d": 90
+   },
+   {
+    "id": "i12",
+    "type": "paper",
+    "art": "dotted-notebook",
+    "x": 312.1402924965415,
+    "y": 765.4722707419843,
+    "w": 184,
+    "h": 240,
+    "rot": 12.78740760521032,
+    "z": 6,
+    "d": 85
+   },
+   {
+    "id": "i13",
+    "type": "paper",
+    "art": "lined-paper",
+    "x": 483.5634923968464,
+    "y": 277.5403670956939,
+    "w": 389,
+    "h": 188,
+    "rot": -1.5429586062580347,
+    "z": 8,
+    "d": 103
+   },
+   {
+    "id": "i14",
+    "type": "leaf",
+    "art": "rose",
+    "x": 840,
+    "y": 358.11488494982774,
+    "w": 245,
+    "h": 340,
+    "rot": 111.05284328572452,
+    "z": 2,
+    "d": 121
+   },
+   {
+    "id": "i15",
+    "type": "leaf",
+    "art": "fatsia",
+    "x": 354.08265769949224,
+    "y": 566.9287764543652,
+    "w": 167,
+    "h": 257,
+    "rot": 175.3919130936265,
+    "z": 2,
+    "d": 139
+   },
+   {
+    "id": "i16",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 219.97672287495988,
+    "y": 393.23867337022745,
+    "w": 128,
+    "h": 38,
+    "rot": 33.90763164195232,
+    "z": 11,
+    "d": 582
+   },
+   {
+    "id": "i17",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 388.02714897213906,
+    "y": 381.21516770189106,
+    "w": 128,
+    "h": 38,
+    "rot": -42.09236835804768,
+    "z": 11,
+    "d": 600
+   },
+   {
+    "id": "i18",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 585.6768019965878,
+    "y": 368.5137452940945,
+    "w": 128,
+    "h": 38,
+    "rot": 44.095375469559805,
+    "z": 13,
+    "d": 510
+   },
+   {
+    "id": "i19",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 751.0565148398007,
+    "y": 386.174237356788,
+    "w": 128,
+    "h": 38,
+    "rot": -31.904624530440195,
+    "z": 13,
+    "d": 528
+   },
+   {
+    "id": "i20",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 208.98351451444378,
+    "y": 620.8410540114143,
+    "w": 128,
+    "h": 38,
+    "rot": -16.049221353419124,
+    "z": 15,
+    "d": 546
+   },
+   {
+    "id": "i21",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 774.6199188247905,
+    "y": 76.58558676750356,
+    "w": 128,
+    "h": 38,
+    "rot": -7.4022851285524665,
+    "z": 17,
+    "d": 564
+   },
+   {
+    "id": "i22",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 442.36679527957523,
+    "y": 627.8840153066919,
+    "w": 128,
+    "h": 38,
+    "rot": 6.438192072510719,
+    "z": 19,
+    "d": 582
+   },
+   {
+    "id": "i23",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 763.2254503063097,
+    "y": 737.5857602215193,
+    "w": 128,
+    "h": 38,
+    "rot": -0.45284642451442814,
+    "z": 21,
+    "d": 600
+   },
+   {
+    "id": "i24",
+    "type": "tape",
+    "kind": "mustard",
+    "x": 491.522305633971,
+    "y": 852.5256413431623,
+    "w": 132,
+    "h": 38,
+    "rot": 6.827293447963894,
+    "z": 15,
+    "d": 510
+   },
+   {
+    "id": "i25",
+    "type": "sticker",
+    "art": "pink-binder",
+    "x": 52,
+    "y": 367.68809052184224,
+    "w": 173,
+    "h": 160,
+    "rot": 94.70138283167034,
+    "z": 48,
+    "d": 698
+   },
+   {
+    "id": "i26",
+    "type": "sticker",
+    "art": "red-pin",
+    "x": 741.429735668455,
+    "y": 683.542998428639,
+    "w": 149,
+    "h": 112,
+    "rot": -12.690712554613128,
+    "z": 47,
+    "d": 716
+   },
+   {
+    "id": "i27",
+    "type": "sticker",
+    "art": "red-paperclip",
+    "x": 254.53046441467038,
+    "y": 855.5458312277585,
+    "w": 44,
+    "h": 140,
+    "rot": -22.310397463850677,
+    "z": 45,
+    "d": 734
+   },
+   {
+    "id": "i28",
+    "type": "stamp",
+    "art": "blue-mountains",
+    "x": 767.7707841142455,
+    "y": 401.1621428176359,
+    "w": 134,
+    "h": 146,
+    "rot": 25.57310666842386,
+    "z": 44,
+    "d": 667
+   },
+   {
+    "id": "i29",
+    "type": "stamp",
+    "art": "blue-compass",
+    "x": 201.99206361004056,
+    "y": 405.7918754660941,
+    "w": 126,
+    "h": 135,
+    "rot": -25.36218155035749,
+    "z": 44,
+    "d": 685
+   },
+   {
+    "id": "i30",
+    "type": "flower",
+    "art": "blue-hydrangea",
+    "x": 268.6974233333719,
+    "y": 1103.1304722238756,
+    "w": 156,
+    "h": 153,
+    "rot": 15.491868139710277,
+    "z": 43,
+    "d": 595
+   },
+   {
+    "id": "i31",
+    "type": "flower",
+    "art": "blue-delphinium",
+    "x": 140.70321584657938,
+    "y": 821.3504764766147,
+    "w": 158,
+    "h": 166,
+    "rot": -38.47424254659563,
+    "z": 43,
+    "d": 613
+   },
+   {
+    "id": "i32",
+    "type": "flower",
+    "art": "peach-hibiscus",
+    "x": 843.4049776468997,
+    "y": 942.7631532442698,
+    "w": 177,
+    "h": 161,
+    "rot": -29.359808882698417,
+    "z": 43,
+    "d": 631
+   },
+   {
+    "id": "i33",
+    "type": "cat",
+    "art": "standing-kitten",
+    "w": 113,
+    "h": 200,
+    "rot": 3.914098295615986,
+    "x": 145.16192462913693,
+    "y": 1041.1325466445833,
+    "z": 46,
+    "d": 734
+   },
+   {
+    "id": "i34",
+    "type": "scrap",
+    "text": "✦ moved",
+    "mono": false,
+    "w": 145,
+    "h": 44,
+    "rot": 8.544981265906245,
+    "x": 789.8971202538723,
+    "y": 476.05937835435094,
+    "z": 50,
+    "d": 837
+   },
+   {
+    "id": "i35",
+    "type": "scrap",
+    "text": "✦ home",
+    "mono": false,
+    "w": 130,
+    "h": 44,
+    "rot": -8.535716128069907,
+    "x": 159.96308568950647,
+    "y": 535.4902023690238,
+    "z": 50,
+    "d": 855
+   },
+   {
+    "id": "i36",
+    "type": "scrap",
+    "text": "✦ travelled",
+    "mono": false,
+    "w": 205,
+    "h": 44,
+    "rot": -4.2579934992827475,
+    "x": 761.6103552181648,
+    "y": 602.8392098131653,
+    "z": 50,
+    "d": 765
+   }
+  ]
+ },
+ {
+  "name": "love",
+  "input": {
+   "story": "I love how you laughed. A sweet, beautiful evening with flowers and my favourite person.",
+   "start": "2026-02-14",
+   "end": "2026-02-14",
+   "cardCount": 2
+  },
+  "args": {
+   "direction": {
+    "seed": 2846668172,
+    "mood": {
+     "arc": "warm",
+     "summary": "a warm, glowing stretch",
+     "chips": [
+      "warm"
+     ],
+     "neg": 0,
+     "pos": 4
+    },
+    "palette": {
+     "ink": "#2e2013",
+     "accent": "#b04a5a",
+     "tape": "sage",
+     "paperKind": "dots",
+     "noteKind": "kraft",
+     "filter": "sepia(.15) saturate(1.06) contrast(.97)"
+    },
+    "title": "14 February",
+    "dateChip": "Saturday · 2026",
+    "dateShort": "14 Feb 2026",
+    "quote": "I love how you laughed",
+    "scraps": [
+     "love",
+     "flowers"
+    ],
+    "stickers": {
+     "stamps": [
+      {
+       "id": "pink-butterfly",
+       "phase": "any"
+      }
+     ],
+     "leaves": [
+      {
+       "id": "yellow-green",
+       "phase": "any"
+      }
+     ],
+     "flowers": [
+      {
+       "id": "pink-hydrangea",
+       "phase": "any"
+      },
+      {
+       "id": "spotted-hydrangea-petals",
+       "phase": "any"
+      }
+     ],
+     "patterns": [
+      {
+       "id": "rose-floral",
+       "m": "h",
+       "s": 3.682007776456885
+      },
+      {
+       "id": "lipstick-kisses",
+       "m": "w",
+       "s": 3.4487280802801252
+      },
+      {
+       "id": "lipstick-kisses-left-torn-edge",
+       "m": "w",
+       "s": 3.3838639789028098
+      },
+      {
+       "id": "lipstick-kisses-corner",
+       "m": "w",
+       "s": 3.3392493165330963
+      },
+      {
+       "id": "tiny-hearts-torn-strip",
+       "m": "w",
+       "s": 3.291743660322391
+      },
+      {
+       "id": "love-text",
+       "m": "w",
+       "s": 3.1660350168356675
+      },
+      {
+       "id": "pink-ditsy-floral",
+       "m": "w",
+       "s": 2.9825701786670837
+      },
+      {
+       "id": "burgundy-roses",
+       "m": "n",
+       "s": 2.7656301367795098
+      }
+     ],
+     "patternCount": 1,
+     "cat": "glasses-and-tulips-cat",
+     "papers": {
+      "under": "torn-strip",
+      "quote": "rounded-torn-paper"
+     },
+     "clip": "red-tab-clip",
+     "pin": "pink-pin-long"
+    },
+    "themes": [
+     "love",
+     "nature"
+    ],
+    "density": "sparse"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "kind": "photo",
+     "imageId": "m0",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c1",
+     "kind": "photo",
+     "imageId": "m1",
+     "w": 750,
+     "h": 1000
+    }
+   ],
+   "story": "I love how you laughed. A sweet, beautiful evening with flowers and my favourite person."
+  },
+  "direction": {
+   "seed": 2846668172,
+   "mood": {
+    "arc": "warm",
+    "summary": "a warm, glowing stretch",
+    "chips": [
+     "warm"
+    ],
+    "neg": 0,
+    "pos": 4
+   },
+   "palette": {
+    "ink": "#2e2013",
+    "accent": "#b04a5a",
+    "tape": "sage",
+    "paperKind": "dots",
+    "noteKind": "kraft",
+    "filter": "sepia(.15) saturate(1.06) contrast(.97)"
+   },
+   "title": "14 February",
+   "dateChip": "Saturday · 2026",
+   "dateShort": "14 Feb 2026",
+   "quote": "I love how you laughed",
+   "scraps": [
+    "love",
+    "flowers"
+   ],
+   "stickers": {
+    "stamps": [
+     {
+      "id": "pink-butterfly",
+      "phase": "any"
+     }
+    ],
+    "leaves": [
+     {
+      "id": "yellow-green",
+      "phase": "any"
+     }
+    ],
+    "flowers": [
+     {
+      "id": "pink-hydrangea",
+      "phase": "any"
+     },
+     {
+      "id": "spotted-hydrangea-petals",
+      "phase": "any"
+     }
+    ],
+    "patterns": [
+     {
+      "id": "rose-floral",
+      "m": "h",
+      "s": 3.682007776456885
+     },
+     {
+      "id": "lipstick-kisses",
+      "m": "w",
+      "s": 3.4487280802801252
+     },
+     {
+      "id": "lipstick-kisses-left-torn-edge",
+      "m": "w",
+      "s": 3.3838639789028098
+     },
+     {
+      "id": "lipstick-kisses-corner",
+      "m": "w",
+      "s": 3.3392493165330963
+     },
+     {
+      "id": "tiny-hearts-torn-strip",
+      "m": "w",
+      "s": 3.291743660322391
+     },
+     {
+      "id": "love-text",
+      "m": "w",
+      "s": 3.1660350168356675
+     },
+     {
+      "id": "pink-ditsy-floral",
+      "m": "w",
+      "s": 2.9825701786670837
+     },
+     {
+      "id": "burgundy-roses",
+      "m": "n",
+      "s": 2.7656301367795098
+     }
+    ],
+    "patternCount": 1,
+    "cat": "glasses-and-tulips-cat",
+    "papers": {
+     "under": "torn-strip",
+     "quote": "rounded-torn-paper"
+    },
+    "clip": "red-tab-clip",
+    "pin": "pink-pin-long"
+   },
+   "themes": [
+    "love",
+    "nature"
+   ],
+   "density": "sparse"
+  },
+  "items": [
+   {
+    "id": "i1",
+    "type": "title",
+    "text": "14 February",
+    "chip": "Saturday · 2026",
+    "tfs": 84,
+    "w": 486,
+    "h": 141,
+    "rot": -1,
+    "z": 32,
+    "x": 416.6595479835942,
+    "y": 117.66838313303887,
+    "score": -3.553936773208111,
+    "d": 358
+   },
+   {
+    "id": "i2",
+    "type": "note",
+    "text": "I love how you laughed. A sweet, beautiful evening with flowers and my favourite person.",
+    "sig": "— 14 Feb 2026",
+    "kind": "kraft",
+    "fs": 32,
+    "lh": 38,
+    "w": 360,
+    "h": 268,
+    "rot": 1.0306788699701428,
+    "z": 14,
+    "torn": "polygon(0.0% 0.9%,4.0% 1.1%,8.0% 0.9%,12.0% 0.4%,16.0% 0.1%,20.0% 0.6%,24.0% 0.8%,28.0% 1.2%,32.0% 0.9%,36.0% 0.5%,40.0% 0.4%,44.0% 0.5%,48.0% 1.2%,52.0% 1.2%,56.0% 1.0%,60.0% 1.0%,64.0% 1.0%,68.0% 0.6%,72.0% 0.5%,76.0% 0.5%,80.0% 0.3%,84.0% 0.9%,88.0% 0.6%,92.0% 0.7%,96.0% 1.2%,100.0% 0.4%,100.0% 4.0%,99.0% 8.0%,98.9% 12.0%,99.3% 16.0%,98.9% 20.0%,99.0% 24.0%,99.7% 28.0%,99.9% 32.0%,99.8% 36.0%,99.3% 40.0%,99.6% 44.0%,99.8% 48.0%,99.7% 52.0%,99.0% 56.0%,99.7% 60.0%,99.9% 64.0%,99.9% 68.0%,99.9% 72.0%,98.9% 76.0%,99.3% 80.0%,99.0% 84.0%,99.3% 88.0%,99.8% 92.0%,99.6% 96.0%,99.7% 100.0%,96.0% 99.5%,92.0% 99.3%,88.0% 99.4%,84.0% 99.4%,80.0% 98.9%,76.0% 98.8%,72.0% 99.3%,68.0% 99.5%,64.0% 99.5%,60.0% 99.0%,56.0% 99.8%,52.0% 99.2%,48.0% 98.9%,44.0% 99.7%,40.0% 99.0%,36.0% 99.0%,32.0% 99.2%,28.0% 98.9%,24.0% 99.1%,20.0% 99.0%,16.0% 99.1%,12.0% 99.9%,8.0% 98.9%,4.0% 100.0%,0.0% 99.9%,1.1% 96.0%,0.2% 92.0%,0.8% 88.0%,0.9% 84.0%,0.7% 80.0%,1.1% 76.0%,0.1% 72.0%,1.2% 68.0%,0.2% 64.0%,0.9% 60.0%,0.3% 56.0%,0.3% 52.0%,0.1% 48.0%,0.5% 44.0%,0.4% 40.0%,0.3% 36.0%,0.6% 32.0%,1.0% 28.0%,0.2% 24.0%,0.1% 20.0%,0.1% 16.0%,0.3% 12.0%,1.0% 8.0%,0.7% 4.0%)",
+    "x": 478.74057437409647,
+    "y": 681.6322624087427,
+    "score": -4.305823036752666,
+    "d": 291
+   },
+   {
+    "id": "i3",
+    "type": "quote",
+    "text": "I love how you laughed",
+    "qfs": 52,
+    "w": 360,
+    "h": 164,
+    "rot": -1.5708981808274984,
+    "z": 30,
+    "x": 499.7339058862999,
+    "y": 282.6499426178634,
+    "d": 479
+   },
+   {
+    "id": "i4",
+    "type": "photo",
+    "cardId": "c0",
+    "frame": "polaroid",
+    "z": 10,
+    "w": 370,
+    "h": 329,
+    "rot": 3.3722370489966123,
+    "x": 605.2279958293935,
+    "y": 986.3479728022415,
+    "torn": "polygon(0.0% 0.2%,5.0% 0.7%,10.0% 1.2%,15.0% 0.6%,20.0% 0.2%,25.0% 1.0%,30.0% 0.2%,35.0% 1.1%,40.0% 1.2%,45.0% 0.2%,50.0% 0.1%,55.0% 1.3%,60.0% 0.6%,65.0% 0.5%,70.0% 0.3%,75.0% 0.8%,80.0% 0.8%,85.0% 0.3%,90.0% 0.0%,95.0% 0.7%,100.0% 1.1%,99.4% 5.0%,99.1% 10.0%,99.6% 15.0%,98.9% 20.0%,99.8% 25.0%,99.3% 30.0%,99.6% 35.0%,99.4% 40.0%,99.5% 45.0%,98.9% 50.0%,99.7% 55.0%,99.9% 60.0%,98.9% 65.0%,99.6% 70.0%,99.6% 75.0%,99.0% 80.0%,99.0% 85.0%,98.8% 90.0%,99.8% 95.0%,99.3% 100.0%,95.0% 99.2%,90.0% 99.0%,85.0% 99.2%,80.0% 99.3%,75.0% 100.0%,70.0% 98.7%,65.0% 99.5%,60.0% 99.6%,55.0% 98.7%,50.0% 98.9%,45.0% 99.2%,40.0% 99.1%,35.0% 99.6%,30.0% 99.3%,25.0% 99.8%,20.0% 99.4%,15.0% 98.9%,10.0% 99.5%,5.0% 99.7%,0.0% 99.2%,1.0% 95.0%,0.1% 90.0%,0.5% 85.0%,0.2% 80.0%,0.5% 75.0%,1.2% 70.0%,1.2% 65.0%,0.8% 60.0%,0.2% 55.0%,0.7% 50.0%,1.3% 45.0%,1.1% 40.0%,0.5% 35.0%,1.0% 30.0%,1.1% 25.0%,0.6% 20.0%,1.0% 15.0%,0.4% 10.0%,0.5% 5.0%)",
+    "d": 242
+   },
+   {
+    "id": "i5",
+    "type": "photo",
+    "cardId": "c1",
+    "frame": "kraft",
+    "z": 12,
+    "w": 287,
+    "h": 417,
+    "rot": -4.70665860301815,
+    "x": 266.75432459125295,
+    "y": 887.1814259067178,
+    "torn": "polygon(0.0% 1.2%,5.0% 1.1%,10.0% 0.4%,15.0% 0.7%,20.0% 0.2%,25.0% 0.8%,30.0% 1.3%,35.0% 0.6%,40.0% 0.2%,45.0% 0.1%,50.0% 0.6%,55.0% 0.2%,60.0% 0.9%,65.0% 1.1%,70.0% 1.0%,75.0% 0.6%,80.0% 1.2%,85.0% 0.7%,90.0% 0.2%,95.0% 1.1%,100.0% 0.4%,99.6% 5.0%,99.9% 10.0%,99.1% 15.0%,98.8% 20.0%,99.5% 25.0%,99.1% 30.0%,99.2% 35.0%,99.1% 40.0%,99.8% 45.0%,100.0% 50.0%,99.2% 55.0%,99.6% 60.0%,99.2% 65.0%,99.0% 70.0%,99.0% 75.0%,99.1% 80.0%,99.3% 85.0%,99.9% 90.0%,99.6% 95.0%,99.5% 100.0%,95.0% 99.3%,90.0% 99.4%,85.0% 99.3%,80.0% 99.9%,75.0% 99.7%,70.0% 99.5%,65.0% 99.8%,60.0% 98.9%,55.0% 99.9%,50.0% 99.1%,45.0% 99.8%,40.0% 99.5%,35.0% 99.4%,30.0% 99.5%,25.0% 99.1%,20.0% 99.8%,15.0% 98.8%,10.0% 99.2%,5.0% 99.7%,0.0% 98.7%,0.8% 95.0%,0.6% 90.0%,0.7% 85.0%,1.2% 80.0%,1.3% 75.0%,0.4% 70.0%,0.6% 65.0%,1.0% 60.0%,0.0% 55.0%,0.8% 50.0%,0.9% 45.0%,0.1% 40.0%,0.0% 35.0%,0.8% 30.0%,0.8% 25.0%,0.2% 20.0%,1.0% 15.0%,1.0% 10.0%,0.0% 5.0%)",
+    "d": 260
+   },
+   {
+    "id": "i6",
+    "type": "pattern",
+    "art": "rose-floral",
+    "x": 162,
+    "y": 164,
+    "w": 336,
+    "h": 340,
+    "rot": 0,
+    "z": 1,
+    "d": 0
+   },
+   {
+    "id": "i7",
+    "type": "paper",
+    "art": "torn-strip",
+    "x": 449.82799582939356,
+    "y": 1052.1479728022416,
+    "w": 416,
+    "h": 127,
+    "rot": 10.953235363820568,
+    "z": 6,
+    "d": 103
+   },
+   {
+    "id": "i8",
+    "type": "paper",
+    "art": "rounded-torn-paper",
+    "x": 499.7339058862999,
+    "y": 282.6499426178634,
+    "w": 389,
+    "h": 210,
+    "rot": 0.942538908496499,
+    "z": 8,
+    "d": 121
+   },
+   {
+    "id": "i9",
+    "type": "leaf",
+    "art": "yellow-green",
+    "x": 265.2590337660341,
+    "y": 508.495119651667,
+    "w": 118,
+    "h": 254,
+    "rot": -33.075504694134,
+    "z": 2,
+    "d": 139
+   },
+   {
+    "id": "i10",
+    "type": "tape",
+    "kind": "sage",
+    "x": 481.5820309089983,
+    "y": 820.2872448774717,
+    "w": 128,
+    "h": 38,
+    "rot": 41.37223704899661,
+    "z": 11,
+    "d": 582
+   },
+   {
+    "id": "i11",
+    "type": "tape",
+    "kind": "sage",
+    "x": 747.5207454366905,
+    "y": 835.9576027342246,
+    "w": 128,
+    "h": 38,
+    "rot": -34.62776295100339,
+    "z": 11,
+    "d": 600
+   },
+   {
+    "id": "i12",
+    "type": "tape",
+    "kind": "sage",
+    "x": 250.13832239402927,
+    "y": 685.3642847343638,
+    "w": 128,
+    "h": 38,
+    "rot": -15.515024896105752,
+    "z": 13,
+    "d": 510
+   },
+   {
+    "id": "i13",
+    "type": "tape",
+    "kind": "sage",
+    "x": 439.5681997547388,
+    "y": 550.9064882400288,
+    "w": 132,
+    "h": 38,
+    "rot": -2.7295185771770774,
+    "z": 15,
+    "d": 528
+   },
+   {
+    "id": "i14",
+    "type": "sticker",
+    "art": "red-tab-clip",
+    "x": 52,
+    "y": 764.3938658339903,
+    "w": 110,
+    "h": 160,
+    "rot": 95.1401999425143,
+    "z": 48,
+    "d": 716
+   },
+   {
+    "id": "i15",
+    "type": "sticker",
+    "art": "pink-pin-long",
+    "x": 404.8720046317251,
+    "y": 1100.2009395301172,
+    "w": 134,
+    "h": 112,
+    "rot": 15.853049026336521,
+    "z": 47,
+    "d": 734
+   },
+   {
+    "id": "i16",
+    "type": "stamp",
+    "art": "pink-butterfly",
+    "x": 761.9913303646308,
+    "y": 1142.8453254422739,
+    "w": 152,
+    "h": 155,
+    "rot": -19.155595905613154,
+    "z": 44,
+    "d": 667
+   },
+   {
+    "id": "i17",
+    "type": "flower",
+    "art": "pink-hydrangea",
+    "x": 126.18989883148043,
+    "y": 710.9593142072895,
+    "w": 163,
+    "h": 165,
+    "rot": 28.105905695818365,
+    "z": 43,
+    "d": 685
+   },
+   {
+    "id": "i18",
+    "type": "flower",
+    "art": "spotted-hydrangea-petals",
+    "x": 783.1439870270619,
+    "y": 849.6950060743658,
+    "w": 137,
+    "h": 139,
+    "rot": -28.325332117732614,
+    "z": 43,
+    "d": 595
+   },
+   {
+    "id": "i19",
+    "type": "cat",
+    "art": "glasses-and-tulips-cat",
+    "w": 230,
+    "h": 211,
+    "rot": 7.8662718154955655,
+    "x": 203.06447707070038,
+    "y": 425.980742957443,
+    "z": 46,
+    "d": 698
+   },
+   {
+    "id": "i20",
+    "type": "scrap",
+    "text": "✦ love",
+    "mono": false,
+    "w": 130,
+    "h": 44,
+    "rot": 5.3040059809572995,
+    "x": 314.0208086683415,
+    "y": 1126.9947230368853,
+    "z": 50,
+    "d": 801
+   },
+   {
+    "id": "i21",
+    "type": "scrap",
+    "text": "✦ flowers",
+    "mono": false,
+    "w": 175,
+    "h": 44,
+    "rot": 4.158162510953844,
+    "x": 760.8619320678108,
+    "y": 1128.0845276394493,
+    "z": 50,
+    "d": 819
+   }
+  ]
+ },
+ {
+  "name": "bright then dim",
+  "input": {
+   "story": "The party was wonderful and happy and full of friends. But later I felt sad, alone and very tired.",
+   "start": "2026-03-05",
+   "end": "2026-03-12",
+   "cardCount": 3
+  },
+  "args": {
+   "direction": {
+    "seed": 181665759,
+    "mood": {
+     "arc": "warm-heavy",
+     "summary": "a bright start that slowly dimmed",
+     "chips": [
+      "warm",
+      "heavy"
+     ],
+     "neg": 3,
+     "pos": 2
+    },
+    "palette": {
+     "ink": "#2a2420",
+     "accent": "#80553a",
+     "tape": "blue",
+     "paperKind": "lined",
+     "noteKind": "white",
+     "filter": "sepia(.12) saturate(.84) contrast(.97)"
+    },
+    "title": "March",
+    "dateChip": "5 – 12 Mar 2026",
+    "dateShort": "Mar 2026",
+    "quote": "But later I felt sad, alone and very tired",
+    "scraps": [
+     "friends"
+    ],
+    "stickers": {
+     "stamps": [
+      {
+       "id": "pink-libra",
+       "phase": "early"
+      },
+      {
+       "id": "green-clover",
+       "phase": "late"
+      }
+     ],
+     "leaves": [
+      {
+       "id": "clover",
+       "phase": "early"
+      }
+     ],
+     "flowers": [
+      {
+       "id": "pink-blossom",
+       "phase": "early"
+      },
+      {
+       "id": "peach-daisy",
+       "phase": "late"
+      }
+     ],
+     "patterns": [
+      {
+       "id": "red-gingham-vertical-strip",
+       "m": "w",
+       "s": 2.175539091206156
+      },
+      {
+       "id": "red-gingham-diagonal-tear",
+       "m": "w",
+       "s": 1.6969526689033956
+      },
+      {
+       "id": "pink-ditsy-floral",
+       "m": "w",
+       "s": 1.6503760837949812
+      },
+      {
+       "id": "embossed-floral-corner",
+       "m": "n",
+       "s": 0.8897185178473592
+      },
+      {
+       "id": "lace-trim",
+       "m": "n",
+       "s": 0.8823104185285047
+      },
+      {
+       "id": "building-sketch",
+       "m": "h",
+       "s": 0.8815927761141211
+      },
+      {
+       "id": "rose-floral",
+       "m": "h",
+       "s": 0.8182975059142337
+      },
+      {
+       "id": "floral-swag",
+       "m": "n",
+       "s": 0.8172495819395408
+      }
+     ],
+     "patternCount": 2,
+     "cat": "sunglasses-cat",
+     "papers": {
+      "under": "dotted-notebook",
+      "quote": "lined-paper"
+     },
+     "clip": "red-tab-clip",
+     "pin": "red-pin"
+    },
+    "themes": [
+     "friends",
+     "celebrate"
+    ],
+    "density": "medium"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "kind": "photo",
+     "imageId": "m0",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c1",
+     "kind": "photo",
+     "imageId": "m1",
+     "w": 750,
+     "h": 1000
+    },
+    {
+     "id": "c2",
+     "kind": "photo",
+     "imageId": "m2",
+     "w": 1000,
+     "h": 750
+    }
+   ],
+   "story": "The party was wonderful and happy and full of friends. But later I felt sad, alone and very tired."
+  },
+  "direction": {
+   "seed": 181665759,
+   "mood": {
+    "arc": "warm-heavy",
+    "summary": "a bright start that slowly dimmed",
+    "chips": [
+     "warm",
+     "heavy"
+    ],
+    "neg": 3,
+    "pos": 2
+   },
+   "palette": {
+    "ink": "#2a2420",
+    "accent": "#80553a",
+    "tape": "blue",
+    "paperKind": "lined",
+    "noteKind": "white",
+    "filter": "sepia(.12) saturate(.84) contrast(.97)"
+   },
+   "title": "March",
+   "dateChip": "5 – 12 Mar 2026",
+   "dateShort": "Mar 2026",
+   "quote": "But later I felt sad, alone and very tired",
+   "scraps": [
+    "friends"
+   ],
+   "stickers": {
+    "stamps": [
+     {
+      "id": "pink-libra",
+      "phase": "early"
+     },
+     {
+      "id": "green-clover",
+      "phase": "late"
+     }
+    ],
+    "leaves": [
+     {
+      "id": "clover",
+      "phase": "early"
+     }
+    ],
+    "flowers": [
+     {
+      "id": "pink-blossom",
+      "phase": "early"
+     },
+     {
+      "id": "peach-daisy",
+      "phase": "late"
+     }
+    ],
+    "patterns": [
+     {
+      "id": "red-gingham-vertical-strip",
+      "m": "w",
+      "s": 2.175539091206156
+     },
+     {
+      "id": "red-gingham-diagonal-tear",
+      "m": "w",
+      "s": 1.6969526689033956
+     },
+     {
+      "id": "pink-ditsy-floral",
+      "m": "w",
+      "s": 1.6503760837949812
+     },
+     {
+      "id": "embossed-floral-corner",
+      "m": "n",
+      "s": 0.8897185178473592
+     },
+     {
+      "id": "lace-trim",
+      "m": "n",
+      "s": 0.8823104185285047
+     },
+     {
+      "id": "building-sketch",
+      "m": "h",
+      "s": 0.8815927761141211
+     },
+     {
+      "id": "rose-floral",
+      "m": "h",
+      "s": 0.8182975059142337
+     },
+     {
+      "id": "floral-swag",
+      "m": "n",
+      "s": 0.8172495819395408
+     }
+    ],
+    "patternCount": 2,
+    "cat": "sunglasses-cat",
+    "papers": {
+     "under": "dotted-notebook",
+     "quote": "lined-paper"
+    },
+    "clip": "red-tab-clip",
+    "pin": "red-pin"
+   },
+   "themes": [
+    "friends",
+    "celebrate"
+   ],
+   "density": "medium"
+  },
+  "items": [
+   {
+    "id": "i1",
+    "type": "title",
+    "text": "March",
+    "chip": "5 – 12 Mar 2026",
+    "tfs": 96,
+    "w": 264,
+    "h": 152,
+    "rot": -1,
+    "z": 32,
+    "x": 371.25113070044665,
+    "y": 119.06096213907003,
+    "score": -1.9871211108994378,
+    "d": 358
+   },
+   {
+    "id": "i2",
+    "type": "note",
+    "text": "The party was wonderful and happy and full of friends. But later I felt sad, alone and very tired.",
+    "sig": "— Mar 2026",
+    "kind": "white",
+    "fs": 28,
+    "lh": 33,
+    "w": 360,
+    "h": 268,
+    "rot": -0.7491519190371037,
+    "z": 14,
+    "torn": "polygon(0.0% 0.1%,4.0% 0.4%,8.0% 0.8%,12.0% 0.5%,16.0% 0.8%,20.0% 0.9%,24.0% 0.4%,28.0% 0.9%,32.0% 0.6%,36.0% 0.4%,40.0% 1.2%,44.0% 1.1%,48.0% 1.0%,52.0% 0.7%,56.0% 0.4%,60.0% 0.7%,64.0% 0.1%,68.0% 0.6%,72.0% 0.5%,76.0% 0.6%,80.0% 0.9%,84.0% 0.4%,88.0% 1.1%,92.0% 0.8%,96.0% 0.9%,100.0% 0.2%,99.0% 4.0%,99.2% 8.0%,99.6% 12.0%,99.3% 16.0%,99.8% 20.0%,99.8% 24.0%,99.3% 28.0%,99.9% 32.0%,99.1% 36.0%,99.6% 40.0%,99.9% 44.0%,99.1% 48.0%,99.4% 52.0%,99.1% 56.0%,99.5% 60.0%,99.6% 64.0%,99.1% 68.0%,99.1% 72.0%,99.2% 76.0%,98.8% 80.0%,99.8% 84.0%,99.2% 88.0%,99.6% 92.0%,99.8% 96.0%,98.9% 100.0%,96.0% 99.0%,92.0% 98.8%,88.0% 99.3%,84.0% 99.4%,80.0% 99.3%,76.0% 99.8%,72.0% 99.6%,68.0% 99.5%,64.0% 99.8%,60.0% 100.0%,56.0% 99.6%,52.0% 99.3%,48.0% 99.5%,44.0% 99.7%,40.0% 99.5%,36.0% 99.9%,32.0% 99.0%,28.0% 99.6%,24.0% 99.3%,20.0% 99.3%,16.0% 99.0%,12.0% 99.7%,8.0% 99.4%,4.0% 99.9%,0.0% 99.8%,0.0% 96.0%,0.6% 92.0%,0.7% 88.0%,0.0% 84.0%,0.9% 80.0%,1.0% 76.0%,0.4% 72.0%,0.2% 68.0%,0.1% 64.0%,0.1% 60.0%,0.9% 56.0%,0.9% 52.0%,0.5% 48.0%,0.3% 44.0%,0.3% 40.0%,0.0% 36.0%,0.3% 32.0%,0.3% 28.0%,0.1% 24.0%,0.8% 20.0%,0.9% 16.0%,0.2% 12.0%,0.8% 8.0%,0.8% 4.0%)",
+    "x": 477.53612108388916,
+    "y": 988.7515513843205,
+    "score": -2.716250695711803,
+    "d": 291
+   },
+   {
+    "id": "i3",
+    "type": "quote",
+    "text": "But later I felt sad, alone and very tired",
+    "qfs": 44,
+    "w": 360,
+    "h": 195,
+    "rot": -2.4650725867599252,
+    "z": 30,
+    "x": 466.35022695269436,
+    "y": 304.2420183904096,
+    "d": 479
+   },
+   {
+    "id": "i4",
+    "type": "photo",
+    "cardId": "c0",
+    "frame": "polaroid",
+    "z": 10,
+    "w": 371,
+    "h": 329,
+    "rot": -6.151321171689779,
+    "x": 407.9924690099433,
+    "y": 604.7115610856563,
+    "torn": "polygon(0.0% 0.4%,5.0% 0.8%,10.0% 0.0%,15.0% 0.8%,20.0% 0.4%,25.0% 1.1%,30.0% 0.3%,35.0% 0.7%,40.0% 0.6%,45.0% 0.8%,50.0% 0.6%,55.0% 0.6%,60.0% 0.5%,65.0% 0.6%,70.0% 0.9%,75.0% 1.0%,80.0% 0.6%,85.0% 0.6%,90.0% 0.4%,95.0% 1.1%,100.0% 1.1%,99.9% 5.0%,99.0% 10.0%,98.9% 15.0%,99.2% 20.0%,99.8% 25.0%,99.2% 30.0%,99.6% 35.0%,99.8% 40.0%,99.9% 45.0%,99.8% 50.0%,99.0% 55.0%,99.0% 60.0%,99.9% 65.0%,99.8% 70.0%,99.1% 75.0%,99.9% 80.0%,98.8% 85.0%,99.6% 90.0%,99.6% 95.0%,99.2% 100.0%,95.0% 98.9%,90.0% 98.9%,85.0% 99.8%,80.0% 99.5%,75.0% 99.4%,70.0% 98.8%,65.0% 99.2%,60.0% 99.7%,55.0% 99.5%,50.0% 99.4%,45.0% 99.7%,40.0% 99.4%,35.0% 99.6%,30.0% 99.5%,25.0% 98.9%,20.0% 99.3%,15.0% 98.8%,10.0% 99.1%,5.0% 100.0%,0.0% 98.8%,0.9% 95.0%,1.2% 90.0%,0.3% 85.0%,1.2% 80.0%,1.1% 75.0%,0.7% 70.0%,1.2% 65.0%,1.0% 60.0%,0.5% 55.0%,0.2% 50.0%,0.8% 45.0%,1.1% 40.0%,0.9% 35.0%,0.2% 30.0%,0.3% 25.0%,0.4% 20.0%,0.8% 15.0%,0.2% 10.0%,0.8% 5.0%)",
+    "d": 242
+   },
+   {
+    "id": "i5",
+    "type": "photo",
+    "cardId": "c1",
+    "frame": "polaroid",
+    "z": 12,
+    "w": 267,
+    "h": 391,
+    "rot": -2.13356577930972,
+    "x": 723.1704641405679,
+    "y": 649.0811550600362,
+    "torn": "polygon(0.0% 0.5%,5.0% 0.3%,10.0% 0.7%,15.0% 0.3%,20.0% 0.5%,25.0% 1.1%,30.0% 0.3%,35.0% 0.0%,40.0% 1.2%,45.0% 0.8%,50.0% 1.1%,55.0% 0.8%,60.0% 0.3%,65.0% 0.0%,70.0% 1.2%,75.0% 0.4%,80.0% 0.6%,85.0% 0.5%,90.0% 0.7%,95.0% 1.1%,100.0% 1.1%,99.1% 5.0%,99.7% 10.0%,98.8% 15.0%,98.9% 20.0%,99.6% 25.0%,99.5% 30.0%,98.8% 35.0%,99.7% 40.0%,99.0% 45.0%,99.2% 50.0%,98.8% 55.0%,99.5% 60.0%,99.6% 65.0%,99.9% 70.0%,99.0% 75.0%,99.7% 80.0%,98.8% 85.0%,99.9% 90.0%,99.0% 95.0%,98.7% 100.0%,95.0% 99.9%,90.0% 99.3%,85.0% 99.5%,80.0% 99.6%,75.0% 99.9%,70.0% 99.6%,65.0% 98.9%,60.0% 99.0%,55.0% 99.1%,50.0% 99.6%,45.0% 99.5%,40.0% 99.5%,35.0% 99.0%,30.0% 98.7%,25.0% 98.9%,20.0% 99.0%,15.0% 99.4%,10.0% 99.0%,5.0% 99.1%,0.0% 99.2%,0.2% 95.0%,0.2% 90.0%,0.8% 85.0%,0.2% 80.0%,1.2% 75.0%,0.8% 70.0%,1.1% 65.0%,0.5% 60.0%,0.1% 55.0%,0.2% 50.0%,0.2% 45.0%,0.2% 40.0%,0.3% 35.0%,0.2% 30.0%,0.6% 25.0%,0.3% 20.0%,1.0% 15.0%,0.7% 10.0%,0.3% 5.0%)",
+    "d": 260
+   },
+   {
+    "id": "i6",
+    "type": "photo",
+    "cardId": "c2",
+    "frame": "instax",
+    "z": 14,
+    "w": 231,
+    "h": 224,
+    "rot": 6.011700119730086,
+    "x": 220.24267357334497,
+    "y": 855.5127629298157,
+    "torn": "polygon(0.0% 0.3%,5.0% 0.6%,10.0% 1.0%,15.0% 1.1%,20.0% 1.0%,25.0% 0.6%,30.0% 0.2%,35.0% 1.1%,40.0% 0.8%,45.0% 1.3%,50.0% 0.3%,55.0% 0.1%,60.0% 1.0%,65.0% 0.2%,70.0% 0.7%,75.0% 0.6%,80.0% 1.0%,85.0% 1.0%,90.0% 1.1%,95.0% 1.0%,100.0% 0.4%,99.2% 5.0%,99.4% 10.0%,99.1% 15.0%,99.0% 20.0%,99.9% 25.0%,99.1% 30.0%,98.8% 35.0%,99.2% 40.0%,99.7% 45.0%,99.4% 50.0%,98.8% 55.0%,98.8% 60.0%,99.9% 65.0%,99.7% 70.0%,99.8% 75.0%,99.9% 80.0%,98.9% 85.0%,98.8% 90.0%,99.8% 95.0%,99.5% 100.0%,95.0% 99.8%,90.0% 99.2%,85.0% 99.0%,80.0% 99.9%,75.0% 99.3%,70.0% 99.6%,65.0% 99.7%,60.0% 99.2%,55.0% 99.1%,50.0% 99.5%,45.0% 99.9%,40.0% 99.4%,35.0% 99.5%,30.0% 99.8%,25.0% 99.6%,20.0% 98.7%,15.0% 99.5%,10.0% 99.9%,5.0% 98.7%,0.0% 98.9%,0.9% 95.0%,0.9% 90.0%,0.4% 85.0%,0.3% 80.0%,1.1% 75.0%,0.2% 70.0%,1.0% 65.0%,0.4% 60.0%,0.1% 55.0%,0.2% 50.0%,0.1% 45.0%,0.9% 40.0%,0.9% 35.0%,1.1% 30.0%,0.9% 25.0%,0.5% 20.0%,0.5% 15.0%,0.2% 10.0%,0.3% 5.0%)",
+    "d": 170
+   },
+   {
+    "id": "i7",
+    "type": "pattern",
+    "art": "red-gingham-vertical-strip",
+    "x": 835.4,
+    "y": 488.25154833029956,
+    "w": 190,
+    "h": 337,
+    "rot": -1.939715508138761,
+    "z": 1,
+    "d": 18
+   },
+   {
+    "id": "i8",
+    "type": "pattern",
+    "art": "red-gingham-diagonal-tear",
+    "x": 262.21195516642183,
+    "y": 1082.12,
+    "w": 207,
+    "h": 421,
+    "rot": 94.52806276641786,
+    "z": 1,
+    "d": 36
+   },
+   {
+    "id": "i9",
+    "type": "paper",
+    "art": "dotted-notebook",
+    "x": 317.26267357334496,
+    "y": 810.7127629298158,
+    "w": 184,
+    "h": 240,
+    "rot": -11.904986024834216,
+    "z": 6,
+    "d": 139
+   },
+   {
+    "id": "i10",
+    "type": "paper",
+    "art": "lined-paper",
+    "x": 466.35022695269436,
+    "y": 304.2420183904096,
+    "w": 389,
+    "h": 250,
+    "rot": 1.479043552055955,
+    "z": 8,
+    "d": 157
+   },
+   {
+    "id": "i11",
+    "type": "leaf",
+    "art": "clover",
+    "x": 170.01254144579175,
+    "y": 425.1148612552804,
+    "w": 191,
+    "h": 254,
+    "rot": -88.49483062513173,
+    "z": 2,
+    "d": 175
+   },
+   {
+    "id": "i12",
+    "type": "tape",
+    "kind": "blue",
+    "x": 258.21744229664574,
+    "y": 461.43572581316175,
+    "w": 128,
+    "h": 38,
+    "rot": 31.84867882831022,
+    "z": 11,
+    "d": 510
+   },
+   {
+    "id": "i13",
+    "type": "tape",
+    "kind": "blue",
+    "x": 523.7994620446414,
+    "y": 432.812567591624,
+    "w": 128,
+    "h": 38,
+    "rot": -44.15132117168978,
+    "z": 11,
+    "d": 528
+   },
+   {
+    "id": "i14",
+    "type": "tape",
+    "kind": "blue",
+    "x": 716.1155416746013,
+    "y": 459.7125249519869,
+    "w": 128,
+    "h": 38,
+    "rot": -9.131275945808738,
+    "z": 13,
+    "d": 546
+   },
+   {
+    "id": "i15",
+    "type": "tape",
+    "kind": "blue",
+    "x": 231.34421766550918,
+    "y": 750.0957068204283,
+    "w": 128,
+    "h": 38,
+    "rot": -1.6759038065560157,
+    "z": 15,
+    "d": 564
+   },
+   {
+    "id": "i16",
+    "type": "tape",
+    "kind": "blue",
+    "x": 390.1671260694779,
+    "y": 859.8828675477304,
+    "w": 132,
+    "h": 38,
+    "rot": 5.3200134839862585,
+    "z": 15,
+    "d": 582
+   },
+   {
+    "id": "i17",
+    "type": "sticker",
+    "art": "red-tab-clip",
+    "x": 52,
+    "y": 593.9478745358065,
+    "w": 110,
+    "h": 160,
+    "rot": 93.30160803114995,
+    "z": 48,
+    "d": 770
+   },
+   {
+    "id": "i18",
+    "type": "sticker",
+    "art": "red-pin",
+    "x": 317.37755133100404,
+    "y": 952.1133160137435,
+    "w": 149,
+    "h": 112,
+    "rot": 26.45300124073401,
+    "z": 47,
+    "d": 680
+   },
+   {
+    "id": "i19",
+    "type": "stamp",
+    "art": "pink-libra",
+    "x": 220.81356593006836,
+    "y": 475.67588573955703,
+    "w": 124,
+    "h": 122,
+    "rot": 16.19890631409362,
+    "z": 44,
+    "d": 613
+   },
+   {
+    "id": "i20",
+    "type": "stamp",
+    "art": "green-clover",
+    "x": 846,
+    "y": 822.795535202079,
+    "w": 133,
+    "h": 139,
+    "rot": -23.53266915353015,
+    "z": 44,
+    "d": 631
+   },
+   {
+    "id": "i21",
+    "type": "flower",
+    "art": "pink-blossom",
+    "x": 135.46779581568595,
+    "y": 750.6322098458879,
+    "w": 153,
+    "h": 155,
+    "rot": -11.796955899335444,
+    "z": 43,
+    "d": 649
+   },
+   {
+    "id": "i22",
+    "type": "flower",
+    "art": "peach-daisy",
+    "x": 642.9527574368369,
+    "y": 1105.866634121091,
+    "w": 136,
+    "h": 121,
+    "rot": 8.402295781299472,
+    "z": 43,
+    "d": 667
+   },
+   {
+    "id": "i23",
+    "type": "cat",
+    "art": "sunglasses-cat",
+    "w": 230,
+    "h": 206,
+    "rot": -8.809602271066979,
+    "x": 752.3314704759978,
+    "y": 146.94497908093035,
+    "z": 46,
+    "d": 770
+   },
+   {
+    "id": "i24",
+    "type": "scrap",
+    "text": "✦ friends",
+    "mono": false,
+    "w": 175,
+    "h": 44,
+    "rot": -3.6461540646851063,
+    "x": 196.86974874371663,
+    "y": 395.3085545282811,
+    "z": 50,
+    "d": 765
+   }
+  ]
+ },
+ {
+  "name": "a long entry",
+  "input": {
+   "story": "November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all November was quite depressing initially. But just as Diwali started, things started getting be",
+   "start": "2026-10-28",
+   "end": "2026-11-02",
+   "cardCount": 4
+  },
+  "args": {
+   "direction": {
+    "seed": 2104081717,
+    "mood": {
+     "arc": "heavy-warm",
+     "summary": "a hard stretch that turned golden",
+     "chips": [
+      "heavy",
+      "warm"
+     ],
+     "neg": 7,
+     "pos": 14
+    },
+    "palette": {
+     "ink": "#2a2118",
+     "accent": "#bd7a14",
+     "tape": "sage",
+     "paperKind": "grid",
+     "noteKind": "kraft",
+     "filter": "sepia(.10) saturate(.94) contrast(.97)"
+    },
+    "title": "Oct – Nov",
+    "dateChip": "28 Oct – 2 Nov 2026",
+    "dateShort": "Oct – Nov 2026",
+    "quote": "I will cherish it all November was quite depressing initially",
+    "scraps": [
+     "diwali",
+     "lady bug",
+     "moving out"
+    ],
+    "stickers": {
+     "stamps": [
+      {
+       "id": "pink-libra",
+       "phase": "early"
+      },
+      {
+       "id": "gold-flowers",
+       "phase": "late"
+      }
+     ],
+     "leaves": [
+      {
+       "id": "banana",
+       "phase": "early"
+      },
+      {
+       "id": "red",
+       "phase": "late"
+      }
+     ],
+     "flowers": [
+      {
+       "id": "peach-hibiscus",
+       "phase": "early"
+      },
+      {
+       "id": "peach-daisy",
+       "phase": "late"
+      },
+      {
+       "id": "hollyhock",
+       "phase": "late"
+      }
+     ],
+     "patterns": [
+      {
+       "id": "red-tile",
+       "m": "w",
+       "s": 15.91926406712737
+      },
+      {
+       "id": "red-gingham-vertical-strip",
+       "m": "w",
+       "s": 14.300922879856081
+      },
+      {
+       "id": "red-gingham-diagonal-tear",
+       "m": "w",
+       "s": 13.990314016770574
+      },
+      {
+       "id": "handwritten-script-corner",
+       "m": "h",
+       "s": 11.895619235164487
+      },
+      {
+       "id": "building-sketch",
+       "m": "h",
+       "s": 11.436176851298661
+      },
+      {
+       "id": "tulip-checkerboard",
+       "m": "w",
+       "s": 11.348677017190495
+      },
+      {
+       "id": "handwriting-script",
+       "m": "h",
+       "s": 11.20359109984711
+      },
+      {
+       "id": "pink-ditsy-floral",
+       "m": "w",
+       "s": 9.92526616153773
+      }
+     ],
+     "patternCount": 2,
+     "cat": "headphones-cat",
+     "papers": {
+      "under": "torn-strip",
+      "quote": "rounded-torn-paper"
+     },
+     "clip": "red-binder",
+     "pin": "red-pin",
+     "extra": "pink-paperclip-tall"
+    },
+    "themes": [
+     "festival",
+     "friends",
+     "food",
+     "move",
+     "insect",
+     "celebrate",
+     "work",
+     "home"
+    ],
+    "density": "rich"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "kind": "photo",
+     "imageId": "m0",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c1",
+     "kind": "photo",
+     "imageId": "m1",
+     "w": 750,
+     "h": 1000
+    },
+    {
+     "id": "c2",
+     "kind": "photo",
+     "imageId": "m2",
+     "w": 1000,
+     "h": 750
+    },
+    {
+     "id": "c3",
+     "kind": "photo",
+     "imageId": "m3",
+     "w": 750,
+     "h": 1000
+    }
+   ],
+   "story": "November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all November was quite depressing initially. But just as Diwali started, things started getting be"
+  },
+  "direction": {
+   "seed": 2104081717,
+   "mood": {
+    "arc": "heavy-warm",
+    "summary": "a hard stretch that turned golden",
+    "chips": [
+     "heavy",
+     "warm"
+    ],
+    "neg": 7,
+    "pos": 14
+   },
+   "palette": {
+    "ink": "#2a2118",
+    "accent": "#bd7a14",
+    "tape": "sage",
+    "paperKind": "grid",
+    "noteKind": "kraft",
+    "filter": "sepia(.10) saturate(.94) contrast(.97)"
+   },
+   "title": "Oct – Nov",
+   "dateChip": "28 Oct – 2 Nov 2026",
+   "dateShort": "Oct – Nov 2026",
+   "quote": "I will cherish it all November was quite depressing initially",
+   "scraps": [
+    "diwali",
+    "lady bug",
+    "moving out"
+   ],
+   "stickers": {
+    "stamps": [
+     {
+      "id": "pink-libra",
+      "phase": "early"
+     },
+     {
+      "id": "gold-flowers",
+      "phase": "late"
+     }
+    ],
+    "leaves": [
+     {
+      "id": "banana",
+      "phase": "early"
+     },
+     {
+      "id": "red",
+      "phase": "late"
+     }
+    ],
+    "flowers": [
+     {
+      "id": "peach-hibiscus",
+      "phase": "early"
+     },
+     {
+      "id": "peach-daisy",
+      "phase": "late"
+     },
+     {
+      "id": "hollyhock",
+      "phase": "late"
+     }
+    ],
+    "patterns": [
+     {
+      "id": "red-tile",
+      "m": "w",
+      "s": 15.91926406712737
+     },
+     {
+      "id": "red-gingham-vertical-strip",
+      "m": "w",
+      "s": 14.300922879856081
+     },
+     {
+      "id": "red-gingham-diagonal-tear",
+      "m": "w",
+      "s": 13.990314016770574
+     },
+     {
+      "id": "handwritten-script-corner",
+      "m": "h",
+      "s": 11.895619235164487
+     },
+     {
+      "id": "building-sketch",
+      "m": "h",
+      "s": 11.436176851298661
+     },
+     {
+      "id": "tulip-checkerboard",
+      "m": "w",
+      "s": 11.348677017190495
+     },
+     {
+      "id": "handwriting-script",
+      "m": "h",
+      "s": 11.20359109984711
+     },
+     {
+      "id": "pink-ditsy-floral",
+      "m": "w",
+      "s": 9.92526616153773
+     }
+    ],
+    "patternCount": 2,
+    "cat": "headphones-cat",
+    "papers": {
+     "under": "torn-strip",
+     "quote": "rounded-torn-paper"
+    },
+    "clip": "red-binder",
+    "pin": "red-pin",
+    "extra": "pink-paperclip-tall"
+   },
+   "themes": [
+    "festival",
+    "friends",
+    "food",
+    "move",
+    "insect",
+    "celebrate",
+    "work",
+    "home"
+   ],
+   "density": "rich"
+  },
+  "items": [
+   {
+    "id": "i1",
+    "type": "title",
+    "text": "Oct – Nov",
+    "chip": "28 Oct – 2 Nov 2026",
+    "tfs": 96,
+    "w": 456,
+    "h": 152,
+    "rot": -1,
+    "z": 32,
+    "x": 569.1132508666441,
+    "y": 118.88716986626386,
+    "score": -3.904831684068183,
+    "d": 358
+   },
+   {
+    "id": "i2",
+    "type": "note",
+    "text": "November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all November was quite depressing initially. But just as Diwali started, things started getting better, my friends came over to cook food and celebrate me moving out. I also celebrated Diwali with my family at home. I found a very cute and unique lady bug at office. I feel like not all was bad this month, there were some really dark days while there were some really beautiful days. I will cherish it all November was quite depressing initially. But just as Diwali started, things started getting be",
+    "sig": "— Oct – Nov 2026",
+    "kind": "kraft",
+    "fs": 23,
+    "lh": 27,
+    "w": 520,
+    "h": 268,
+    "rot": -1.0346892183646559,
+    "z": 14,
+    "torn": "polygon(0.0% 1.0%,4.0% 0.5%,8.0% 0.1%,12.0% 0.9%,16.0% 0.5%,20.0% 0.3%,24.0% 0.9%,28.0% 0.7%,32.0% 0.8%,36.0% 0.1%,40.0% 0.7%,44.0% 1.0%,48.0% 0.6%,52.0% 0.8%,56.0% 0.8%,60.0% 0.0%,64.0% 0.8%,68.0% 0.1%,72.0% 0.1%,76.0% 1.2%,80.0% 0.9%,84.0% 0.4%,88.0% 0.6%,92.0% 0.9%,96.0% 0.7%,100.0% 1.0%,98.8% 4.0%,99.1% 8.0%,99.6% 12.0%,99.8% 16.0%,100.0% 20.0%,99.3% 24.0%,99.3% 28.0%,99.9% 32.0%,99.0% 36.0%,98.9% 40.0%,99.8% 44.0%,99.6% 48.0%,99.2% 52.0%,99.2% 56.0%,98.9% 60.0%,99.4% 64.0%,99.5% 68.0%,99.2% 72.0%,99.6% 76.0%,98.8% 80.0%,99.1% 84.0%,99.2% 88.0%,99.2% 92.0%,99.4% 96.0%,99.9% 100.0%,96.0% 99.1%,92.0% 98.9%,88.0% 98.8%,84.0% 99.1%,80.0% 99.4%,76.0% 99.8%,72.0% 99.5%,68.0% 99.0%,64.0% 98.9%,60.0% 99.0%,56.0% 98.9%,52.0% 99.2%,48.0% 99.9%,44.0% 100.0%,40.0% 98.9%,36.0% 99.0%,32.0% 100.0%,28.0% 99.3%,24.0% 99.8%,20.0% 99.2%,16.0% 98.9%,12.0% 99.1%,8.0% 99.4%,4.0% 99.1%,0.0% 99.7%,0.2% 96.0%,0.5% 92.0%,0.8% 88.0%,0.6% 84.0%,0.5% 80.0%,0.2% 76.0%,1.1% 72.0%,1.2% 68.0%,1.1% 64.0%,1.0% 60.0%,0.4% 56.0%,1.1% 52.0%,0.0% 48.0%,0.9% 44.0%,1.0% 40.0%,0.5% 36.0%,1.1% 32.0%,0.9% 28.0%,1.2% 24.0%,0.6% 20.0%,0.5% 16.0%,0.1% 12.0%,0.1% 8.0%,0.7% 4.0%)",
+    "x": 599.3017865719273,
+    "y": 928.4434376194608,
+    "score": -17.953132485491356,
+    "d": 291
+   },
+   {
+    "id": "i3",
+    "type": "quote",
+    "text": "I will cherish it all November was quite depressing initially",
+    "qfs": 36,
+    "w": 360,
+    "h": 169,
+    "rot": -1.1943324815481902,
+    "z": 30,
+    "x": 316.1304660604894,
+    "y": 291.50754945747553,
+    "d": 479
+   },
+   {
+    "id": "i4",
+    "type": "photo",
+    "cardId": "c0",
+    "frame": "kraft",
+    "z": 10,
+    "w": 276,
+    "h": 258,
+    "rot": -6.003824490634725,
+    "x": 657.2195324300416,
+    "y": 367.08182955035943,
+    "torn": "polygon(0.0% 1.0%,5.0% 0.1%,10.0% 0.2%,15.0% 0.3%,20.0% 0.6%,25.0% 1.2%,30.0% 0.6%,35.0% 1.2%,40.0% 0.1%,45.0% 1.3%,50.0% 0.2%,55.0% 0.1%,60.0% 1.3%,65.0% 1.1%,70.0% 0.9%,75.0% 0.7%,80.0% 1.3%,85.0% 0.3%,90.0% 1.3%,95.0% 0.8%,100.0% 0.6%,99.9% 5.0%,100.0% 10.0%,99.8% 15.0%,99.4% 20.0%,99.0% 25.0%,98.9% 30.0%,98.9% 35.0%,99.9% 40.0%,98.9% 45.0%,99.1% 50.0%,99.2% 55.0%,99.1% 60.0%,99.3% 65.0%,99.8% 70.0%,99.6% 75.0%,99.8% 80.0%,98.8% 85.0%,99.0% 90.0%,99.8% 95.0%,100.0% 100.0%,95.0% 99.0%,90.0% 100.0%,85.0% 99.3%,80.0% 99.2%,75.0% 99.9%,70.0% 98.8%,65.0% 98.8%,60.0% 99.6%,55.0% 99.7%,50.0% 99.7%,45.0% 99.0%,40.0% 99.8%,35.0% 98.8%,30.0% 99.2%,25.0% 99.2%,20.0% 99.9%,15.0% 99.4%,10.0% 99.5%,5.0% 99.7%,0.0% 99.6%,0.7% 95.0%,0.5% 90.0%,0.0% 85.0%,0.7% 80.0%,0.1% 75.0%,1.3% 70.0%,0.9% 65.0%,1.0% 60.0%,0.2% 55.0%,0.3% 50.0%,0.4% 45.0%,0.5% 40.0%,0.7% 35.0%,1.1% 30.0%,0.1% 25.0%,0.2% 20.0%,0.4% 15.0%,0.2% 10.0%,0.2% 5.0%)",
+    "d": 242
+   },
+   {
+    "id": "i5",
+    "type": "photo",
+    "cardId": "c1",
+    "frame": "kraft",
+    "z": 12,
+    "w": 280,
+    "h": 408,
+    "rot": 2.0280844726599754,
+    "x": 345.8864139742218,
+    "y": 590.8891849312931,
+    "torn": "polygon(0.0% 0.9%,5.0% 0.6%,10.0% 1.1%,15.0% 0.9%,20.0% 1.0%,25.0% 0.5%,30.0% 1.2%,35.0% 1.2%,40.0% 0.9%,45.0% 0.4%,50.0% 1.1%,55.0% 0.9%,60.0% 0.1%,65.0% 1.0%,70.0% 0.2%,75.0% 0.7%,80.0% 1.1%,85.0% 1.1%,90.0% 0.7%,95.0% 0.6%,100.0% 0.1%,99.2% 5.0%,99.7% 10.0%,99.1% 15.0%,98.9% 20.0%,98.9% 25.0%,99.3% 30.0%,99.3% 35.0%,98.7% 40.0%,99.2% 45.0%,99.7% 50.0%,99.5% 55.0%,98.8% 60.0%,98.7% 65.0%,99.2% 70.0%,99.8% 75.0%,98.8% 80.0%,99.6% 85.0%,100.0% 90.0%,98.8% 95.0%,99.4% 100.0%,95.0% 99.6%,90.0% 99.5%,85.0% 99.7%,80.0% 99.1%,75.0% 98.8%,70.0% 99.6%,65.0% 99.8%,60.0% 99.4%,55.0% 99.5%,50.0% 99.0%,45.0% 99.9%,40.0% 99.6%,35.0% 98.8%,30.0% 99.6%,25.0% 99.0%,20.0% 99.0%,15.0% 99.5%,10.0% 99.5%,5.0% 99.0%,0.0% 98.9%,0.2% 95.0%,0.8% 90.0%,0.4% 85.0%,1.1% 80.0%,0.1% 75.0%,1.0% 70.0%,0.8% 65.0%,0.6% 60.0%,0.8% 55.0%,1.2% 50.0%,1.2% 45.0%,1.0% 40.0%,1.0% 35.0%,0.1% 30.0%,0.9% 25.0%,0.5% 20.0%,0.9% 15.0%,1.1% 10.0%,0.6% 5.0%)",
+    "d": 260
+   },
+   {
+    "id": "i6",
+    "type": "photo",
+    "cardId": "c2",
+    "frame": "instax",
+    "z": 14,
+    "w": 287,
+    "h": 266,
+    "rot": -3.3116976325400174,
+    "x": 662.0510121635161,
+    "y": 623.5908336248249,
+    "torn": "polygon(0.0% 1.2%,5.0% 0.9%,10.0% 0.6%,15.0% 0.3%,20.0% 1.2%,25.0% 0.6%,30.0% 1.3%,35.0% 1.2%,40.0% 0.4%,45.0% 1.1%,50.0% 0.4%,55.0% 0.8%,60.0% 0.2%,65.0% 1.1%,70.0% 1.0%,75.0% 0.4%,80.0% 0.2%,85.0% 1.2%,90.0% 0.7%,95.0% 0.5%,100.0% 0.6%,98.7% 5.0%,99.2% 10.0%,99.2% 15.0%,99.2% 20.0%,99.4% 25.0%,99.0% 30.0%,98.8% 35.0%,99.9% 40.0%,99.1% 45.0%,98.9% 50.0%,99.4% 55.0%,99.8% 60.0%,99.6% 65.0%,99.4% 70.0%,99.9% 75.0%,99.6% 80.0%,99.2% 85.0%,99.8% 90.0%,99.9% 95.0%,99.3% 100.0%,95.0% 99.7%,90.0% 99.6%,85.0% 99.8%,80.0% 99.5%,75.0% 99.1%,70.0% 98.9%,65.0% 99.6%,60.0% 99.4%,55.0% 98.8%,50.0% 99.3%,45.0% 99.6%,40.0% 99.3%,35.0% 99.4%,30.0% 99.1%,25.0% 99.9%,20.0% 99.9%,15.0% 99.8%,10.0% 99.1%,5.0% 98.8%,0.0% 99.4%,0.9% 95.0%,1.2% 90.0%,0.9% 85.0%,1.2% 80.0%,1.1% 75.0%,0.6% 70.0%,0.5% 65.0%,1.2% 60.0%,0.7% 55.0%,0.2% 50.0%,1.3% 45.0%,0.4% 40.0%,0.3% 35.0%,1.3% 30.0%,1.2% 25.0%,0.0% 20.0%,0.9% 15.0%,0.3% 10.0%,0.7% 5.0%)",
+    "d": 170
+   },
+   {
+    "id": "i7",
+    "type": "photo",
+    "cardId": "c3",
+    "frame": "instax",
+    "z": 16,
+    "w": 217,
+    "h": 324,
+    "rot": -3.472411432862282,
+    "x": 218.38982768556104,
+    "y": 988.6584721973352,
+    "torn": "polygon(0.0% 0.2%,5.0% 0.4%,10.0% 1.1%,15.0% 1.1%,20.0% 0.6%,25.0% 0.1%,30.0% 0.9%,35.0% 0.9%,40.0% 1.1%,45.0% 0.8%,50.0% 0.1%,55.0% 0.4%,60.0% 0.4%,65.0% 0.9%,70.0% 1.3%,75.0% 0.9%,80.0% 1.2%,85.0% 1.3%,90.0% 1.0%,95.0% 0.8%,100.0% 0.7%,99.1% 5.0%,99.1% 10.0%,98.8% 15.0%,98.8% 20.0%,99.8% 25.0%,99.7% 30.0%,99.1% 35.0%,98.8% 40.0%,99.1% 45.0%,99.4% 50.0%,99.2% 55.0%,99.4% 60.0%,99.6% 65.0%,99.6% 70.0%,100.0% 75.0%,98.8% 80.0%,99.5% 85.0%,99.0% 90.0%,99.7% 95.0%,99.5% 100.0%,95.0% 99.4%,90.0% 99.3%,85.0% 98.9%,80.0% 99.0%,75.0% 99.3%,70.0% 99.5%,65.0% 99.1%,60.0% 99.4%,55.0% 99.7%,50.0% 100.0%,45.0% 98.8%,40.0% 99.2%,35.0% 100.0%,30.0% 99.8%,25.0% 99.2%,20.0% 99.3%,15.0% 99.0%,10.0% 98.9%,5.0% 98.9%,0.0% 99.0%,0.1% 95.0%,1.2% 90.0%,1.2% 85.0%,0.5% 80.0%,1.1% 75.0%,1.2% 70.0%,0.7% 65.0%,1.2% 60.0%,0.6% 55.0%,0.1% 50.0%,0.5% 45.0%,0.8% 40.0%,0.9% 35.0%,0.6% 30.0%,1.3% 25.0%,0.0% 20.0%,1.2% 15.0%,0.9% 10.0%,0.4% 5.0%)",
+    "d": 188
+   },
+   {
+    "id": "i8",
+    "type": "pattern",
+    "art": "red-tile",
+    "x": 710.5,
+    "y": 1019,
+    "w": 391,
+    "h": 374,
+    "rot": 0,
+    "z": 1,
+    "d": 36
+   },
+   {
+    "id": "i9",
+    "type": "pattern",
+    "art": "building-sketch",
+    "x": 194.5,
+    "y": 995,
+    "w": 401,
+    "h": 422,
+    "rot": 0,
+    "z": 1,
+    "d": 54
+   },
+   {
+    "id": "i10",
+    "type": "paper",
+    "art": "torn-strip",
+    "x": 541.2995324300416,
+    "y": 418.68182955035945,
+    "w": 315,
+    "h": 96,
+    "rot": 5.945136930793524,
+    "z": 6,
+    "d": 157
+   },
+   {
+    "id": "i11",
+    "type": "paper",
+    "art": "rounded-torn-paper",
+    "x": 316.1304660604894,
+    "y": 291.50754945747553,
+    "w": 389,
+    "h": 216,
+    "rot": 0.7165994889289141,
+    "z": 8,
+    "d": 175
+   },
+   {
+    "id": "i12",
+    "type": "leaf",
+    "art": "banana",
+    "x": 171.47423935248213,
+    "y": 340.3431599028689,
+    "w": 238,
+    "h": 295,
+    "rot": 145.39082257077098,
+    "z": 2,
+    "d": 85
+   },
+   {
+    "id": "i13",
+    "type": "leaf",
+    "art": "red",
+    "x": 840,
+    "y": 1101.7086145694914,
+    "w": 168,
+    "h": 311,
+    "rot": 342.09422507323325,
+    "z": 2,
+    "d": 103
+   },
+   {
+    "id": "i14",
+    "type": "tape",
+    "kind": "sage",
+    "x": 644.3543662090303,
+    "y": 244.7564948967982,
+    "w": 128,
+    "h": 38,
+    "rot": -14.886959198443218,
+    "z": 11,
+    "d": 546
+   },
+   {
+    "id": "i15",
+    "type": "tape",
+    "kind": "sage",
+    "x": 352.8935073355517,
+    "y": 393.01321205276093,
+    "w": 128,
+    "h": 38,
+    "rot": 6.909720445889979,
+    "z": 13,
+    "d": 564
+   },
+   {
+    "id": "i16",
+    "type": "tape",
+    "kind": "sage",
+    "x": 654.7144952868468,
+    "y": 496.80291811187726,
+    "w": 128,
+    "h": 38,
+    "rot": -10.065024482551962,
+    "z": 15,
+    "d": 582
+   },
+   {
+    "id": "i17",
+    "type": "tape",
+    "kind": "sage",
+    "x": 130.96465448631199,
+    "y": 837.6764418391456,
+    "w": 128,
+    "h": 38,
+    "rot": 34.52758856713772,
+    "z": 17,
+    "d": 600
+   },
+   {
+    "id": "i18",
+    "type": "tape",
+    "kind": "sage",
+    "x": 286.9178100758408,
+    "y": 828.2133101340387,
+    "w": 128,
+    "h": 38,
+    "rot": -41.47241143286228,
+    "z": 17,
+    "d": 510
+   },
+   {
+    "id": "i19",
+    "type": "tape",
+    "kind": "sage",
+    "x": 726.289160615403,
+    "y": 796.1287565996236,
+    "w": 132,
+    "h": 38,
+    "rot": 6.296961298584938,
+    "z": 15,
+    "d": 528
+   },
+   {
+    "id": "i20",
+    "type": "sticker",
+    "art": "red-binder",
+    "x": 52,
+    "y": 491.980470623821,
+    "w": 199,
+    "h": 160,
+    "rot": 96.17175643867813,
+    "z": 48,
+    "d": 716
+   },
+   {
+    "id": "i21",
+    "type": "sticker",
+    "art": "red-pin",
+    "x": 472.57928850595516,
+    "y": 750.7559098697111,
+    "w": 149,
+    "h": 112,
+    "rot": -17.421498326584697,
+    "z": 47,
+    "d": 734
+   },
+   {
+    "id": "i22",
+    "type": "sticker",
+    "art": "pink-paperclip-tall",
+    "x": 346.92444196469484,
+    "y": 801.1603024592337,
+    "w": 52,
+    "h": 140,
+    "rot": -16.253586692735553,
+    "z": 45,
+    "d": 752
+   },
+   {
+    "id": "i23",
+    "type": "stamp",
+    "art": "pink-libra",
+    "x": 216.75468039489954,
+    "y": 772.0468889546992,
+    "w": 150,
+    "h": 148,
+    "rot": -13.817725553642958,
+    "z": 44,
+    "d": 685
+   },
+   {
+    "id": "i24",
+    "type": "stamp",
+    "art": "gold-flowers",
+    "x": 798.8344973659177,
+    "y": 733.5590430060846,
+    "w": 118,
+    "h": 121,
+    "rot": -22.593973976094276,
+    "z": 44,
+    "d": 595
+   },
+   {
+    "id": "i25",
+    "type": "flower",
+    "art": "peach-hibiscus",
+    "x": 141.1410281128744,
+    "y": 1137.6126721173798,
+    "w": 177,
+    "h": 161,
+    "rot": -12.976879620924592,
+    "z": 43,
+    "d": 613
+   },
+   {
+    "id": "i26",
+    "type": "flower",
+    "art": "peach-daisy",
+    "x": 843.4391311791599,
+    "y": 1041.526572779688,
+    "w": 152,
+    "h": 135,
+    "rot": 22.2248198967427,
+    "z": 43,
+    "d": 631
+   },
+   {
+    "id": "i27",
+    "type": "flower",
+    "art": "hollyhock",
+    "x": 319.46263309833114,
+    "y": 1127.1094336380645,
+    "w": 142,
+    "h": 139,
+    "rot": -41.10466249054298,
+    "z": 43,
+    "d": 649
+   },
+   {
+    "id": "i28",
+    "type": "cat",
+    "art": "headphones-cat",
+    "w": 124,
+    "h": 145,
+    "rot": -3.443855076096952,
+    "x": 196.84693944780156,
+    "y": 99.30906710587442,
+    "z": 46,
+    "d": 752
+   },
+   {
+    "id": "i29",
+    "type": "scrap",
+    "text": "✦ diwali",
+    "mono": false,
+    "w": 160,
+    "h": 44,
+    "rot": -7.340849242173135,
+    "x": 213.72279187664992,
+    "y": 790.8901220159551,
+    "z": 50,
+    "d": 855
+   },
+   {
+    "id": "i30",
+    "type": "scrap",
+    "text": "✦ lady bug",
+    "mono": false,
+    "w": 190,
+    "h": 44,
+    "rot": 3.4973964001983404,
+    "x": 757.4039349495433,
+    "y": 764.379595303908,
+    "z": 50,
+    "d": 765
+   },
+   {
+    "id": "i31",
+    "type": "scrap",
+    "text": "✦ moving out",
+    "mono": false,
+    "w": 220,
+    "h": 44,
+    "rot": 4.684878446627408,
+    "x": 208.92592740944258,
+    "y": 745.7029366209117,
+    "z": 50,
+    "d": 783
+   }
+  ]
+ }
+]
