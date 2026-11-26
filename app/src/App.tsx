@@ -5,6 +5,7 @@ import { generatePage, SaveFailed } from './features/create/generate';
 import { Generating, type Narration } from './features/create/Generating';
 import { WritingPad } from './features/create/WritingPad';
 import { measureNote, noteFontsReady } from './features/page/measureNote';
+import { PageView } from './features/page/PageView';
 import { Desk, type DeskMode } from './features/desk/Desk';
 import { FolderView } from './features/folder/FolderView';
 import { go, parseRoute, resolveRoute, useHash, type Route } from './route';
@@ -45,6 +46,8 @@ function ScrapDesk() {
   const folderId = route.view === 'folder' ? route.id : route.view === 'page' ? pages.find((p) => p.id === route.id)!.folderId : null;
   const lastFolder = useRef<string | null>(null);
   if (folderId) lastFolder.current = folderId;
+  const lastPage = useRef<string | null>(null);
+  if (route.view === 'page') lastPage.current = route.id;
 
   const [chosen, setMode] = useState<DeskMode>('folders');
   const [webgl, setWebgl] = useState(true);
@@ -63,6 +66,7 @@ function ScrapDesk() {
         selected={folders.findIndex((f) => f.id === lastFolder.current)} onOpen={open} onUnavailable={() => setWebgl(false)} />
       <Desk active={route.view === 'home'} mode={mode} webgl={webgl} onMode={setMode} onOpen={open} onAddNew={() => addNew(null)} />
       <FolderView active={route.view === 'folder'} folderId={lastFolder.current} onAddNew={addNew} />
+      <PageView active={route.view === 'page'} pageId={lastPage.current} />
       {pad && <WritingPad open initial={pad} folders={folders} onClose={closePad} onGenerate={generate} />}
       <Generating narration={narration} />
       {saveError && <div className="save-error" role="alert">{saveError}</div>}

@@ -1,5 +1,5 @@
 // A page: items on a 900 × 1200 sheet. Same structure and class names as the prototype, so its styles apply unchanged.
-import type { CSSProperties, ReactNode } from 'react';
+import { useLayoutEffect, useRef, type CSSProperties, type ReactNode } from 'react';
 import { art } from '../../engine/manifest';
 import type { ArtList, ArtType, Card, FrameId, Item, Page, PhotoItem } from '../../engine/types';
 import { useImageUrl } from '../../images/urls';
@@ -26,26 +26,29 @@ export interface SheetProps {
   selectedId?: string | null;
   freshCardId?: string;
   addedIds?: string[];
+  draggingId?: string | null;
+  /** given on an editable page: captions can then be typed into */
+  onCaption?(cardId: string, text: string): void;
 }
 
-export function Sheet({ page, imageUrl, enter, editing, selectedId, freshCardId, addedIds }: SheetProps) {
+export function Sheet({ page, imageUrl, enter, editing, selectedId, freshCardId, addedIds, draggingId, onCaption }: SheetProps) {
   const p = page.direction.palette;
   const cls = ['sheet', `paper-${p.paperKind}`, editing && 'editing', enter && 'enter'].filter(Boolean).join(' ');
   return (
     <div className={cls} style={{ '--ink': p.ink, '--accent': p.accent, '--photo-filter': p.filter } as Vars}>
       <div className="holes" />
       {page.items.map((it) => (
-        <Piece key={it.id} it={it} page={page} imageUrl={imageUrl}
-          extra={[it.id === selectedId && 'is-sel', addedIds?.includes(it.id) && 'pop']}
+        <Piece key={it.id} it={it} page={page} imageUrl={imageUrl} onCaption={onCaption}
+          extra={[it.id === selectedId && 'is-sel', it.id === draggingId && 'dragging', addedIds?.includes(it.id) && 'pop']}
           fresh={it.type === 'photo' && it.cardId === freshCardId} />
       ))}
     </div>
   );
 }
 
-interface PieceProps { it: Item; page: Page; imageUrl?: ImageUrl; extra: (string | false | undefined)[]; fresh: boolean }
+interface PieceProps { it: Item; page: Page; imageUrl?: ImageUrl; extra: (string | false | undefined)[]; fresh: boolean; onCaption?: SheetProps['onCaption'] }
 
-function Piece({ it, page, imageUrl, extra, fresh }: PieceProps) {
+function Piece({ it, page, imageUrl, extra, fresh, onCaption }: PieceProps) {
   const frame = (classes: (string | false)[], children: ReactNode, vars: Vars = {}) => (
     <div className={['it', it.type, ...classes, ...extra].filter(Boolean).join(' ')} data-id={it.id}
       style={{ left: it.x - it.w / 2, top: it.y - it.h / 2, width: it.w, height: it.h, transform: `rotate(${it.rot}deg)`, '--z': it.z, '--d': it.d || 0, ...vars } as Vars}>
@@ -66,7 +69,7 @@ function Piece({ it, page, imageUrl, extra, fresh }: PieceProps) {
         <>
           {album && <div className="rec" />}
           <Photo card={card} imageUrl={imageUrl} />
-          <div className="cap" data-ph="add a note">{cardCaption(card, page)}</div>
+          <Caption text={cardCaption(card, page)} onChange={onCaption && ((text) => onCaption(card.id, text))} />
         </>
       ), vars);
     }
@@ -104,4 +107,23 @@ function Photo({ card, imageUrl }: { card: Card; imageUrl?: ImageUrl }) {
   const src = imageUrl ? imageUrl(card.imageId) : stored;
   const alt = card.kind === 'album' && card.album ? `${card.album.title} — ${card.album.artist}` : 'Photo';
   return <div className="ph">{src && <img src={src} alt={alt} draggable={false} />}</div>;
+}
+
+// The text is written into the element by hand: React must not rewrite a field while someone is typing in it.
+function Caption({ text, onChange }: { text: string; onChange?(text: string): void }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const editable = !!onChange;
+  useLayoutEffect(() => {
+    const el = ref.current!;
+    if (editable && !el.hasAttribute('contenteditable')) {
+      el.setAttribute('contenteditable', 'plaintext-only');
+      if (el.contentEditable === 'inherit') el.setAttribute('contenteditable', 'true');     // older browsers
+    }
+    if (document.activeElement !== el && el.textContent !== text) el.textContent = text;
+  });
+  return (
+    <div ref={ref} className="cap" data-ph="add a note"
+      onInput={(e) => onChange?.(e.currentTarget.textContent ?? '')}
+      onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); e.currentTarget.blur(); } }} />
+  );
 }

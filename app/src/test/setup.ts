@@ -18,3 +18,11 @@ if (typeof window !== 'undefined') {
 afterEach(() => {
   if (typeof document !== 'undefined') { cleanup(); location.hash = ''; }
 });
+
+// jsdom has no PointerEvent: without one, tests lose the pointer position
+if (typeof window !== 'undefined' && !window.PointerEvent) {
+  window.PointerEvent = class extends MouseEvent {
+    pointerId: number; pointerType: string;
+    constructor(type: string, init: PointerEventInit = {}) { super(type, init); this.pointerId = init.pointerId ?? 0; this.pointerType = init.pointerType ?? ''; }
+  } as typeof PointerEvent;
+}
