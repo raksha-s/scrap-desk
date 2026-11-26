@@ -6,7 +6,7 @@ Purpose: judge the look and feel. Nothing here is the real app, and the "AI" is 
 ## Run it
 
 ```bash
-cd "/Users/rakshas/Junk Journal Project/prototype"
+cd prototype
 python3 serve.py 5190   # no-cache dev server, so edits show up on refresh
 ```
 

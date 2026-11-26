@@ -2,6 +2,8 @@
 
 A digital junk journal for desktop and mobile browsers. Pick a date, write a few lines, add up to six photos, and the app builds a scrapbook page you can edit and save as an image.
 
+Live at https://scrap-desk-gamma.vercel.app
+
 ## Run it
 
 Needs Node 20.19 or newer. In this folder:
@@ -43,4 +45,12 @@ Browsers open the camera only on `localhost` or HTTPS. Elsewhere, use **From fil
 
 ## Not built yet
 
-The AI art director (a rule-based one stands in), hosting, backup, and editing a page's date or story after it is made. Check the rights to the supplied art before publishing the app publicly.
+The AI art director (a rule-based one stands in), backup, and editing a page's date or story after it is made. The supplied art is not offered for reuse.
+
+## Deploying
+
+The site is hosted on Vercel. From this folder:
+
+```bash
+vercel deploy --prod
+```
