@@ -1,0 +1,4 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "echo 'Stopped: deploy Scrap Desk from the app folder (vercel deploy --prod --cwd app)' && exit 1"
+}

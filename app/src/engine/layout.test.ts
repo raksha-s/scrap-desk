@@ -73,6 +73,35 @@ describe('layout', () => {
     expect(overlaps).toEqual([]);
   }, 120_000);
 
+  // with no photos the note is the only thing decorations can lean on, so they all gather round the writing
+  it.each([
+    ['one line', 'Checking the live site.'],
+    ['a couple of sentences', SAMPLE.slice(0, 90)],
+    ['a paragraph', SAMPLE],
+    ['the longest story', `${SAMPLE} ${SAMPLE} ${SAMPLE}`.slice(0, 900)],
+  ])('leaves the writing uncovered on a page with no photos (%s)', async (_name, story) => {
+    const covered: string[] = []; const offSheet: string[] = []; const missing: string[] = [];
+    for (let day = 1; day <= 28; day++) {
+      const date = `2026-11-${String(day).padStart(2, '0')}`;
+      const direction = await ruleDirector.direct({ story, start: date, end: date, cardCount: 0 });
+      const { items } = layoutPage({ direction, cards: [], story }, { art, measureNote: estimate });
+      const note = items.find((i) => i.type === 'note') as NoteItem;
+      const n = bbox(note);
+      const writing = { x0: n.x0 + 30, x1: n.x1 - 30, y0: n.y0 + 30, y1: n.y1 - 30 };     // inside the note's padding
+      for (const i of items) {
+        if (i.z <= note.z || i.type === 'tape') continue;
+        const b = bbox(i);
+        if (Math.min(b.x1, writing.x1) - Math.max(b.x0, writing.x0) > 1 && Math.min(b.y1, writing.y1) - Math.max(b.y0, writing.y0) > 1) covered.push(`${date}: ${i.type}`);
+        if (i.x < 0 || i.x > 900 || i.y < 0 || i.y > 1200) offSheet.push(`${date}: ${i.type}`);
+      }
+      const decorations = items.filter((i) => i.type === 'stamp' || i.type === 'flower').length;
+      if (decorations !== direction.stickers.stamps.length + direction.stickers.flowers.length) missing.push(date);
+    }
+    expect(covered).toEqual([]);
+    expect(offSheet).toEqual([]);
+    expect(missing).toEqual([]);
+  });
+
   it('sizes a card to its photo shape', () => {
     expect(cardSize({ kind: 'photo', w: 1000, h: 750 }, 328)).toEqual({ w: 328, h: 297 });
     expect(cardSize({ kind: 'album', w: 500, h: 500 }, 328)).toEqual({ w: 328, h: 372 });

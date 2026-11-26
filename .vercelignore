@@ -1,0 +1,6 @@
+# Guard: the site deploys from app/ (see app/README.md).
+# A deploy started here by mistake must never upload photos or design sources.
+# Vercel does not read .gitignore, so everything is left out except the app.
+/*
+!/app
+!/vercel.json

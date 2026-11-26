@@ -6,3 +6,4 @@ Sample Project/
 prototype/assets/photos/
 __pycache__/
 .claude/settings.local.json
+.vercel

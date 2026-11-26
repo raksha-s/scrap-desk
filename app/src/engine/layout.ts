@@ -54,6 +54,7 @@ function tornPolygon(rng: Rng, amp = 1.6, step = 5) {
 
 const NOTE_MAX = 640;      // the tallest a note may be
 const NOTE_ROOMY = 480;    // what a note that had to be squeezed aims for, leaving room for the title and quote
+const NOTE_PAD = 30;       // the blank margin round a note's writing (see .pnote), which decorations may lap over
 const lineHeight = (fs: number) => Math.round(fs * 1.18);
 
 /**
@@ -209,6 +210,26 @@ export function layoutPage(
   const byDiag = [...hosts].sort((a, b) => (a.x + a.y) - (b.x + b.y));
   const tapeKind = pal.tape;
 
+  // With no photos the decorations have only the note to lean on, however small it is. Slide one that hides the
+  // writing to the nearest side where it only laps the margin, keeping to the sheet and clear of the other pieces.
+  const uncoverWriting = (it: Draft, upOrDownOnly = false) => {
+    if (n || !note) return;
+    const nb = bbox(note), o = bbox(it);
+    const writing = { x0: nb.x0 + NOTE_PAD, x1: nb.x1 - NOTE_PAD, y0: nb.y0 + NOTE_PAD, y1: nb.y1 - NOTE_PAD };
+    if (!overlap(o, writing)) return;
+    const others = items.filter((i) => i !== it && ['title', 'quote', 'stamp', 'flower', 'sticker', 'cat', 'scrap'].includes(i.type)).map(bbox);
+    const cost = ({ x, y }: { x: number; y: number }) => {
+      const b = bbox({ ...it, x, y });
+      const offSheet = y < 0 || y > SHEET.h || x < 0 || x > SHEET.w;
+      const crowded = others.reduce((sum, other) => sum + overlap(b, other) / area(b), 0);
+      return (offSheet ? 1e6 : 0) + crowded * 600 + Math.hypot(x - it.x, y - it.y);
+    };
+    const above = { x: it.x, y: it.y - (o.y1 - writing.y0) }, below = { x: it.x, y: it.y + (writing.y1 - o.y0) };
+    const left = { x: it.x - (o.x1 - writing.x0), y: it.y }, right = { x: it.x + (writing.x1 - o.x0), y: it.y };
+    const sides = upOrDownOnly ? [above, below] : [left, right, above, below];
+    Object.assign(it, sides.reduce((best, side) => (cost(side) < cost(best) ? side : best)));
+  };
+
   // patterns: torn pieces glued into a corner or along an edge, under everything
   const headings = [tit, quote].filter((t): t is Draft => !!t).map(bbox);
   const takenSpots = new Set<string>(); let laid = 0;
@@ -286,7 +307,8 @@ export function layoutPage(
   if (direction.stickers.clip) {
     // grips the left edge of the sheet, like the clip in the reference photo
     const id = direction.stickers.clip; const h = 160; const w = Math.round(h * aspect(id));
-    mk('sticker', { art: id, x: 52, y: lerp(300, 880, rng()), w, h, rot: 90 + sign(rng) * (3 + rng() * 5), z: 48 });
+    const clip = mk('sticker', { art: id, x: 52, y: lerp(300, 880, rng()), w, h, rot: 90 + sign(rng) * (3 + rng() * 5), z: 48 });
+    uncoverWriting(clip, true);                               // it stays on the edge
   }
   if (direction.stickers.pin && photoItems.length) {
     const id = direction.stickers.pin; const h = 112; const w = Math.round(h * aspect(id));
@@ -322,7 +344,9 @@ export function layoutPage(
       if (sc > bsc) { bsc = sc; best = { x, y, host }; }
     }
     used.add(best!.host.id);
-    cornerItems.push(mk(type, { art: s.id, x: best!.x, y: best!.y, w, h, rot: sign(rng) * (8 + rng() * tilt), z }));
+    const piece = mk(type, { art: s.id, x: best!.x, y: best!.y, w, h, rot: sign(rng) * (8 + rng() * tilt), z });
+    cornerItems.push(piece);
+    uncoverWriting(piece);
   };
   const stampItems: Draft[] = [];
   for (const s of direction.stickers.stamps) {
@@ -361,8 +385,9 @@ export function layoutPage(
     const base = { w, h, rot: sign(rng) * (3 + rng() * 6) };
     const anchor = { x: ref.x + sign(rng) * 90, y: ref.y + 95 };
     const spot = placeBest(rng, placed, base, { anchor, aw: 0.5, spread: 90, n: 240, soft: true });
-    placed.push({ bb: bbox({ ...base, x: spot.x, y: spot.y }), solid: true, text: false }); // later scraps keep clear of this one
-    mk('scrap', { text: t, mono: i === 1 && direction.palette.accent !== undefined && rng() < 0.4, ...base, x: spot.x, y: spot.y, z: 50 });
+    const scrap = mk('scrap', { text: t, mono: i === 1 && direction.palette.accent !== undefined && rng() < 0.4, ...base, x: spot.x, y: spot.y, z: 50 });
+    uncoverWriting(scrap);
+    placed.push({ bb: bbox(scrap), solid: true, text: false });   // later scraps keep clear of this one
   });
 
   // assemble order → stagger
