@@ -1,7 +1,7 @@
 /* ---------- small screens ---------- */
 @media (max-width: 720px) {
   :root { --u: calc(min(100vw - 24px, 430px) / 776); }
-  .controls { padding: 0 12px; bottom: calc(14px + var(--safe-b)); }
+  .controls { padding: 0 12px; bottom: calc(30px + var(--safe-b)); }
   .fv-head, .pv-top { --u: .36px; }                     /* smaller header keys so the folder name has room */
   .fv-head { grid-template-columns: auto 1fr auto; gap: 8px; }
   .fv-scroll { top: 138px; padding: 14px 18px 70px; }

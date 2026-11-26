@@ -33,6 +33,7 @@ export function Desk({ active, mode, webgl, onMode, onOpen, onAddNew }: Props) {
         </div>
         <button type="button" className="key key-solo" id="btnStart" onClick={onAddNew}><span>+ Add New</span></button>
       </div>
+      <p className="credit">Made with <span role="img" aria-label="love">❤️</span> by Raksha</p>
     </section>
   );
 }

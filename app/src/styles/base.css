@@ -52,6 +52,13 @@ h1, h2, h3, p { margin: 0; }
 #home { pointer-events: none; }
 #home > .brand { pointer-events: none; }
 
+/* ---------- maker's line, under the bottom keys ---------- */
+#home > .credit {
+  position: absolute; left: 50%; bottom: calc(4px + var(--safe-b)); transform: translateX(-50%); width: max-content;
+  padding: 3px 12px 4px; border-radius: 3px; background: rgba(252, 249, 242, .9);   /* a paper label: folders of any colour pass under it */
+  font: 600 18px/1 var(--hand); color: var(--ink-soft); pointer-events: none;
+}
+
 /* ---------- brand ---------- */
 .brand { position: absolute; top: clamp(22px, 4.2vh, 44px); left: 0; right: 0; text-align: center; }
 .brand h1 {
