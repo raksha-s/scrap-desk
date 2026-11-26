@@ -11,6 +11,7 @@ import { Bubble } from './Bubble';
 import { applyAction, setCaption, setFrame } from './edits';
 import { Sheet } from './Sheet';
 import { useEditor } from './useEditor';
+import { SERVICES, usePageTools, type PageServices } from './usePageTools';
 import { useZoom } from './useZoom';
 import { ZoomBar } from './ZoomBar';
 
@@ -18,7 +19,7 @@ interface Exporter { exportPage: typeof exportPage; deliver(blob: Blob, name: st
 const EXPORTER: Exporter = { exportPage, deliver: (blob, name) => deliver(blob, name) };
 
 /** `pageId` is the page shown, or the one last shown, so it stays put while the screen fades away. */
-export function PageView({ active, pageId, exporter = EXPORTER }: { active: boolean; pageId: string | null; exporter?: Exporter }) {
+export function PageView({ active, pageId, exporter = EXPORTER, services = SERVICES }: { active: boolean; pageId: string | null; exporter?: Exporter; services?: PageServices }) {
   const store = useStore();
   const page = useApp((s) => s.pages.find((p) => p.id === pageId));
   const folder = useApp((s) => s.folders.find((f) => f.id === page?.folderId));
@@ -38,6 +39,8 @@ export function PageView({ active, pageId, exporter = EXPORTER }: { active: bool
     if (shown && isEntering(shown)) { setEntering(shown); clearEntering(); }
     if (!shown) setEntering(null);
   }, [shown]);
+
+  const tools = usePageTools(page, shown, editor.select, services);
 
   useEscape(active, () => { if (folder) go(`/f/${folder.id}`); });
 
@@ -71,13 +74,14 @@ export function PageView({ active, pageId, exporter = EXPORTER }: { active: bool
             <div className="under u1" /><div className="under u2" />
             <div className="sheet-scale" id="sheetScale" {...editor.sheetHandlers}>
               {page && (
-                <Sheet key={page.id} page={page} editing enter={entering === page.id} selectedId={editor.selected} draggingId={editor.dragging}
+                <Sheet key={page.id} page={page} editing enter={entering === page.id} selectedId={editor.selected} draggingId={editor.dragging} addedIds={tools.addedIds} freshCardId={tools.freshCardId}
                   onCaption={(cardId, text) => store.updatePage(page.id, (p) => setCaption(p, cardId, text))} />
               )}
             </div>
           </div>
         </div>
         <ZoomBar zoom={zoom} onZoom={setZoom} onFit={reset} />
+        {tools.tray}
       </section>
 
       <Bubble item={item} selected={!!editor.selected} tick={editor.tick} onEnter={editor.keepHover} onLeave={editor.dropHover}
@@ -87,6 +91,8 @@ export function PageView({ active, pageId, exporter = EXPORTER }: { active: bool
           store.updatePage(page!.id, (p) => applyAction(p, item.id, action));
           if (action === 'delete') editor.select(null); else editor.refresh();
         }} />
+
+      {tools.dialogs}
 
       <ConfirmDialog open={asking} title="Delete this page?" body="This permanently deletes the page and its photos." onCancel={() => setAsking(false)}
         onConfirm={() => { setAsking(false); const id = page!.id; go(folder ? `/f/${folder.id}` : '/'); store.deletePage(id); }} />
