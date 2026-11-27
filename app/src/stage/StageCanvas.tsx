@@ -28,7 +28,6 @@ export function StageCanvas(props: Props) {
     stage.current = s; shown.current = null;
     const home = () => now.current.view === 'home';
     s.onFlip = () => { if (home()) play('flick'); };
-    document.fonts?.load('600 72px "IBM Plex Mono"').then(() => { if (stage.current === s) s.refreshLabels(); }).catch(() => {});
 
     const open = (i: number) => { const f = now.current.folders[i]; if (f) now.current.onOpen(f.id); };
     let drag: { y: number; total: number; moved: boolean } | null = null;

@@ -16,7 +16,7 @@ const broken = (id: string, folderId: string) => ({ ...page(id, folderId, [card(
 describe('when something cannot be drawn', () => {
   it('falls back to the list if the 3D desk fails', async () => {
     const boom = () => { throw new Error('stage broke'); };
-    vi.mocked(createStage).mockImplementation(() => ({ setFolders: boom, setView() {}, focusTo() {}, refreshLabels() {}, setPointer() {}, setHover() {}, dispose() {} }) as unknown as Stage);
+    vi.mocked(createStage).mockImplementation(() => ({ setFolders: boom, setView() {}, focusTo() {}, setPointer() {}, setHover() {}, dispose() {} }) as unknown as Stage);
     renderWith(await readyStore(), <App />);
     await waitFor(() => expect((screen.getByRole('button', { name: 'Folder view' }) as HTMLButtonElement).disabled).toBe(true));
     expect(screen.getByRole('button', { name: /Unnamed Folder/ })).toBeTruthy();

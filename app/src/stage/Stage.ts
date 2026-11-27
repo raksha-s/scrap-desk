@@ -298,18 +298,17 @@ export class Stage {
     const text = (it.f.name || 'Unnamed Folder').toUpperCase();
     let size = 72;
     const spacing = 0.12;
-    const width = (s: number, t: string) => { x.font = `600 ${s}px "IBM Plex Mono", ui-monospace, monospace`; return x.measureText(t).width + t.length * s * spacing; };
+    const width = (s: number, t: string) => { x.font = `600 ${s}px Helvetica, "Helvetica Neue", Arial, sans-serif`; return x.measureText(t).width + t.length * s * spacing; };
     while (size > 34 && width(size, text) > c.width - 40) size -= 2;
     let t = text; while (width(size, t) > c.width - 40 && t.length > 3) t = t.slice(0, -2);
     if (t !== text) t = t.trim() + '…';
-    x.font = `600 ${size}px "IBM Plex Mono", ui-monospace, monospace`;
+    x.font = `600 ${size}px Helvetica, "Helvetica Neue", Arial, sans-serif`;
     // manual letter-spacing (works everywhere)
     const total = width(size, t) - t.length * size * spacing + (t.length - 1) * size * spacing;
     let px = c.width / 2 - total / 2; x.textAlign = 'left';
     for (const ch of t) { x.fillText(ch, px, c.height / 2 + 3); px += x.measureText(ch).width + size * spacing; }
     it.labelTex.needsUpdate = true;
   }
-  refreshLabels() { this.items.forEach((it) => this.drawLabel(it)); }
 
   // ---------- editing one folder ----------
   rename(i: number, name: string) { const it = this.items[i]; if (!it) return; it.f.name = name; this.drawLabel(it); }

@@ -30,7 +30,7 @@
 .zoom input[type="range"]::-moz-range-track { width: 8px; border-radius: 99px; background: rgba(92, 48, 8, .42); }
 .zoom input[type="range"]::-moz-range-thumb { width: 30px; height: 24px; border: 0; border-radius: 0; background: url("/art/ui/cardboard/keycap_square.png") 0 0 / 100% 100% no-repeat; }
 .zoom input[type="range"]:focus-visible { outline: 2px solid #fff; outline-offset: 2px; border-radius: 10px; }
-.zoom-fit { padding: 4px 2px; border: 0; background: none; font: 600 11px/1 var(--mono); color: #3b2410; border-radius: 6px; }
+.zoom-fit { padding: 4px 2px; border: 0; background: none; font: 600 11px/1 var(--sans); color: #3b2410; border-radius: 6px; }
 .zoom-fit:hover { text-decoration: underline; text-underline-offset: 3px; }
 .sheet-wrap { position: relative; width: calc(900px * var(--s, .5)); height: calc(1200px * var(--s, .5)); }
 .sheet-scale { position: absolute; left: 0; top: 0; width: 900px; height: 1200px; transform: scale(var(--s, .5)); transform-origin: 0 0; }
@@ -69,7 +69,7 @@
 .obj[aria-disabled="true"] .obj-art { opacity: .55; filter: grayscale(.8) brightness(.92); translate: none; }
 .obj[aria-disabled="true"] .cam-print { translate: 0 calc(var(--w) * .82); }
 .obj-tip { position: absolute; left: 50%; bottom: calc(100% + var(--rise) + 10px); translate: -50% 4px; padding: 9px 12px; border-radius: 8px; background: var(--brown); color: #fbf3e4;
-  font: 500 12px/1 var(--mono); letter-spacing: .04em; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity .14s, translate .14s var(--ease); box-shadow: 0 8px 18px rgba(40, 20, 0, .28); }
+  font: 500 12px/1 var(--sans); letter-spacing: .04em; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity .14s, translate .14s var(--ease); box-shadow: 0 8px 18px rgba(40, 20, 0, .28); }
 .obj-tip::after { content: ""; position: absolute; left: 50%; top: 100%; translate: -50% 0; border: 6px solid transparent; border-bottom: 0; border-top-color: var(--brown); }
 .obj:focus-visible .obj-tip { opacity: 1; translate: -50% 0; }
 @media (hover: hover) {
