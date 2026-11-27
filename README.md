@@ -141,6 +141,6 @@ The stickers, papers, stamps, folders and other artwork are included so the app 
 
 ---
 
-<p align="center"><i>"I feel like not all was bad this month. I will cherish it all."</i></p>
+<p align="center"><i>"I hope this helps you curate your memories"</i></p>
 
 <p align="center">Made with ❤️ by Raksha</p>
